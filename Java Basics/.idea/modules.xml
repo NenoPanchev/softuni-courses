@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/ConditionalStatements/ConditionalStatements.iml" filepath="$PROJECT_DIR$/ConditionalStatements/ConditionalStatements.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ConditionalStatementsExercise/ConditionalStatementsExercise.iml" filepath="$PROJECT_DIR$/ConditionalStatementsExercise/ConditionalStatementsExercise.iml" />
+      <module fileurl="file://$PROJECT_DIR$/DrawingOnTheConsole/DrawingOnTheConsole.iml" filepath="$PROJECT_DIR$/DrawingOnTheConsole/DrawingOnTheConsole.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ExamPreparations/ExamPreparations.iml" filepath="$PROJECT_DIR$/ExamPreparations/ExamPreparations.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ForLoop/ForLoop.iml" filepath="$PROJECT_DIR$/ForLoop/ForLoop.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ForLoopExercise/ForLoopExercise.iml" filepath="$PROJECT_DIR$/ForLoopExercise/ForLoopExercise.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/Java Basics.iml" filepath="$PROJECT_DIR$/.idea/Java Basics.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Java Hello World/Java Hello World.iml" filepath="$PROJECT_DIR$/Java Hello World/Java Hello World.iml" />
+      <module fileurl="file://$PROJECT_DIR$/LoopsExam/LoopsExam.iml" filepath="$PROJECT_DIR$/LoopsExam/LoopsExam.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Nested ConditionalStatementsExercise/Nested ConditionalStatementsExercise.iml" filepath="$PROJECT_DIR$/Nested ConditionalStatementsExercise/Nested ConditionalStatementsExercise.iml" />
+      <module fileurl="file://$PROJECT_DIR$/NestedConditionalStatements/NestedConditionalStatements.iml" filepath="$PROJECT_DIR$/NestedConditionalStatements/NestedConditionalStatements.iml" />
+      <module fileurl="file://$PROJECT_DIR$/NestedLoopsExercise/NestedLoopsExercise.iml" filepath="$PROJECT_DIR$/NestedLoopsExercise/NestedLoopsExercise.iml" />
+      <module fileurl="file://$PROJECT_DIR$/NestedLoopsLab/NestedLoopsLab.iml" filepath="$PROJECT_DIR$/NestedLoopsLab/NestedLoopsLab.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ProblemsOfChampions/ProblemsOfChampions.iml" filepath="$PROJECT_DIR$/ProblemsOfChampions/ProblemsOfChampions.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ProgramingBasicsEXAM/ProgramingBasicsEXAM.iml" filepath="$PROJECT_DIR$/ProgramingBasicsEXAM/ProgramingBasicsEXAM.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ProgramingBasicsSampleExam/ProgramingBasicsSampleExam.iml" filepath="$PROJECT_DIR$/ProgramingBasicsSampleExam/ProgramingBasicsSampleExam.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SimpleCalculations/SimpleCalculations.iml" filepath="$PROJECT_DIR$/SimpleCalculations/SimpleCalculations.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SimpleCalculationsExam/SimpleCalculationsExam.iml" filepath="$PROJECT_DIR$/SimpleCalculationsExam/SimpleCalculationsExam.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SimpleConditionsExam/SimpleConditionsExam.iml" filepath="$PROJECT_DIR$/SimpleConditionsExam/SimpleConditionsExam.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SimpleOperationsandCalculationsExercise/SimpleOperationsandCalculationsExercise.iml" filepath="$PROJECT_DIR$/SimpleOperationsandCalculationsExercise/SimpleOperationsandCalculationsExercise.iml" />
+      <module fileurl="file://$PROJECT_DIR$/WhileLoop/WhileLoop.iml" filepath="$PROJECT_DIR$/WhileLoop/WhileLoop.iml" />
+      <module fileurl="file://$PROJECT_DIR$/WhileLoopExercise/WhileLoopExercise.iml" filepath="$PROJECT_DIR$/WhileLoopExercise/WhileLoopExercise.iml" />
+    </modules>
+  </component>
+</project>
