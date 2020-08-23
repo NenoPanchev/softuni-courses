@@ -2,36 +2,22 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="856fea58-d1b4-4811-a5c2-c509eb178c69" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GenericsExercise.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/GenericsExercise/GenericBox/Box.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/GenericsExercise/GenericBox/Main.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/CustomList/CustomList.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/CustomList/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/CustomListIterator/CustomList.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/CustomListIterator/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/CustomListIterator/Sorter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/CustomListSorter/CustomList.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/CustomListSorter/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/CustomListSorter/Sorter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/GenericBox.zip" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/GenericBox/Box.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/GenericBox/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/GenericBoxOfInteger.zip" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/GenericBoxOfInteger/Box.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/GenericBoxOfInteger/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/GenericCountMethodDouble/Box.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/GenericCountMethodDouble/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/GenericCountMethodStrings/Box.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/GenericCountMethodStrings/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/GenericSwapMethodStrings.zip" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/GenericSwapMethodStrings/Box.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/GenericSwapMethodStrings/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Tuple/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Tuple/Tuple.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/CustomList.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/CustomListIterator.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/CustomListSorter.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/GenericCountMethodDouble.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/GenericCountMethodStrings.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/GenericSwapMethodInteger.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/GenericSwapMethodInteger/Box.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/GenericSwapMethodInteger/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Threeuple.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Threeuple/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Threeuple/Threeuple.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Tuple.zip" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Tuple/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Tuple/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Tuple/Tuple.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Tuple/Tuple.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,20 +43,22 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/CustomListIterator" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/Threeuple" />
     <property name="settings.editor.selected.configurable" value="configurable.group.appearance" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Panchev\IdeaProjects\MyRepository\Java Advanced\Advanced\GenericsExercise\src\Threeuple" />
       <recent name="C:\Users\Panchev\IdeaProjects\MyRepository\Java Advanced\Advanced\GenericsExercise\src\CustomListIterator" />
       <recent name="C:\Users\Panchev\IdeaProjects\MyRepository\Java Advanced\Advanced\GenericsExercise\src\CustomListSorter" />
       <recent name="C:\Users\Panchev\IdeaProjects\MyRepository\Java Advanced\Advanced\GenericsExercise\src\GenericCountMethodDouble" />
       <recent name="C:\Users\Panchev\IdeaProjects\MyRepository\Java Advanced\Advanced\GenericsExercise\src\GenericBoxOfInteger" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Main (2)">
+  <component name="RunManager" selected="Application.Main (4)">
     <configuration name="Main (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="CustomListSorter.Main" />
       <module name="GenericsExercise" />
@@ -97,12 +85,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Main (4)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="GenericCountMethodStrings.Main" />
+    <configuration name="Main (3)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Tuple.Main" />
       <module name="GenericsExercise" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="GenericCountMethodStrings.*" />
+          <option name="PATTERN" value="Tuple.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -110,12 +98,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Main (5)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="GenericCountMethodDouble.Main" />
+    <configuration name="Main (4)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Threeuple.Main" />
       <module name="GenericsExercise" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="GenericCountMethodDouble.*" />
+          <option name="PATTERN" value="Threeuple.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -138,11 +126,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Main (4)" />
+        <item itemvalue="Application.Main (3)" />
         <item itemvalue="Application.Main (2)" />
         <item itemvalue="Application.Main (1)" />
         <item itemvalue="Application.Main" />
-        <item itemvalue="Application.Main (5)" />
-        <item itemvalue="Application.Main (4)" />
       </list>
     </recent_temporary>
   </component>
@@ -155,28 +143,65 @@
       <option name="presentableId" value="Default" />
       <updated>1598026879178</updated>
     </task>
+    <task id="LOCAL-00001" summary="update">
+      <created>1598111512820</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1598111512820</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="update" />
+    <option name="LAST_COMMIT_MESSAGE" value="update" />
+  </component>
   <component name="WindowStateProjectService">
-    <state x="1105" y="370" key="#com.intellij.ide.util.MemberChooser" timestamp="1598111260361">
+    <state x="1105" y="370" key="#com.intellij.ide.util.MemberChooser" timestamp="1598194755264">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="1105" y="370" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1598111260361" />
-    <state width="1340" height="266" key="GridCell.Tab.0.bottom" timestamp="1598110709144">
+    <state x="1105" y="370" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1598194755264" />
+    <state x="0" y="177" key="CommitChangelistDialog2" timestamp="1598111512152">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1340" height="266" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1598110709144" />
-    <state width="1340" height="266" key="GridCell.Tab.0.center" timestamp="1598110709144">
+    <state x="0" y="177" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1598111512152" />
+    <state width="1340" height="266" key="GridCell.Tab.0.bottom" timestamp="1598195595637">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1340" height="266" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1598110709144" />
-    <state width="1340" height="266" key="GridCell.Tab.0.left" timestamp="1598110709144">
+    <state width="1340" height="266" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1598195595637" />
+    <state width="1340" height="266" key="GridCell.Tab.0.center" timestamp="1598195595637">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1340" height="266" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1598110709144" />
-    <state width="1340" height="266" key="GridCell.Tab.0.right" timestamp="1598110709144">
+    <state width="1340" height="266" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1598195595637" />
+    <state width="1340" height="266" key="GridCell.Tab.0.left" timestamp="1598195595637">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1340" height="266" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1598110709144" />
+    <state width="1340" height="266" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1598195595637" />
+    <state width="1340" height="266" key="GridCell.Tab.0.right" timestamp="1598195595637">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1340" height="266" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1598195595637" />
+    <state width="1340" height="329" key="GridCell.Tab.1.bottom" timestamp="1598192622383">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1340" height="329" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1598192622383" />
+    <state width="1340" height="329" key="GridCell.Tab.1.center" timestamp="1598192622382">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1340" height="329" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1598192622382" />
+    <state width="1340" height="329" key="GridCell.Tab.1.left" timestamp="1598192622382">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1340" height="329" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1598192622382" />
+    <state width="1340" height="329" key="GridCell.Tab.1.right" timestamp="1598192622382">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1340" height="329" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1598192622382" />
+    <state x="732" y="399" key="Vcs.Push.Dialog.v2" timestamp="1598111518829">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="732" y="399" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1598111518829" />
   </component>
 </project>
