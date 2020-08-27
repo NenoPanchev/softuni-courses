@@ -1,5 +1,7 @@
 package LingedListTraversal;
 
+import java.util.LinkedList;
+import java.util.List;
 import java.util.Scanner;
 
 public class Main {
@@ -7,6 +9,7 @@ public class Main {
         Scanner scan = new Scanner(System.in);
         int num = Integer.parseInt(scan.nextLine());
         MyList<Integer> list = new MyList<>();
+        List<Integer> link = new LinkedList<>();
 
         for (int i = 0; i < num; i++) {
             String input = scan.nextLine();
