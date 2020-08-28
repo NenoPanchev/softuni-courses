@@ -19,8 +19,8 @@ public class Snake {
         int foodEaten = 0;
         while (foodEaten != 10) {
             String direction = scan.nextLine();
+            matrix[currentPosition.get(0)][currentPosition.get(1)] = ".";
             if (isValidIndex(matrix, getDirection(currentPosition, direction))) {
-                matrix[currentPosition.get(0)][currentPosition.get(1)] = ".";
                 currentPosition = getDirection(currentPosition, direction);
 
                 String whatsOnNextPosition = matrix[currentPosition.get(0)][currentPosition.get(1)];
@@ -41,7 +41,6 @@ public class Snake {
                     matrix[currentPosition.get(0)][currentPosition.get(1)] = "S";
                 }
             } else {
-                matrix[currentPosition.get(0)][currentPosition.get(1)] = ".";
                 break;
             }
         }
