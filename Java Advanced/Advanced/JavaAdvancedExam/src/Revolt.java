@@ -36,6 +36,7 @@ public class Revolt {
                         if (!matrix[currentPosition.get(0)][currentPosition.get(1)].equals("-"))
                         matrix[currentPosition.get(0)][currentPosition.get(1)] = "-";
                         currentPosition = getDirection(currentPosition, direction, sizeOfMatrix);
+                        i -= 2;
                         continue;
 
                     case "F":
@@ -46,8 +47,7 @@ public class Revolt {
                         break;
                 }
 
-            printMatrix(matrix);
-            if (won)
+            if (won || i == numberOfCommands - 1)
                 break;
             direction = scan.nextLine();
         }
@@ -71,9 +71,8 @@ public class Revolt {
         List<Integer> list = new ArrayList<>();
         list.add(initialList.get(0));
         list.add(initialList.get(1));
-        int nextRow = initialList.get(0);
-        int nextCol = initialList.get(1);
-        if (nextRow >= 0 && nextRow < size && nextCol >= 0 && nextCol < size) {
+
+
 
             switch (direction) {
                 case "up":
@@ -92,8 +91,11 @@ public class Revolt {
                     list.set(1, list.get(1) + 1);
                     break;
             }
+            int nextRow = list.get(0);
+            int nextCol = list.get(1);
 
-        } else {
+            if (nextRow < 0 || nextRow >= size || nextCol < 0 || nextCol >= size) {
+
             switch (direction) {
                 case "up":
                     list.set(0, size - 1);
