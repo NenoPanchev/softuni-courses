@@ -23,39 +23,51 @@ public class SantasPresentFactory {
         boolean winCondition = false;
 
         while (!boxesWithMaterials.isEmpty() && !magicValue.isEmpty()) {
-            int box = boxesWithMaterials.pop();
-            if (box == 0) {
+            int box = boxesWithMaterials.peek();
+            int magic = magicValue.peek();
+            if (box == 0 || magic == 0) {
+                if (box == 0){
+                    boxesWithMaterials.pop();
+                }
+                if (magic == 0) {
+                    magicValue.poll();
+                    continue;
+                }
                 continue;
             }
 
-            int magic = magicValue.poll();
-            if (magic == 0) {
-                boxesWithMaterials.push(box);
-                continue;
-            }
             int product = box*magic;
             switch (product) {
                 case 400:
                     bicycle++;
+                    boxesWithMaterials.pop();
+                    magicValue.poll();
                     break;
 
                 case 300:
                     bear++;
+                    boxesWithMaterials.pop();
+                    magicValue.poll();
                     break;
 
                 case 250:
                     train++;
+                    boxesWithMaterials.pop();
+                    magicValue.poll();
                     break;
 
                 case 150:
                     doll++;
+                    boxesWithMaterials.pop();
+                    magicValue.poll();
                     break;
 
                 default:
                     if (product < 0) {
-                        boxesWithMaterials.push(box + magic);
+                        boxesWithMaterials.push(boxesWithMaterials.pop() + magicValue.poll());
                     } else {
-                        boxesWithMaterials.push(box + 15);
+                        magicValue.poll();
+                        boxesWithMaterials.push(boxesWithMaterials.pop() + 15);
                     }
                     break;
             }
