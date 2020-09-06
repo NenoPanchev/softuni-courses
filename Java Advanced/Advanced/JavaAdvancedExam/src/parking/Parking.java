@@ -62,7 +62,7 @@ public class Parking {
         StringBuilder sb = new StringBuilder();
         sb.append(String.format("The cars are parked in %s:%n", this.type));
         for (Car car : this.data) {
-            sb.append(car.toString()).append("\n");
+            sb.append(car.toString()).append(System.lineSeparator());
         }
         return sb.toString();
     }

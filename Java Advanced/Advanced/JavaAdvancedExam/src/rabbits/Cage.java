@@ -77,7 +77,7 @@ public class Cage {
     @Override
     public String toString() {
         StringBuilder sb = new StringBuilder();
-        sb.append("Rabbits available at ").append(this.getName()).append(System.lineSeparator());
+        sb.append("Rabbits available at ").append(this.name).append(":").append(System.lineSeparator());
         this.data.stream()
                 .filter(Rabbit::isAvailable)
                 .forEach(x -> sb.append(x.toString()).append(System.lineSeparator()));

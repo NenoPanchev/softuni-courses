@@ -87,9 +87,9 @@ public class Guild {
     @Override
     public String toString() {
         StringBuilder sb = new StringBuilder();
-        sb.append("Players in the guild: ").append(this.getName()).append(":").append("\n");
+        sb.append("Players in the guild: ").append(this.getName()).append(":").append(System.lineSeparator());
         for (Player player : this.getRoster()) {
-            sb.append(player).append("\n");
+            sb.append(player).append(System.lineSeparator());
         }
         return sb.toString().trim();
     }

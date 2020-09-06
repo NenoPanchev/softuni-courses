@@ -21,17 +21,21 @@ public class Main {
         Rabbit thirdRabbit = new Rabbit("Jumpy", "Cashmere Lop");
         Rabbit fourthRabbit = new Rabbit("Puffy", "Cashmere Lop");
         Rabbit fifthRabbit = new Rabbit("Marlin", "Brazilian");
+        Rabbit sixthRabbit = new Rabbit("Zaek", "Bulgarian");
 
 //Add Rabbits
         cage.add(secondRabbit);
         cage.add(thirdRabbit);
         cage.add(fourthRabbit);
         cage.add(fifthRabbit);
+        cage.add(sixthRabbit);
 
 //Sell Rabbit by name
         System.out.println(cage.sellRabbit("Bunny")); //Rabbit (Brazilian): Bunny
+
+        cage.removeSpecies("Cashmere Lop");
 //Sell Rabbit by species
-        List<Rabbit> soldSpecies = cage.sellRabbitBySpecies(("Cashmere Lop"));
+        List<Rabbit> soldSpecies = cage.sellRabbitBySpecies(("Brazilian"));
 
         soldSpecies.forEach(f-> {
             System.out.println(f.getName());
@@ -41,6 +45,15 @@ public class Main {
         //Puffy
 
         System.out.println(cage.report());
+
+        System.out.println(cage.count());
+        System.out.println(cage.removeRabbit("Fluffy"));
+        System.out.println(cage.count());
+        System.out.println(cage.removeRabbit("Pesho"));
+        System.out.println(cage.count());
+        cage.sellRabbitBySpecies("Bulgarian");
+        System.out.println(cage.report());
+        System.out.println(cage.count());
 //Rabbits available at Wildness:
 //Rabbit (Blanc de Hotot): Fluffy
 //Rabbit (Brazilian): Marlin
