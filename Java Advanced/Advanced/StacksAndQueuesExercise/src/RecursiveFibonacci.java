@@ -6,8 +6,8 @@ public class RecursiveFibonacci {
         Scanner scan = new Scanner(System.in);
         int num = Integer.parseInt(scan.nextLine());
         ArrayDeque<Long> stack = new ArrayDeque<>();
-        stack.push((long) 1);
-        stack.push((long) 1);
+        stack.push(1L);
+        stack.push(1L);
         while (stack.size() < num + 1) {
             long currentNum = stack.pop();
             long previousNum = stack.peek();

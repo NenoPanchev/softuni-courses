@@ -20,25 +20,27 @@ public class Robotics {
         String product = scan.nextLine();
         ArrayDeque<String> productsQueue = new ArrayDeque<>();
         while (!"End".equals(product)) {
-            productsQueue.push(product);
-
             totalSeconds += 1;
-            checkIfRobotIsFreeAndGiveItItem(robots, totalSeconds, productsQueue);
+            checkIfRobotIsFreeAndGiveItItem(robots, totalSeconds, productsQueue, product);
             product = scan.nextLine();
         }
         while (!productsQueue.isEmpty()) {
             totalSeconds += 1;
-            checkIfRobotIsFreeAndGiveItItem(robots, totalSeconds, productsQueue);
+            checkIfRobotIsFreeAndGiveItItem(robots, totalSeconds, productsQueue, product);
         }
     }
 
-    private static void checkIfRobotIsFreeAndGiveItItem(Robot[] robots, long totalSeconds, ArrayDeque<String> productsQueue) {
+    private static void checkIfRobotIsFreeAndGiveItItem(Robot[] robots, long totalSeconds, ArrayDeque<String> productsQueue, String product) {
         boolean productTaken = false;
-
+        String currentProduct = "";
+        if (!product.equals("End")) {
+            currentProduct = product;
+        } else {
+            currentProduct = productsQueue.poll();
+        }
         for (Robot robot : robots) {
             robot.reduceTimeLeft();
             if (robot.isFree() && !productTaken) {
-                String currentProduct = productsQueue.pop();
                 robot.setTimeLeftUntilFree();
                 productTaken = true;
                 System.out.printf("%s - %s [%02d:%02d:%02d]%n",
@@ -48,6 +50,9 @@ public class Robotics {
                         (totalSeconds % 3600) / 60,
                         totalSeconds % 60);
             }
+        }
+        if (!productTaken) {
+            productsQueue.offer(currentProduct);
         }
     }
 }
