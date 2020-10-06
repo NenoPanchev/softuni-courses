@@ -1,4 +1,6 @@
-package militaryElite;
+package militaryElite.implementations;
+
+import militaryElite.interfaces.Soldier;
 
 public abstract class SoldierImpl implements Soldier {
 
@@ -6,7 +8,7 @@ public abstract class SoldierImpl implements Soldier {
     private String firstName;
     private String lastName;
 
-    public SoldierImpl(int id, String firstName, String lastName) {
+    protected SoldierImpl(int id, String firstName, String lastName) {
         this.id = id;
         this.firstName = firstName;
         this.lastName = lastName;

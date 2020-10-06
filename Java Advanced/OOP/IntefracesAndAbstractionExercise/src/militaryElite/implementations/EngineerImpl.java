@@ -1,22 +1,24 @@
-package militaryElite;
+package militaryElite.implementations;
 
-import java.util.LinkedHashSet;
-import java.util.Set;
+import militaryElite.interfaces.Engineer;
+import militaryElite.interfaces.Repair;
 
-public class EngineerImpl extends SpecialisedSoldierImpl implements  Engineer{
-    private Set<Repair> repairs;
+import java.util.*;
+
+public class EngineerImpl extends SpecialisedSoldierImpl implements Engineer {
+    private List<Repair> repairs;
 
     public EngineerImpl(int id, String firstName, String lastName, double salary, String corps) {
         super(id, firstName, lastName, salary, corps);
-        this.repairs = new LinkedHashSet<>();
+        this.repairs = new ArrayList<>();
     }
 
-    public void addRepair(Repair repair) {
+    public void addRepair(RepairImpl repair) {
         this.repairs.add(repair);
     }
 
     @Override
-    public Set<Repair> getRepairs() {
+    public Collection<Repair> getRepairs() {
         return this.repairs;
     }
 
@@ -24,7 +26,7 @@ public class EngineerImpl extends SpecialisedSoldierImpl implements  Engineer{
     public String toString() {
         StringBuilder sb = new StringBuilder();
         sb.append(super.toString()).append(System.lineSeparator());
-        sb.append("Corps: ").append(this.getCorps()).append(System.lineSeparator());
+        sb.append("Corps: ").append(this.getCorps().getName()).append(System.lineSeparator());
         sb.append("Repairs:").append(System.lineSeparator());
         this.repairs.forEach(r -> sb.append("  ").append(r).append(System.lineSeparator()));
         return sb.toString().trim();

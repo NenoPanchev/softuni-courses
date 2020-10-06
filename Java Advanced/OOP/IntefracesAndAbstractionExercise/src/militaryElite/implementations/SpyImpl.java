@@ -1,4 +1,6 @@
-package militaryElite;
+package militaryElite.implementations;
+
+import militaryElite.interfaces.Spy;
 
 public class SpyImpl extends SoldierImpl implements Spy {
     private int codeNumber;

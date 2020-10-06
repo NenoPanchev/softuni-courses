@@ -1,4 +1,6 @@
-package militaryElite;
+package militaryElite.implementations;
+
+import militaryElite.interfaces.Private;
 
 public class PrivateImpl extends SoldierImpl implements Private {
     private double salary;

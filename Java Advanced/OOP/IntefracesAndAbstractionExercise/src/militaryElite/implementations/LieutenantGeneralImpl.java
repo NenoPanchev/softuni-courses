@@ -1,23 +1,28 @@
-package militaryElite;
+package militaryElite.implementations;
 
-import java.util.LinkedHashSet;
-import java.util.Set;
+import militaryElite.interfaces.LieutenantGeneral;
+import militaryElite.interfaces.Private;
+
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.List;
 
 public class LieutenantGeneralImpl extends PrivateImpl implements LieutenantGeneral {
-    private Set<PrivateImpl> privates;
+    private List<Private> privates;
 
     public LieutenantGeneralImpl(int id, String firstName, String lastName, double salary) {
         super(id, firstName, lastName, salary);
-        this.privates = new LinkedHashSet<>();
+        this.privates = new ArrayList<>();
     }
 
     @Override
-    public Set<PrivateImpl> getPrivates() {
+    public Collection<Private> getPrivates() {
         return this.privates;
     }
 
     public void addPrivate(Private priv) {
-        this.privates.add((PrivateImpl)(priv));
+        this.privates.add(priv);
+
     }
 
     @Override
