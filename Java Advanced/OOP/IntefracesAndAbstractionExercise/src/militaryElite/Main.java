@@ -1,5 +1,9 @@
 package militaryElite;
 
+import militaryElite.implementations.*;
+import militaryElite.interfaces.Mission;
+import militaryElite.interfaces.Private;
+
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
@@ -8,7 +12,7 @@ public class Main {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
         String input = scan.nextLine();
-        List<Private> privatesList = new ArrayList<>();
+        List<PrivateImpl> privatesList = new ArrayList<>();
         while (!"End".equals(input)) {
             String[] tokens = input.split("\\s+");
             String typeOfSoldier = tokens[0];
@@ -24,7 +28,7 @@ public class Main {
                     System.out.println(priv);
                     break;
 
-                case "LieutenantGeneral":
+                case "LeutenantGeneral":
                     salary = Double.parseDouble(tokens[4]);
                     LieutenantGeneralImpl lieutenantGeneral = new LieutenantGeneralImpl(id, firstName, lastName, salary);
                     for (int i = 5; i < tokens.length; i++) {
@@ -43,12 +47,12 @@ public class Main {
                     try {
                         EngineerImpl engineer = new EngineerImpl(id, firstName, lastName, salary, corps);
                         for (int i = 6; i < tokens.length; i += 2) {
-                            Repair repair = new Repair(tokens[i], Integer.parseInt(tokens[i + 1]));
+                            RepairImpl repair = new RepairImpl(tokens[i], Integer.parseInt(tokens[i + 1]));
                             engineer.addRepair(repair);
                         }
                         System.out.println(engineer);
                     } catch (IllegalArgumentException e) {
-                        continue;
+
                     }
                     break;
 
@@ -59,15 +63,15 @@ public class Main {
                         CommandoImpl commando = new CommandoImpl(id, firstName, lastName, salary, corps);
                         for (int i = 6; i < tokens.length; i += 2) {
                             try {
-                                Mission mission = new Mission(tokens[i], tokens[i + 1]);
-                                commando.addMission(mission);
+                                MissionImpl missionImpl = new MissionImpl(tokens[i], tokens[i + 1]);
+                                commando.addMission(missionImpl);
                             } catch (IllegalArgumentException e) {
                                 continue;
                             }
                         }
                         System.out.println(commando);
                     } catch (IllegalArgumentException e) {
-                        continue;
+
                     }
                     break;
 

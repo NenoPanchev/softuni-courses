@@ -1,14 +1,19 @@
-package militaryElite;
+package militaryElite.implementations;
 
-import java.util.LinkedHashSet;
-import java.util.Set;
+import militaryElite.interfaces.Commando;
+import militaryElite.interfaces.Mission;
+
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.List;
+
 
 public class CommandoImpl extends SpecialisedSoldierImpl implements Commando {
-    private Set<Mission> missions;
+    private List<Mission> missions;
 
     public CommandoImpl(int id, String firstName, String lastName, double salary, String corps) {
         super(id, firstName, lastName, salary, corps);
-        this.missions = new LinkedHashSet<>();
+        this.missions = new ArrayList<>();
     }
 
     public void addMission(Mission mission) {
@@ -16,7 +21,7 @@ public class CommandoImpl extends SpecialisedSoldierImpl implements Commando {
     }
 
     @Override
-    public Set<Mission> getMissions() {
+    public Collection<Mission> getMissions() {
         return this.missions;
     }
 
@@ -24,7 +29,7 @@ public class CommandoImpl extends SpecialisedSoldierImpl implements Commando {
     public String toString() {
         StringBuilder sb = new StringBuilder();
         sb.append(super.toString()).append(System.lineSeparator());
-        sb.append("Corps: ").append(this.getCorps()).append(System.lineSeparator());
+        sb.append("Corps: ").append(this.getCorps().getName()).append(System.lineSeparator());
         sb.append("Missions:").append(System.lineSeparator());
         this.missions.forEach(m -> sb.append("  ").append(m).append(System.lineSeparator()));
         return sb.toString().trim();
