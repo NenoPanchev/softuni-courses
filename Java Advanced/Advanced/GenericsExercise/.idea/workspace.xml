@@ -2,7 +2,60 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="856fea58-d1b4-4811-a5c2-c509eb178c69" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/out/production/GenericsExercise/CustomList/CustomList.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/GenericsExercise/CustomList/Main.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/GenericsExercise/CustomListIterator/CustomList$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/GenericsExercise/CustomListIterator/CustomList.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/GenericsExercise/CustomListIterator/Main.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/GenericsExercise/CustomListIterator/Sorter.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/GenericsExercise/CustomListSorter/CustomList.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/GenericsExercise/CustomListSorter/Main.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/GenericsExercise/CustomListSorter/Sorter.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/GenericsExercise/GenericBoxOfInteger/Box.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/GenericsExercise/GenericBoxOfInteger/Main.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/GenericsExercise/GenericCountMethodDouble/Box.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/GenericsExercise/GenericCountMethodDouble/Main.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/GenericsExercise/GenericCountMethodStrings/Box.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/GenericsExercise/GenericCountMethodStrings/Main.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/GenericsExercise/GenericSwapMethodInteger/Box.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/GenericsExercise/GenericSwapMethodInteger/Main.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/GenericsExercise/GenericSwapMethodStrings/Box.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/GenericsExercise/GenericSwapMethodStrings/Main.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/GenericsExercise/Threeuple/Main.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/GenericsExercise/Threeuple/Threeuple.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/GenericsExercise/Tuple/Main.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/GenericsExercise/Tuple/Tuple.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../OOP/Polymorphism Exercise/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../OOP/Polymorphism Exercise/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../OOP/Polymorphism Exercise/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../OOP/Polymorphism Exercise/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../OOP/Polymorphism Exercise/Polymorphism Exercise.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../OOP/Polymorphism Exercise/src/vehicles.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../OOP/Polymorphism Exercise/src/vehicles/Car.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../OOP/Polymorphism Exercise/src/vehicles/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../OOP/Polymorphism Exercise/src/vehicles/Truck.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../OOP/Polymorphism Exercise/src/vehicles/Vehicle.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../OOP/Polymorphism Exercise/src/vehiclesExtension.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../OOP/Polymorphism Exercise/src/vehiclesExtension/Bus.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../OOP/Polymorphism Exercise/src/vehiclesExtension/Car.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../OOP/Polymorphism Exercise/src/vehiclesExtension/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../OOP/Polymorphism Exercise/src/vehiclesExtension/Truck.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../OOP/Polymorphism Exercise/src/vehiclesExtension/Vehicle.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../OOP/Polymorphism Exercise/src/wildFarm.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../OOP/Polymorphism Exercise/src/wildFarm/Animal.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../OOP/Polymorphism Exercise/src/wildFarm/Cat.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../OOP/Polymorphism Exercise/src/wildFarm/Feline.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../OOP/Polymorphism Exercise/src/wildFarm/Food.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../OOP/Polymorphism Exercise/src/wildFarm/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../OOP/Polymorphism Exercise/src/wildFarm/Mammal.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../OOP/Polymorphism Exercise/src/wildFarm/Meat.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../OOP/Polymorphism Exercise/src/wildFarm/Mouse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../OOP/Polymorphism Exercise/src/wildFarm/Tiger.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../OOP/Polymorphism Exercise/src/wildFarm/Vegetable.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../OOP/Polymorphism Exercise/src/wildFarm/Zebra.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GenericSwapMethodInteger.zip" beforeDir="false" afterPath="$PROJECT_DIR$/src/GenericSwapMethodInteger.zip" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GenericSwapMethodInteger/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GenericSwapMethodInteger/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,7 +84,7 @@
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/Threeuple" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="configurable.group.appearance" />
   </component>
   <component name="RecentsManager">
@@ -43,7 +96,7 @@
       <recent name="C:\Users\Panchev\IdeaProjects\MyRepository\Java Advanced\Advanced\GenericsExercise\src\GenericBoxOfInteger" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Main (4)">
+  <component name="RunManager" selected="Application.Main (5)">
     <configuration name="Main (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="CustomListSorter.Main" />
       <module name="GenericsExercise" />
@@ -96,12 +149,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="CustomList.Main" />
+    <configuration name="Main (5)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="GenericBoxOfInteger.Main" />
       <module name="GenericsExercise" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="CustomList.*" />
+          <option name="PATTERN" value="GenericBoxOfInteger.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -111,11 +164,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Main (5)" />
         <item itemvalue="Application.Main (4)" />
         <item itemvalue="Application.Main (3)" />
         <item itemvalue="Application.Main (2)" />
         <item itemvalue="Application.Main (1)" />
-        <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
   </component>

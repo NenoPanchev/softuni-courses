@@ -10,13 +10,15 @@ public class Main {
         int num = Integer.parseInt(scan.nextLine());
         List<Box<Integer>> list = new ArrayList<>();
         for (int i = 0; i < num; i++) {
-            int input = Integer.parseInt(scan.nextLine());
-            Box<Integer> box = new Box<>(input);
-            list.add(box);
+//            int input = Integer.parseInt(scan.nextLine());
+//            Box<Integer> box = new Box<>(input);
+            list.add(new Box<>(Integer.parseInt(scan.nextLine())));
         }
         int firstIndex = scan.nextInt();
         int secondIndex = scan.nextInt();
         Box.swap(list,firstIndex, secondIndex);
-        list.forEach(System.out::println);
+        for (Box<Integer> integerBox : list) {
+            System.out.println(integerBox);
+        }
     }
 }
