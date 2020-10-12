@@ -16,7 +16,7 @@ public abstract class Animal {
         this.foodEaten = 0;
     }
 
-    public abstract String makeSound();
+    public abstract void makeSound();
 
     public void eat(Food foodType) {
         this.foodEaten += foodType.getQuantity();

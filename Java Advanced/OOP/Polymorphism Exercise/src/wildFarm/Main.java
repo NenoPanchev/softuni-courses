@@ -1,21 +1,26 @@
 package wildFarm;
 
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
         String input = scan.nextLine();
+        List<Animal> animals = new ArrayList<>();
         while (!input.equals("End")) {
             String[] tokens = input.split("\\s+");
-            String typeOfAnimal = tokens[0];
             Animal animal = createCorrectTypeOfAnimal(tokens);
             String[] foodTokens = scan.nextLine().split("\\s+");
             Food food = createCorrectTypeOfFood(foodTokens);
-            System.out.println(animal.makeSound());
+            animal.makeSound();
             animal.eat(food);
-            System.out.println(animal);
+            animals.add(animal);
             input = scan.nextLine();
+        }
+        for (Animal animal : animals) {
+            System.out.println(animal);
         }
     }
 

@@ -1,6 +1,6 @@
 package wildFarm;
 
-public class Cat extends Feline {
+public class Cat extends Felime {
     private String breed;
 
     public Cat(String animalName, String animalType, Double animalWeight, String livingRegion, String breed) {
@@ -9,8 +9,8 @@ public class Cat extends Feline {
     }
 
     @Override
-    public String makeSound() {
-        return "Meowwww";
+    public void makeSound() {
+        System.out.println("Meowwww");
     }
 
     @Override

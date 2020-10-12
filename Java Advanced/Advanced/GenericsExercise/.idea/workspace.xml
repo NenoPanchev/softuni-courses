@@ -2,60 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="856fea58-d1b4-4811-a5c2-c509eb178c69" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/out/production/GenericsExercise/CustomList/CustomList.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/GenericsExercise/CustomList/Main.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/GenericsExercise/CustomListIterator/CustomList$1.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/GenericsExercise/CustomListIterator/CustomList.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/GenericsExercise/CustomListIterator/Main.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/GenericsExercise/CustomListIterator/Sorter.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/GenericsExercise/CustomListSorter/CustomList.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/GenericsExercise/CustomListSorter/Main.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/GenericsExercise/CustomListSorter/Sorter.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/GenericsExercise/GenericBoxOfInteger/Box.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/GenericsExercise/GenericBoxOfInteger/Main.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/GenericsExercise/GenericCountMethodDouble/Box.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/GenericsExercise/GenericCountMethodDouble/Main.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/GenericsExercise/GenericCountMethodStrings/Box.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/GenericsExercise/GenericCountMethodStrings/Main.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/GenericsExercise/GenericSwapMethodInteger/Box.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/GenericsExercise/GenericSwapMethodInteger/Main.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/GenericsExercise/GenericSwapMethodStrings/Box.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/GenericsExercise/GenericSwapMethodStrings/Main.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/GenericsExercise/Threeuple/Main.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/GenericsExercise/Threeuple/Threeuple.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/GenericsExercise/Tuple/Main.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/GenericsExercise/Tuple/Tuple.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../OOP/Polymorphism Exercise/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../OOP/Polymorphism Exercise/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../OOP/Polymorphism Exercise/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../OOP/Polymorphism Exercise/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../OOP/Polymorphism Exercise/Polymorphism Exercise.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../OOP/Polymorphism Exercise/src/vehicles.zip" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../OOP/Polymorphism Exercise/src/vehicles/Car.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../OOP/Polymorphism Exercise/src/vehicles/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../OOP/Polymorphism Exercise/src/vehicles/Truck.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../OOP/Polymorphism Exercise/src/vehicles/Vehicle.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../OOP/Polymorphism Exercise/src/vehiclesExtension.zip" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../OOP/Polymorphism Exercise/src/vehiclesExtension/Bus.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../OOP/Polymorphism Exercise/src/vehiclesExtension/Car.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../OOP/Polymorphism Exercise/src/vehiclesExtension/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../OOP/Polymorphism Exercise/src/vehiclesExtension/Truck.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../OOP/Polymorphism Exercise/src/vehiclesExtension/Vehicle.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../OOP/Polymorphism Exercise/src/wildFarm.zip" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../OOP/Polymorphism Exercise/src/wildFarm/Animal.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../OOP/Polymorphism Exercise/src/wildFarm/Cat.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../OOP/Polymorphism Exercise/src/wildFarm/Feline.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../OOP/Polymorphism Exercise/src/wildFarm/Food.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../OOP/Polymorphism Exercise/src/wildFarm/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../OOP/Polymorphism Exercise/src/wildFarm/Mammal.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../OOP/Polymorphism Exercise/src/wildFarm/Meat.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../OOP/Polymorphism Exercise/src/wildFarm/Mouse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../OOP/Polymorphism Exercise/src/wildFarm/Tiger.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../OOP/Polymorphism Exercise/src/wildFarm/Vegetable.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../OOP/Polymorphism Exercise/src/wildFarm/Zebra.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/GenericSwapMethodInteger.zip" beforeDir="false" afterPath="$PROJECT_DIR$/src/GenericSwapMethodInteger.zip" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/GenericSwapMethodInteger/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GenericSwapMethodInteger/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -212,22 +159,22 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="0" y="177" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1598195641936" />
-    <state width="1340" height="329" key="GridCell.Tab.0.bottom" timestamp="1598202626053">
+    <state width="1340" height="266" key="GridCell.Tab.0.bottom" timestamp="1602450530273">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1340" height="329" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1598202626053" />
-    <state width="1340" height="329" key="GridCell.Tab.0.center" timestamp="1598202626051">
+    <state width="1340" height="266" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1602450530273" />
+    <state width="1340" height="266" key="GridCell.Tab.0.center" timestamp="1602450530258">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1340" height="329" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1598202626051" />
-    <state width="1340" height="329" key="GridCell.Tab.0.left" timestamp="1598202626049">
+    <state width="1340" height="266" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1602450530258" />
+    <state width="1340" height="266" key="GridCell.Tab.0.left" timestamp="1602450530258">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1340" height="329" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1598202626049" />
-    <state width="1340" height="329" key="GridCell.Tab.0.right" timestamp="1598202626052">
+    <state width="1340" height="266" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1602450530258" />
+    <state width="1340" height="266" key="GridCell.Tab.0.right" timestamp="1602450530258">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1340" height="329" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1598202626052" />
+    <state width="1340" height="266" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1602450530258" />
     <state width="1340" height="329" key="GridCell.Tab.1.bottom" timestamp="1598202626053">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

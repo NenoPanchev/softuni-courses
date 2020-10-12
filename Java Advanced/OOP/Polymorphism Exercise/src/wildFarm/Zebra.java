@@ -6,8 +6,8 @@ public class Zebra extends Mammal {
     }
 
     @Override
-    public String makeSound() {
-        return "Zs";
+    public void makeSound() {
+        System.out.println("Zs");
     }
 
     @Override
