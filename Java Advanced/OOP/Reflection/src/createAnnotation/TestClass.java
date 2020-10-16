@@ -1,6 +1,7 @@
 package createAnnotation;
 
-public class Foo {
+@Subject(categories = {"Test", "Annotations"})
+public class TestClass {
     private String[] categories;
 
     public void testFoo() {
