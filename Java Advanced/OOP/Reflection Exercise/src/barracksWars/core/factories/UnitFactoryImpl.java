@@ -1,12 +1,12 @@
-package core.factories;
+package barracksWars.core.factories;
 
-import interfaces.Unit;
-import interfaces.UnitFactory;
+import barracksWars.interfaces.Unit;
+import barracksWars.interfaces.UnitFactory;
 import jdk.jshell.spi.ExecutionControl;
-import models.units.AbstractUnit;
+
 
 import java.lang.reflect.InvocationTargetException;
-import java.util.regex.Pattern;
+
 
 public class UnitFactoryImpl implements UnitFactory {
 
@@ -22,8 +22,7 @@ public class UnitFactoryImpl implements UnitFactory {
 //		Class<Unit> unit = Unit.class;
 //		Class<? extends AbstractUnit>[] classes = (Class<? extends AbstractUnit>[]) pa.getClasses();
 //		Class<? extends Unit>[] classez = (Class<? extends Unit>[]) unit.getDeclaredClasses();
-		Unit unit1 = (Unit) Class.forName("models.units." + unitType).getConstructor().newInstance();
-		return unit1;
+		return (Unit) Class.forName(UNITS_PACKAGE_NAME + unitType).getConstructor().newInstance();
 //		for (Class<?> aClass : classes) {
 //			if (aClass.getSimpleName().equals(unitType)) {
 //				return (Unit) Class.forName(unitType).getConstructor().newInstance();
