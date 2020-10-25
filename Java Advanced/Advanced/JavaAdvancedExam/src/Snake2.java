@@ -21,6 +21,48 @@ public class Snake2 {
 
         int foodQuantity = 0;
 
+        while (foodQuantity < 10) {
+            String direction = scan.nextLine();
+            matrix[currentPosition.get(0)][currentPosition.get(1)] = ".";
+            if (isValidIndex(matrix, getNextPosition(currentPosition, direction))) {
+                String symbol = matrix[getNextPosition(currentPosition, direction).get(0)]
+                        [getNextPosition(currentPosition, direction).get(1)];
+                currentPosition = getNextPosition(currentPosition, direction);
+
+                switch (symbol) {
+                    case "*":
+                        foodQuantity++;
+                        break;
+
+                    case "B":
+                        matrix[currentPosition.get(0)][currentPosition.get(1)] = ".";
+                        for (int rows = 0; rows < matrix.length; rows++) {
+                            for (int cols = 0; cols < matrix[0].length; cols++) {
+                                if (matrix[rows][cols].equals("B")) {
+                                    currentPosition.set(0, rows);
+                                    currentPosition.set(1, cols);
+                                    break;
+                                }
+                            }
+                        }
+                        break;
+
+                }
+                matrix[currentPosition.get(0)][currentPosition.get(1)] = "S";
+            } else {
+                break;
+            }
+        }
+        if (foodQuantity >= 10) {
+            System.out.println("You won! You fed the snake.");
+        } else {
+            System.out.println("Game over!");
+        }
+
+        System.out.println("Food eaten: " + foodQuantity);
+
+        printMatrix(matrix);
+
     }
 
     private static String[][] readMatrix(int sizeOfMatrix, Scanner scan) {

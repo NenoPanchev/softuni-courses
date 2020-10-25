@@ -12,19 +12,34 @@ public class Car {
     }
 
     public String getManufacturer() {
-        return manufacturer;
+        return this.manufacturer;
+    }
+
+    public void setManufacturer(String manufacturer) {
+        this.manufacturer = manufacturer;
     }
 
     public String getModel() {
-        return model;
+        return this.model;
+    }
+
+    public void setModel(String model) {
+        this.model = model;
     }
 
     public int getYear() {
-        return year;
+        return this.year;
+    }
+
+    public void setYear(int year) {
+        this.year = year;
     }
 
     @Override
     public String toString() {
-        return this.manufacturer + " " +this.model + " (" + this.year + ")";
+        return String.format("%s %s (%s)",
+                this.manufacturer,
+                this.model,
+                this.year);
     }
 }

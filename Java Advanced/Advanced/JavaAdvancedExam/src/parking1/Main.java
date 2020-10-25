@@ -1,4 +1,4 @@
-package parking;
+package parking1;
 
 public class Main {
     public static void main(String[] args) {
@@ -20,9 +20,18 @@ public class Main {
 
         Car peugeot = new Car("Peugeot", "307", 2011);
         Car audi = new Car("Audi", "S4", 2005);
+        Car nissan = new Car("Nissan", "Almera", 2015);
+        Car nissanP = new Car("Nissan", "Primera", 2002);
+        Car renault = new Car("Renault", "Clio", 2008);
+        Car porche = new Car("Porche", "Panamera", 2016);
 
         parking.add(peugeot);
         parking.add(audi);
+        parking.add(nissan);
+        parking.add(nissanP);
+        parking.add(porche);
+        parking.add(renault);
+        System.out.println(parking.remove("Porchee", "Panamera"));
 
 // Get Latest Car
         Car latestCar = parking.getLatestCar();
@@ -40,6 +49,5 @@ public class Main {
 // The cars are parked in Underground parking garage:
 // Peugeot 307 (2011)
 // Audi S4 (2005)
-
     }
 }

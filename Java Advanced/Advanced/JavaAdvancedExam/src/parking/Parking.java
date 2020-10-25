@@ -2,17 +2,16 @@ package parking;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.function.Predicate;
 
 public class Parking {
-    List<Car> data;
-    String type;
-    int capacity;
+    private String type;
+    private int capacity;
+    private List<Car> data;
 
     public Parking(String type, int capacity) {
-        this.data = new ArrayList<>();
         this.type = type;
         this.capacity = capacity;
+        this.data = new ArrayList<>();
     }
 
     public void add(Car car) {
@@ -22,11 +21,10 @@ public class Parking {
     }
 
     public boolean remove(String manufacturer, String model) {
-        Predicate<Car> carPredicate = car -> car.getManufacturer().equals(manufacturer) && car.getModel().equals(model);
-
-        for (int i = 0; i < this.data.size(); i++) {
-            if (carPredicate.test(this.data.get(i))) {
-                this.data.remove(i);
+        for (Car car : this.data) {
+            if (car.getManufacturer().equals(manufacturer) &&
+                    car.getModel().equals(model)) {
+                this.data.remove(car);
                 return true;
             }
         }
@@ -34,19 +32,18 @@ public class Parking {
     }
 
     public Car getLatestCar() {
-        if (this.data.size() == 0) {
-            return null;
-        } else
-        return this.data.stream().min((a, b) -> Integer.compare(b.getYear(), a.getYear())).get();
+        return this.data.stream()
+                .sorted((first, second) -> Integer.compare(second.getYear(), first.getYear()))
+                .findFirst()
+                .orElse(null);
     }
 
     public Car getCar(String manufacturer, String model) {
-        if (this.data.size() == 0) {
-            return null;
-        } else
-            return this.data.stream()
-                    .filter(car -> car.getManufacturer().equals(manufacturer) && car.getModel().equals(model))
-                    .findFirst().orElse(null);
+        return this.data.stream()
+                .filter(car -> car.getManufacturer().equals(manufacturer) &&
+                        car.getModel().equals(model))
+                .findFirst()
+                .orElse(null);
     }
 
     public int getCount() {
@@ -54,16 +51,10 @@ public class Parking {
     }
 
     public String getStatistics() {
-        return toString().trim();
-    }
+        StringBuilder sb = new StringBuilder(String.format("The cars are parked in %s:%n",
+                this.type));
+        this.data.forEach(car -> sb.append(car).append(System.lineSeparator()));
 
-    @Override
-    public String toString() {
-        StringBuilder sb = new StringBuilder();
-        sb.append(String.format("The cars are parked in %s:%n", this.type));
-        for (Car car : this.data) {
-            sb.append(car.toString()).append(System.lineSeparator());
-        }
-        return sb.toString();
+        return sb.toString().trim();
     }
 }
