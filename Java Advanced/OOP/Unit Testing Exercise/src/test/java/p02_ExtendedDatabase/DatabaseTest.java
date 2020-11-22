@@ -95,4 +95,18 @@ public class DatabaseTest {
     }
 
 
+    @Test (expected = OperationNotSupportedException.class)
+    public void shouldThrowIfUserNotFound() throws OperationNotSupportedException {
+        database.findByUsername("Pesho");
+    }
+
+    @Test (expected = OperationNotSupportedException.class)
+    public void shouldThrowIfUserIsNull() throws OperationNotSupportedException {
+        database.findByUsername(null);
+    }
+
+    @Test (expected = OperationNotSupportedException.class)
+    public void shouldThrowIfIdNotFound() throws OperationNotSupportedException {
+        database.findById(7);
+    }
 }
