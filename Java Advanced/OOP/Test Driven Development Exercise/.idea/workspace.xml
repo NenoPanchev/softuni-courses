@@ -4,70 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="eca0adb0-0ec3-479c-8139-dcdde03514da" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../Java OOP Exams/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java OOP Exams/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java OOP Exams/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java OOP Exams/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java OOP Exams/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java OOP Exams/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java OOP Exams/Java OOP Exams.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java OOP Exams/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java OOP Exams/src/main/java/computers/Computer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java OOP Exams/src/main/java/computers/ComputerManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java OOP Exams/src/main/java/computers/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java OOP Exams/src/main/java/onlineShop 1.zip" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java OOP Exams/src/main/java/onlineShop 2.zip" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java OOP Exams/src/main/java/onlineShop/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java OOP Exams/src/main/java/onlineShop/common/constants/ExceptionMessages.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java OOP Exams/src/main/java/onlineShop/common/constants/OutputMessages.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java OOP Exams/src/main/java/onlineShop/common/enums/CommandType.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java OOP Exams/src/main/java/onlineShop/core/ControllerImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java OOP Exams/src/main/java/onlineShop/core/EngineImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java OOP Exams/src/main/java/onlineShop/core/interfaces/Controller.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java OOP Exams/src/main/java/onlineShop/core/interfaces/Engine.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java OOP Exams/src/main/java/onlineShop/io/ConsoleReader.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java OOP Exams/src/main/java/onlineShop/io/ConsoleWriter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java OOP Exams/src/main/java/onlineShop/io/interfaces/InputReader.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java OOP Exams/src/main/java/onlineShop/io/interfaces/OutputWriter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java OOP Exams/src/main/java/onlineShop/models/products/BaseProduct.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java OOP Exams/src/main/java/onlineShop/models/products/Product.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java OOP Exams/src/main/java/onlineShop/models/products/components/BaseComponent.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java OOP Exams/src/main/java/onlineShop/models/products/components/CentralProcessingUnit.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java OOP Exams/src/main/java/onlineShop/models/products/components/Component.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java OOP Exams/src/main/java/onlineShop/models/products/components/Motherboard.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java OOP Exams/src/main/java/onlineShop/models/products/components/PowerSupply.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java OOP Exams/src/main/java/onlineShop/models/products/components/RandomAccessMemory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java OOP Exams/src/main/java/onlineShop/models/products/components/SolidStateDrive.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java OOP Exams/src/main/java/onlineShop/models/products/components/VideoCard.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java OOP Exams/src/main/java/onlineShop/models/products/computers/BaseComputer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java OOP Exams/src/main/java/onlineShop/models/products/computers/Computer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java OOP Exams/src/main/java/onlineShop/models/products/computers/DesktopComputer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java OOP Exams/src/main/java/onlineShop/models/products/computers/Laptop.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java OOP Exams/src/main/java/onlineShop/models/products/peripherals/BasePeripheral.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java OOP Exams/src/main/java/onlineShop/models/products/peripherals/Headset.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java OOP Exams/src/main/java/onlineShop/models/products/peripherals/Keyboard.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java OOP Exams/src/main/java/onlineShop/models/products/peripherals/Monitor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java OOP Exams/src/main/java/onlineShop/models/products/peripherals/Mouse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java OOP Exams/src/main/java/onlineShop/models/products/peripherals/Peripheral.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java OOP Exams/src/test/java/computers.zip" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java OOP Exams/src/test/java/computers/ComputerManagerTests.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/Test Driven Development Exercise.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_4_12.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_bytebuddy_byte_buddy_1_10_15.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_bytebuddy_byte_buddy_agent_1_10_15.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_core_1_3.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mockito_mockito_core_3_6_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_objenesis_objenesis_3_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Chainblock/Chainblock.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Chainblock/Chainblock.iml" afterDir="false" />
-    </list>
+    <list default="true" id="eca0adb0-0ec3-479c-8139-dcdde03514da" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
