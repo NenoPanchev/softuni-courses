@@ -1,38 +1,52 @@
 package computers;
 
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
+
 public class Computer {
+    private String name;
 
-    private String manufacturer;
-    private String model;
-    private double price;
+    private List<Part> parts;
 
-    public Computer(String manufacturer, String model, double price) {
-        this.setManufacturer(manufacturer);
-        this.setModel(model);
-        this.setPrice(price);
+    public Computer(String name) {
+        this.setName(name);
+        this.parts= new ArrayList<>();
     }
 
-    public String getManufacturer() {
-        return manufacturer;
+    public String getName() {
+        return name;
     }
 
-    private void setManufacturer(String manufacturer) {
-        this.manufacturer = manufacturer;
+    private void setName(String name) {
+
+        if (name==null||name.isEmpty()){
+            throw new IllegalArgumentException("Name cannot be null or empty");
+        }
+        this.name = name;
     }
 
-    public String getModel() {
-        return model;
+    public List<Part> getParts() {
+        return Collections.unmodifiableList(this.parts);
     }
 
-    private void setModel(String model) {
-        this.model = model;
+    public double getTotalPrice(){
+        return this.parts.stream().mapToDouble(Part::getPrice).sum();
     }
 
-    public double getPrice() {
-        return price;
+    public void addPart(Part part){
+        if (part==null){
+            throw new IllegalArgumentException("Cannot be null!");
+        }
+        this.parts.add(part);
     }
 
-    private void setPrice(double price) {
-        this.price = price;
+    public boolean removePart(Part part){
+        return this.parts.remove(part);
     }
+
+    public Part getPart(String partName){
+        return this.parts.stream().filter(p->p.getName().equals(partName)).findFirst().orElse(null);
+    }
+
 }
