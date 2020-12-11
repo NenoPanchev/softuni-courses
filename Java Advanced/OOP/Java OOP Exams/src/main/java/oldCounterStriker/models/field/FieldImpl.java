@@ -1,14 +1,13 @@
-package CounterStriker.models.field;
+package oldCounterStriker.models.field;
 
-import CounterStriker.common.OutputMessages;
-import CounterStriker.models.players.Player;
+import oldCounterStriker.common.OutputMessages;
+import oldCounterStriker.models.players.Player;
 
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.List;
 
 public class FieldImpl implements Field {
-
     @Override
     public String start(Collection<Player> players) {
         List<Player> terrorists = new ArrayList<>();

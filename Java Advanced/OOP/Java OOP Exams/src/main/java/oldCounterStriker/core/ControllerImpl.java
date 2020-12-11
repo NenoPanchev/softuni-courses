@@ -1,19 +1,20 @@
-package CounterStriker.core;
+package oldCounterStriker.core;
 
-import CounterStriker.models.field.Field;
-import CounterStriker.models.field.FieldImpl;
-import CounterStriker.repositories.GunRepository;
-import CounterStriker.repositories.PlayerRepository;
-import CounterStriker.common.ExceptionMessages;
-import CounterStriker.common.OutputMessages;
-import CounterStriker.models.guns.Gun;
-import CounterStriker.models.guns.Pistol;
-import CounterStriker.models.guns.Rifle;
-import CounterStriker.models.players.CounterTerrorist;
-import CounterStriker.models.players.Player;
-import CounterStriker.models.players.Terrorist;
+import oldCounterStriker.common.ExceptionMessages;
+import oldCounterStriker.common.OutputMessages;
+import oldCounterStriker.models.field.Field;
+import oldCounterStriker.models.field.FieldImpl;
+import oldCounterStriker.models.guns.Gun;
+import oldCounterStriker.models.guns.Pistol;
+import oldCounterStriker.models.guns.Rifle;
+import oldCounterStriker.models.players.CounterTerrorist;
+import oldCounterStriker.models.players.Player;
+import oldCounterStriker.models.players.Terrorist;
+import oldCounterStriker.repositories.GunRepository;
+import oldCounterStriker.repositories.PlayerRepository;
 
-public class ControllerImpl implements Controller{
+
+public class ControllerImpl implements Controller {
     private GunRepository guns;
     private PlayerRepository players;
     private Field field;

@@ -1,13 +1,14 @@
-package CounterStriker.repositories;
+package oldCounterStriker.repositories;
 
-import CounterStriker.common.ExceptionMessages;
-import CounterStriker.models.guns.Gun;
+import oldCounterStriker.common.ExceptionMessages;
+import oldCounterStriker.models.guns.Gun;
 
 import java.util.Collection;
+import java.util.Collections;
 import java.util.LinkedHashMap;
 import java.util.Map;
 
-public class GunRepository implements Repository<Gun> {
+public class GunRepository implements Repository<Gun>{
     private Map<String, Gun> models;
 
     public GunRepository() {
@@ -16,7 +17,7 @@ public class GunRepository implements Repository<Gun> {
 
     @Override
     public Collection<Gun> getModels() {
-        return this.models.values();
+        return Collections.unmodifiableCollection(this.models.values());
     }
 
     @Override
@@ -24,16 +25,17 @@ public class GunRepository implements Repository<Gun> {
         if (model == null) {
             throw new NullPointerException(ExceptionMessages.INVALID_GUN_REPOSITORY);
         }
-        this.models.put(model.getName(), model);
+        this.models.putIfAbsent(model.getName(), model);
     }
 
     @Override
     public boolean remove(Gun model) {
-        if (this.models.containsKey(model.getName())) {
+        if (!this.models.containsKey(model.getName())) {
+            return false;
+        } else  {
             this.models.remove(model.getName());
             return true;
         }
-        return false;
     }
 
     @Override

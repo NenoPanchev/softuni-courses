@@ -1,15 +1,15 @@
-package CounterStriker.models.guns;
+package oldCounterStriker.models.guns;
 
-import CounterStriker.common.ExceptionMessages;
+import oldCounterStriker.common.ExceptionMessages;
 
-public abstract class GunImpl implements Gun{
+public abstract class GunImpl implements Gun {
     private String name;
     private int bulletsCount;
-    private int NUMBER_OF_BULLETS_PER_FIRING = 0;
+    private int BULLETS_TO_FIRE_AT_ONCE = 0;
 
     protected GunImpl(String name, int bulletsCount) {
-        setName(name);
-        setBulletsCount(bulletsCount);
+        this.setName(name);
+        this.setBulletsCount(bulletsCount);
     }
 
     @Override
@@ -24,11 +24,11 @@ public abstract class GunImpl implements Gun{
 
     @Override
     public int fire() {
-        if (this.bulletsCount >= NUMBER_OF_BULLETS_PER_FIRING) {
-            setBulletsCount(this.bulletsCount - NUMBER_OF_BULLETS_PER_FIRING);
-            return NUMBER_OF_BULLETS_PER_FIRING;
+        if (this.bulletsCount >= BULLETS_TO_FIRE_AT_ONCE) {
+            setBulletsCount(this.bulletsCount - BULLETS_TO_FIRE_AT_ONCE);
+            return BULLETS_TO_FIRE_AT_ONCE;
         } else
-            return 0;
+        return 0;
     }
 
     private void setName(String name) {
@@ -45,7 +45,7 @@ public abstract class GunImpl implements Gun{
         this.bulletsCount = bulletsCount;
     }
 
-    protected void setNUMBER_OF_BULLETS_PER_FIRING(int number) {
-        this.NUMBER_OF_BULLETS_PER_FIRING = number;
+    protected void setBULLETS_TO_FIRE_AT_ONCE(int number) {
+        this.BULLETS_TO_FIRE_AT_ONCE = number;
     }
 }

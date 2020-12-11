@@ -1,8 +1,8 @@
-package CounterStriker.models.guns;
+package oldCounterStriker.models.guns;
 
 public class Rifle extends GunImpl{
     public Rifle(String name, int bulletsCount) {
         super(name, bulletsCount);
-        setNUMBER_OF_BULLETS_PER_FIRING(10);
+        this.setBULLETS_TO_FIRE_AT_ONCE(10);
     }
 }

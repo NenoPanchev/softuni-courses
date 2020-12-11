@@ -1,7 +1,7 @@
-package CounterStriker.models.players;
+package oldCounterStriker.models.players;
 
-import CounterStriker.common.ExceptionMessages;
-import CounterStriker.models.guns.Gun;
+import oldCounterStriker.common.ExceptionMessages;
+import oldCounterStriker.models.guns.Gun;
 
 public abstract class PlayerImpl implements Player{
     private String username;
@@ -10,12 +10,12 @@ public abstract class PlayerImpl implements Player{
     private boolean isAlive;
     private Gun gun;
 
-    public PlayerImpl(String username, int health, int armor, Gun gun) {
-        setUsername(username);
-        setHealth(health);
-        setArmor(armor);
-        setGun(gun);
-        setAlive();
+    protected PlayerImpl(String username, int health, int armor, Gun gun) {
+        this.setUsername(username);
+        this.setHealth(health);
+        this.setArmor(armor);
+        this.setAlive();
+        this.gun = gun;
     }
 
     @Override
@@ -45,15 +45,20 @@ public abstract class PlayerImpl implements Player{
 
     @Override
     public void takeDamage(int points) {
-        if (this.armor >= points) {
-            this.armor -= points;
+        int damageToHealth = 0;
+        if (points > this.armor) {
+            damageToHealth = points - this.armor;
+            setArmor(0);
+
+            if (damageToHealth >= this.health) {
+                setHealth(0);
+                setAlive();
+            } else {
+                setHealth(this.health - damageToHealth);
+            }
+
         } else {
-            this.health = this.health + this.armor - points;
-            this.armor = 0;
-        }
-        if (this.health <= 0) {
-            this.health = 0;
-            this.isAlive = false;
+            setArmor(this.armor - points);
         }
     }
 
@@ -79,7 +84,7 @@ public abstract class PlayerImpl implements Player{
     }
 
     private void setAlive() {
-        if (this.health > 0) {
+        if (health > 0) {
             this.isAlive = true;
         } else
         this.isAlive = false;

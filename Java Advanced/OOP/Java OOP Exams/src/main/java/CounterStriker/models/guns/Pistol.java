@@ -1,8 +1,8 @@
 package CounterStriker.models.guns;
 
-public class Pistol extends GunImpl {
+public class Pistol extends GunImpl{
     public Pistol(String name, int bulletsCount) {
         super(name, bulletsCount);
-        this.setBULLETS_TO_FIRE_AT_ONCE(1);
+        setNUMBER_OF_BULLETS_PER_FIRING(1);
     }
 }
