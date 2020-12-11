@@ -10,7 +10,7 @@ import java.util.List;
 public class RaceImpl implements Race {
     private String name;
     private int laps;
-    private List<Driver> drivers;
+    private Collection<Driver> drivers;
 
     public RaceImpl(String name, int laps) {
         this.setName(name);
