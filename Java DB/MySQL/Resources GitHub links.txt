@@ -1,0 +1,2 @@
+Lab - https://github.com/iproduct/course-sql
+Exercise - https://github.com/Martin-BG/SoftUni-DatabaseBasics-MySQL
