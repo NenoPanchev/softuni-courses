@@ -1,21 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="37e0ccb8-6061-442e-8b22-6ca83ac484dc" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/mysql_connector_java_8_0_21.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JDBC.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/mysql-connector-java-8.0.21.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sql/diablo_database.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sql/soft_uni_database.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Homework.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/diablo/Main.java" afterDir="false" />
+    <list default="true" id="37e0ccb8-6061-442e-8b22-6ca83ac484dc" name="Default Changelist" comment="First lab">
+      <change afterPath="$PROJECT_DIR$/../JDBC Exercise/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JDBC Exercise/.idea/dataSources/3145804b-198f-45a5-b77b-6d6e24838148.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JDBC Exercise/.idea/dataSources/3145804b-198f-45a5-b77b-6d6e24838148/storage_v2/_src_/schema/colonial_blog_db.kf4L7g.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JDBC Exercise/.idea/dataSources/3145804b-198f-45a5-b77b-6d6e24838148/storage_v2/_src_/schema/colonial_blog_db.kf4L7g.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JDBC Exercise/.idea/dataSources/3145804b-198f-45a5-b77b-6d6e24838148/storage_v2/_src_/schema/fsd.N40BAA.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JDBC Exercise/.idea/dataSources/3145804b-198f-45a5-b77b-6d6e24838148/storage_v2/_src_/schema/fsd.N40BAA.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JDBC Exercise/.idea/dataSources/3145804b-198f-45a5-b77b-6d6e24838148/storage_v2/_src_/schema/information_schema.FNRwLQ.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JDBC Exercise/.idea/dataSources/3145804b-198f-45a5-b77b-6d6e24838148/storage_v2/_src_/schema/ruk_database.UuFhBA.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JDBC Exercise/.idea/dataSources/3145804b-198f-45a5-b77b-6d6e24838148/storage_v2/_src_/schema/ruk_database.UuFhBA.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JDBC Exercise/.idea/libraries/mysql_connector_java_8_0_21.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JDBC Exercise/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JDBC Exercise/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JDBC Exercise/.idea/sqldialects.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JDBC Exercise/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JDBC Exercise/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JDBC Exercise/JDBC Exercise.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JDBC Exercise/lib/mysql-connector-java-8.0.21.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JDBC Exercise/out/production/JDBC Exercise/Homework.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JDBC Exercise/out/production/JDBC Exercise/Main.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JDBC Exercise/sql/minions_db.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JDBC Exercise/src/Homework.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JDBC Exercise/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -74,19 +83,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Application.Main (1)" />
@@ -103,8 +99,18 @@
       <option name="presentableId" value="Default" />
       <updated>1611667766452</updated>
       <workItem from="1611667768603" duration="3656000" />
-      <workItem from="1611674638860" duration="5993000" />
+      <workItem from="1611674638860" duration="6420000" />
+      <workItem from="1611733600628" duration="1745000" />
+      <workItem from="1611755043648" duration="1839000" />
     </task>
+    <task id="LOCAL-00001" summary="First lab">
+      <created>1611682125694</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1611682125694</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -124,5 +130,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="First lab" />
+    <option name="LAST_COMMIT_MESSAGE" value="First lab" />
   </component>
 </project>
