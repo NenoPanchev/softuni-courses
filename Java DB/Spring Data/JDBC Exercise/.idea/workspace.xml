@@ -1,30 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6283ae8f-c59d-455d-a0b1-112f19e48604" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources/3145804b-198f-45a5-b77b-6d6e24838148.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources/3145804b-198f-45a5-b77b-6d6e24838148/storage_v2/_src_/schema/colonial_blog_db.kf4L7g.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources/3145804b-198f-45a5-b77b-6d6e24838148/storage_v2/_src_/schema/colonial_blog_db.kf4L7g.zip" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources/3145804b-198f-45a5-b77b-6d6e24838148/storage_v2/_src_/schema/fsd.N40BAA.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources/3145804b-198f-45a5-b77b-6d6e24838148/storage_v2/_src_/schema/fsd.N40BAA.zip" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources/3145804b-198f-45a5-b77b-6d6e24838148/storage_v2/_src_/schema/information_schema.FNRwLQ.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources/3145804b-198f-45a5-b77b-6d6e24838148/storage_v2/_src_/schema/ruk_database.UuFhBA.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources/3145804b-198f-45a5-b77b-6d6e24838148/storage_v2/_src_/schema/ruk_database.UuFhBA.zip" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/mysql_connector_java_8_0_21.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JDBC Exercise.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/mysql-connector-java-8.0.21.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/JDBC Exercise/Homework.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/JDBC Exercise/Main.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sql/minions_db.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Homework.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../JDBC/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../JDBC/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="6283ae8f-c59d-455d-a0b1-112f19e48604" name="Default Changelist" comment="JDBC exercise">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Homework.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Homework.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,6 +37,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="extract.method.default.visibility" value="private" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/lib/mysql-connector-java-8.0.21.jar" />
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
@@ -70,15 +51,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -98,8 +77,17 @@
       <option name="presentableId" value="Default" />
       <updated>1611736963180</updated>
       <workItem from="1611736964389" duration="947000" />
-      <workItem from="1611755036648" duration="15035000" />
+      <workItem from="1611755036648" duration="15147000" />
+      <workItem from="1611838890238" duration="6640000" />
     </task>
+    <task id="LOCAL-00001" summary="JDBC exercise">
+      <created>1611777012390</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1611777012390</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -119,6 +107,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="JDBC exercise" />
+    <option name="LAST_COMMIT_MESSAGE" value="JDBC exercise" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

@@ -1,8 +1,6 @@
 import java.sql.*;
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Properties;
-import java.util.Scanner;
+import java.util.*;
+import java.util.stream.Collectors;
 
 public class Homework {
     private static final String CONNECTION_STRING = "jdbc:mysql://localhost:3306/";
@@ -42,7 +40,7 @@ public class Homework {
     }
 
     public void getMinionNamesEx3() throws SQLException {
-        System.out.println("Enter villain id to get info of all of their minions:");
+        System.out.println("Enter villain ID to get info of all of their minions:");
         int villainId = Integer.parseInt(scan.nextLine());
         String query = "SELECT m.name, m.age\n" +
                 "FROM villains AS v\n" +
@@ -142,11 +140,71 @@ public class Homework {
         if (villainName == null) {
             System.out.println("No such villain was found");
         } else {
-            System.out.printf("%s was deleted", villainName);
-            String selectMinionsQuery = "SELECT COUNT(*) FROM minions_villains WHERE villain_id = ?";
+            System.out.printf("%s was deleted%n", villainName);
+            String selectMinionsQuery = "SELECT COUNT(*) AS count FROM minions_villains WHERE villain_id = ?";
             PreparedStatement statement = connection.prepareStatement(selectMinionsQuery);
             statement.setInt(1, villainId);
+            ResultSet rs = statement.executeQuery();
+            rs.next();
+            int numberOfMinions = rs.getInt("count");
+            System.out.printf("%d minions released%n", numberOfMinions);
+
+            deleteFromTable(villainId, "DELETE FROM minions_villains WHERE villain_id = ?");
+            deleteFromTable(villainId, "DELETE FROM villains WHERE id = ?");
         }
+    }
+
+    public void printAllMinionNamesEx7() throws SQLException {
+        ArrayDeque<String> ad = new ArrayDeque<>();
+        String query = "SELECT name FROM minions";
+        PreparedStatement statement = connection.prepareStatement(query);
+        ResultSet rs = statement.executeQuery();
+        while (rs.next()) {
+            ad.offer(rs.getString("name"));
+        }
+
+        int counter = 1;
+        while (!ad.isEmpty()) {
+            if (counter % 2 == 0) {
+                System.out.println(ad.pollLast());
+            } else {
+                System.out.println(ad.pop());
+            }
+            counter++;
+        }
+    }
+
+    public void increaseMinionsAgeEx8() throws SQLException {
+        System.out.println("Enter minions IDs on one row, separated by space, to increase minions age by 1 year:");
+        List<String> iDs = Arrays.stream(scan.nextLine().split("\\s+"))
+                .collect(Collectors.toList());
+        String inRange = iDs.toString().replaceAll("\\[", "(");
+        inRange = inRange.replaceAll("]", ")");
+        String query = String.format("UPDATE minions SET age = age + 1, name = LOWER(name) WHERE id IN %s", inRange);
+        PreparedStatement statement = connection.prepareStatement(query);
+       statement.execute();
+
+        String printQuery = "SELECT name, age FROM minions";
+        PreparedStatement printStatement = connection.prepareStatement(printQuery);
+        ResultSet resultSet = printStatement.executeQuery();
+        while (resultSet.next()) {
+            System.out.println(resultSet.getString("name") + " " + resultSet.getInt("age"));
+        }
+    }
+
+    public void increaseAgeStoredProcedureEx9() throws SQLException {
+        System.out.println("You need to have the procedure already.\r\nEnter minion ID to call the procedure with:");
+        int minionId = Integer.parseInt(scan.nextLine());
+
+        String callQuery = String.format("CALL usp_get_older(%d)", minionId);
+        PreparedStatement statement = connection.prepareStatement(callQuery);
+        statement.execute();
+
+        String printMinion = String.format("SELECT name, age FROM minions WHERE id = %d", minionId);
+        PreparedStatement statement2 = connection.prepareStatement(printMinion);
+        ResultSet resultSet = statement2.executeQuery();
+        resultSet.next();
+        System.out.println(resultSet.getString(1) + " " + resultSet.getString(2));
     }
 
     private String getEntityNameById(int entityId, String tableName) throws SQLException {
@@ -201,5 +259,12 @@ public class Homework {
         }
 
         return countryId > 0;
+    }
+
+    private void deleteFromTable(int villainId, String s) throws SQLException {
+        String deleteQuery = s;
+        PreparedStatement statement1 = connection.prepareStatement(deleteQuery);
+        statement1.setInt(1, villainId);
+        statement1.execute();
     }
 }
