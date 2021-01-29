@@ -3,8 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="6283ae8f-c59d-455d-a0b1-112f19e48604" name="Default Changelist" comment="JDBC exercise">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Homework.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Homework.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JDBC Exercise/Homework.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JDBC Exercise/Homework.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JDBC Exercise/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JDBC Exercise/Main.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,17 +51,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Application.Main" />
@@ -78,7 +67,8 @@
       <updated>1611736963180</updated>
       <workItem from="1611736964389" duration="947000" />
       <workItem from="1611755036648" duration="15147000" />
-      <workItem from="1611838890238" duration="6640000" />
+      <workItem from="1611838890238" duration="6881000" />
+      <workItem from="1611914862328" duration="668000" />
     </task>
     <task id="LOCAL-00001" summary="JDBC exercise">
       <created>1611777012390</created>
@@ -87,7 +77,14 @@
       <option name="project" value="LOCAL" />
       <updated>1611777012390</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="JDBC exercise">
+      <created>1611845806363</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1611845806363</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
