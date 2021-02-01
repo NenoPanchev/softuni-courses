@@ -2,9 +2,48 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6283ae8f-c59d-455d-a0b1-112f19e48604" name="Default Changelist" comment="JDBC exercise">
+      <change afterPath="$PROJECT_DIR$/../introtohibernate/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../introtohibernate/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../introtohibernate/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../introtohibernate/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../introtohibernate/.idea/libraries/Maven__antlr_antlr_2_7_7.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../introtohibernate/.idea/libraries/Maven__com_fasterxml_classmate_1_5_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../introtohibernate/.idea/libraries/Maven__com_google_protobuf_protobuf_java_3_11_4.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../introtohibernate/.idea/libraries/Maven__com_sun_istack_istack_commons_runtime_3_0_7.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../introtohibernate/.idea/libraries/Maven__com_sun_xml_fastinfoset_FastInfoset_1_2_15.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../introtohibernate/.idea/libraries/Maven__javax_activation_javax_activation_api_1_2_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../introtohibernate/.idea/libraries/Maven__javax_persistence_javax_persistence_api_2_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../introtohibernate/.idea/libraries/Maven__javax_xml_bind_jaxb_api_2_3_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../introtohibernate/.idea/libraries/Maven__mysql_mysql_connector_java_8_0_22.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../introtohibernate/.idea/libraries/Maven__net_bytebuddy_byte_buddy_1_10_10.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../introtohibernate/.idea/libraries/Maven__org_dom4j_dom4j_2_1_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../introtohibernate/.idea/libraries/Maven__org_eclipse_persistence_javax_persistence_2_2_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../introtohibernate/.idea/libraries/Maven__org_glassfish_jaxb_jaxb_runtime_2_3_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../introtohibernate/.idea/libraries/Maven__org_glassfish_jaxb_txw2_2_3_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../introtohibernate/.idea/libraries/Maven__org_hibernate_common_hibernate_commons_annotations_5_1_0_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../introtohibernate/.idea/libraries/Maven__org_hibernate_hibernate_core_5_4_22_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../introtohibernate/.idea/libraries/Maven__org_javassist_javassist_3_24_0_GA.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../introtohibernate/.idea/libraries/Maven__org_jboss_jandex_2_1_3_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../introtohibernate/.idea/libraries/Maven__org_jboss_logging_jboss_logging_3_3_2_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../introtohibernate/.idea/libraries/Maven__org_jboss_spec_javax_transaction_jboss_transaction_api_1_2_spec_1_1_1_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../introtohibernate/.idea/libraries/Maven__org_jvnet_staxex_stax_ex_1_8.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../introtohibernate/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../introtohibernate/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../introtohibernate/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../introtohibernate/introtohibernate.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../introtohibernate/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../introtohibernate/src/main/java/Engine.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../introtohibernate/src/main/java/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../introtohibernate/src/main/java/entities/Address.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../introtohibernate/src/main/java/entities/Department.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../introtohibernate/src/main/java/entities/Employee.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../introtohibernate/src/main/java/entities/Project.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../introtohibernate/src/main/java/entities/Town.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../introtohibernate/src/main/resources/META-INF/persistence.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/JDBC Exercise/Homework.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JDBC Exercise/Homework.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/JDBC Exercise/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JDBC Exercise/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,6 +90,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Application.Main" />
@@ -69,6 +121,8 @@
       <workItem from="1611755036648" duration="15147000" />
       <workItem from="1611838890238" duration="6881000" />
       <workItem from="1611914862328" duration="668000" />
+      <workItem from="1612184926124" duration="755000" />
+      <workItem from="1612210710138" duration="62000" />
     </task>
     <task id="LOCAL-00001" summary="JDBC exercise">
       <created>1611777012390</created>
