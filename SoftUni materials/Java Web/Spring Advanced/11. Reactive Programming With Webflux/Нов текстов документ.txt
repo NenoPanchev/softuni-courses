@@ -1,0 +1,593 @@
+https://www.youtube.com/watch?v=nJol3sQ1qH4&feature=youtu.beReactive Programming
+
+
+Software University
+
+https://softuni.bg
+
+SoftUni Team
+
+Technical Trainers
+
+
+What is reactive programming
+
+Intro to Spring WebFlux
+
+Working with Flux and Mono
+
+Programming Models
+
+
+
+Table of Contents
+
+2
+
+
+
+
+sli.do
+#java-web
+
+Have a Question?
+
+3
+
+
+What is Reactive Programming
+
+
+Is a model of coding where communication happens through a non-blocking stream of data
+
+Makes code "reactive", reacting to change and not 
+being blocked, such as performing operations that 
+read/wait for responses from a database or file
+
+Can react to events as data becomes available
+
+Using it we can use effective resources utilization 
+(CPU cores) for computing
+
+Reactive Programming
+
+5
+
+
+It's principles are based on the Reactive Manifesto
+
+It is build around publisher-subscriber pattern 
+(observer pattern)
+
+In non-blocking code, the Back pressure becomes 
+important to control the rate of events so that a 
+fast producer does not overwhelm its destination
+
+Reactive Programming (2)
+
+6
+
+
+Blocking vs Non-blocking(Traditional MVC)
+
+Presentation 
+Layer
+
+Database
+Layer
+
+Core
+
+Request #1
+
+Request #2
+
+Request #3
+
+blocked
+
+Servlet Thread #2
+
+Servlet Thread #3
+
+
+
+DB
+
+Servlet Thread #1
+
+unblocked
+
+blocked
+
+blocked
+
+Worker Thread #1
+
+Worker Thread #2
+
+Worker Thread #3
+
+7
+
+
+Blocking vs Non-blocking(2)
+
+Request #1
+
+Event with Callback
+
+Callback
+Execution
+
+Database
+Layer
+
+Presentation
+Layer
+
+Event
+
+Handler
+
+Event
+
+
+
+
+
+Fixed/Small
+No. of Threads
+
+
+
+DB
+
+8
+
+
+Reactive Streams: is a specification that defines how an API that implements and follows the Reactive Programming paradigm should work
+
+Reactor: is a Java implementation of the 
+Reactive Streams specification
+
+Spring WebFlux is the "reaction" of Spring for this 
+paradigm to use on web applications
+
+Reactive Streams and Reactor
+
+9
+
+
+The core difference is that Reactive is a push model, whereas 
+the Java 8 Streams are a pull model
+
+In reactive events are pushed to the subscribers as 
+they come in
+
+Java 8 Streams - pulling all the data and returning a result
+
+With Reactive we could have an infinite stream coming in from an external resource, with multiple subscribers attached
+
+Reactive Streams VS Java 8 Streams
+
+10
+
+
+As per Java 9 and reactive specification below are API we need to use for reactive implementation
+
+Publisher - Emits a sequence of events to subscribers according to the demand received from its subscribers
+
+Subscriber - Receives&Processes events emitted by a Publisher
+
+Subscription - Defines a one-to-one relationship between a 
+Publisher and a Subscriber
+
+Processors - Represents a processing stage consisting of both a
+ Publisher and a Subscriber and obeys the contracts of both
+
+
+
+Reactive Stream APIs
+
+11
+
+
+WebFlux
+
+Spring Data reactive library
+
+Reactive IO
+
+Nonblocking Servlet container
+
+Spring security reactive API
+
+Spring 5 Reactive Building Blocks 
+
+12
+
+
+Source - https://docs.spring.io/
+
+Spring 5 Reactive Building Blocks
+
+13
+
+
+Spring WebFlux
+
+
+Web framework that brings support for the 
+reactive programming model
+
+Implemented using the Project Reactor, and its  publisher implementations — Flux and Mono, 
+the library chosen by Spring
+
+WebFlux is not a replacement for Spring MVC 
+they can actually complement each other, working 
+together on the same solution
+
+Spring WebFlux 
+
+15
+
+
+Adding Spring WebFlux Dependency in pom
+
+The Reactive Web dependency includes 
+Spring WebFlux dependency
+
+<dependency> 
+
+	<groupId>org.springframework.boot</groupId>
+
+	<artifactId>spring-boot-starter-webflux</artifactId>
+
+	<version>...</version> 
+
+</dependency>
+
+Spring WebFlux Dependencies
+
+16
+
+
+Mono and Flux
+
+In WebFlux, the data returned from any operation is packed into a reactive stream
+
+There are two types that embody this approach and are the building blocks in WebFlux:
+
+Mono - is a stream which returns zero items or 
+a single item (0..1)
+
+Flux - is a stream which returns zero or more 
+items (0..n)
+
+17
+
+
+Mono/Flux.just()
+
+The easiest way to emit an element is using the just method
+
+
+
+
+
+Mono/Flux can have more than one subscribers
+
+
+
+Working with Mono and Flux
+
+Mono.just(1).subscribe(System.out::println);
+
+Flux.just(1,2,3).subscribe(System.out::println);
+
+Flux<Integer> flux = Flux.just(1,2,3);
+
+flux.subscribe(s->System.out.println("Subscr One-"+ s));
+
+flux.subscribe(s->System.out.println("Subscr Two-"+ s));
+
+18
+
+
+Example of two subscribers with delay
+
+
+
+
+
+
+
+
+
+
+
+
+
+Working with Mono and Flux (2)
+
+Flux<Integer> flux = Flux.just(1,2,3);
+
+flux
+
+	.map(n -> ++n)
+
+	.delayElements(Duration.ofMillis(500))
+
+	.subscribe(System.out::println);
+
+flux
+
+	.delayElements(Duration.ofMillis(1000))
+
+	.subscribe(s-> System.out.println("Subscriber One-"+ s));
+
+19
+
+
+The subscribe method could accept other parameters as 
+well to handle the error and completion calls
+
+Working with Mono and Flux (3)
+
+Flux.just(1,2,3)
+
+.subscribe(
+
+        i -> System.out.println("Received :: " + i),  
+
+        err -> System.out.println("Error :: " + err),  
+
+        ()->System.out.println("Successfully completed")
+
+);
+
+20
+
+
+Programming Models
+
+
+We can implement it in two ways:
+
+Annotated Controllers 
+
+using Spring MVC annotations with minimum 
+modifications
+
+The old applications can also be converted to reactive nature and can use its features and benefits
+
+Functional Endpoints 
+
+functional lambda style of programming
+
+
+
+
+
+Programming Models
+
+22
+
+
+Annotated Controllers VS Func Endpoints
+
+HTTP Request/Response
+
+Annotated Controllers
+
+Rest Controller
+
+Service
+
+Repository
+
+Database
+
+HTTP Request/Response
+
+Functional Endpoints
+
+Router
+
+Handler
+
+Repository
+
+Database
+
+23
+
+
+Similar to how we use controllers in classic Spring MVC
+
+To mark a class as a controller, we use 
+the @RestController annotation on a class level.
+
+Having Spring WebFlux and the Reactor Core dependencies, in 
+the class path, will let Spring know that the @RestController 
+is in fact a reactive component and add support for Mono and Flux
+
+Annotated Controllers
+
+24
+
+
+Annotated Controller Example
+
+Annotated Controllers Example
+
+@RestController
+
+@RequestMapping("/students")
+
+public class StudentsControllers {
+
+	//Inject studentsService in constructor
+
+	@GetMapping("/all")
+
+	public Flux<Students> findAll(){
+
+		return studentsService.findAll();
+
+	}
+
+25
+
+
+Spring WebFlux includes WebFlux.fn, a lightweight functional 
+programming model in which functions are used to route and 
+handle requests and contracts are designed for immutability
+
+An HTTP request is handled with a HandlerFunction that takes ServerRequest and returns a delayed ServerResponse - Mono<ServerResponse>
+
+Incoming requests are routed to a handler function with a 
+RouterFunction - takes ServerRequest and returns a delayed 
+HandlerFunction - Mono<HandlerFunction>
+
+Functional Endpoints
+
+26
+
+
+Example of Student Handler
+
+Functional Endpoints Example – Handler
+
+public class StudentHandler {
+
+//...
+
+public Mono<ServerResponse> getStudent(ServerRequest request) { 
+
+	int studentId = Integer.valueOf(request.pathVariable("id"));
+
+	return repository.getStudent(studentId)
+
+	.flatMap(student -> 
+		ok().contentType(APPLICATION_JSON).bodyValue(student))
+
+	.switchIfEmpty(ServerResponse.notFound().build());
+
+} //... }
+
+27
+
+
+ Example of Router Function
+
+Functional Endpoints Example – Router
+
+//... Inject PersonHandler in constructor
+
+RouterFunction<ServerResponse> router = router()
+
+    .GET("/student/{id}", accept(APPLICATION_JSON), handler::getStudent)
+
+    .GET("/student ", accept(APPLICATION_JSON), handler::listStudents)
+
+    .POST("/student ", handler::createStudent)
+
+    .build();
+
+28
+
+
+The @Configuration and @EnableWebFlux annotations 
+mark a class as a configuration class and Spring's bean 
+management will register it
+
+To use or extend the existing WebFlux configuration API, 
+you can implement WebFluxConfigurer
+
+@Configuration
+
+@EnableWebFlux 
+
+public class Configuration implements WebFluxConfigurer {...}
+
+Spring WebFlux Configuration
+
+29
+
+
+Live Demo
+
+
+…
+
+…
+
+…
+
+
+
+Summary
+
+
+
+
+
+
+
+
+
+Reactive Programming Is a model of coding where communication happens through a non-blocking stream of data
+
+Webflux is a Web framework that brings support for the reactive programming model
+
+Programming models
+
+Annotated Controllers 
+
+Functional Endpoints
+
+
+
+
+
+31
+
+
+Questions?
+
+
+Software University – High-Quality Education, Profession and Job for Software Developers
+
+softuni.bg, about.softuni.bg 
+
+Software University Foundation
+
+softuni.foundation
+
+Software University @ Facebook
+
+facebook.com/SoftwareUniversity
+
+Software University Forums
+
+forum.softuni.bg
+
+Trainings @ Software University (SoftUni)
+
+33
+
+
+This course (slides, examples, demos, exercises, homework, documents, videos and other assets) is copyrighted content
+
+Unauthorized copy, reproduction or use is illegal
+
+© SoftUni – https://about.softuni.bg/
+
+© Software University – https://softuni.bg
+
+License
+
+34
+

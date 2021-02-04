@@ -1,0 +1,589 @@
+https://www.youtube.com/watch?v=Dc5dTiBDzC0&feature=youtu.be
+
+Exception Responses, Exception Handlers, Global Handlers
+
+Error Handling
+
+Software University
+
+https://softuni.bg
+
+SoftUni Team
+
+Technical Trainers
+
+
+
+
+
+
+Error Handling
+
+Exception Responses
+
+Controller-based Exception Handling
+
+@ExceptionHandler
+
+Global Application Exception Handling
+
+@ControllerAdvice
+
+Exception techniques use cases
+
+Table of Contents
+
+2
+
+
+sli.do
+#java-web
+
+
+
+Questions
+
+3
+
+
+Error Handling
+
+Anticipate! Detect! Resolve!
+
+
+Error handling refers to:
+
+The anticipation, detection and resolution of programming errors
+
+The response & recovery procedures from error conditions
+
+Error handling is necessary!
+
+Improves user experience
+
+Optimizes debugging
+
+Facilitates code maintenance
+
+Ensures product quality
+
+Error Handling
+
+5
+
+
+6
+
+Error Handling Example
+
+
+
+We've encountered a 
+problem! Don't worry, 
+we are working on it!
+
+Oops…
+
+
+7
+
+Spring MVC offers no default (fall-back) error page 
+out of the box
+
+At start-up, Spring Boot tries to find a mapping for /error
+
+Spring MVC provides several approaches to error handling
+
+Per exception
+
+Per controller
+
+Globally
+
+Error Handling in Spring
+
+
+8
+
+Depending on the option you are ought to choose
+
+Because each option has its own use cases and circumstances
+
+You can use:
+
+Response-annotated custom exceptions
+
+Controller-based handlers on specified actions
+
+@ControllerAdvise annotated classes for global handlers
+
+Error Handling in Spring
+
+
+9
+
+To disable the default White label error page 
+for a Spring Boot application:
+
+We must save error.html file in resources/templates directory, 
+it'll automatically be picked up by the default Spring
+
+Custom error page
+
+
+Spring Boot maps /error to BasicErrorController which populates model with error attributes 
+and then returns 'error' as the view name
+
+
+
+To replace BasicErrorController with our own custom controller which can map to /error, we need to implement ErrorController interface
+
+ErrorController Interface
+
+10
+
+
+ErrorController Interface (2)
+
+@Controller
+
+public class MyErrorController implements ErrorController {
+
+    @RequestMapping
+
+    @ResponseBody
+
+    public String handle(HttpServletRequest request){
+
+        //Some code ...
+
+    }
+
+    @Override
+
+    public String getErrorPath() {
+
+        return "/error";
+
+    }
+
+}
+
+11
+
+
+HTTP Status Codes
+
+Annotated Custom Exceptions
+
+
+Unhandled exceptions during a request produce HTTP 500 response
+
+Any custom exception can be annotated with @ResponseStatus
+
+Supports all HTTP status codes
+
+When thrown and unhandled – produces error page with 
+appropriate response
+
+
+
+HTTP Status Codes
+
+@ResponseStatus(value = HttpStatus.NOT_FOUND, reason = "Product was not found.")
+
+public class ProductNotFoundException extends RuntimeException {
+
+   // Exception definition
+
+}
+
+13
+
+
+And the controller action, throwing the exception
+
+HTTP Status Codes
+
+@GetMapping("/products/details/{id}")
+
+public ModelAndView productDetails(@PathVariable String id, ModelAndView modelAndView) {
+
+   Product product = this.productRepository.findProductById(id);
+
+
+
+   if(product == null) throw new ProductNotFoundException(id);
+
+
+
+   modelAndView.addObject("product", product);
+
+   return this.view("product/details", modelAndView);
+
+}
+
+The requested URL
+
+The produced HTTP Status & Message
+
+The exception's message
+
+14
+
+
+Controller-Based Error Handling
+
+Exceptions & Views
+
+
+You can define Controller-specific Exception Handlers
+
+Annotated with @ExceptionHandler annotation
+
+They work only for the Controller they are defined in
+
+Can be annotated with @ResponseStatus to convert HTTP status
+
+Can accept the caught exception as a parameter
+
+Can return ModelAndView or String (view name)
+
+Can catch multiple exception types
+
+Controller-Based Error Handling
+
+16
+
+
+Controller-Based Error Handling
+
+@ExceptionHandler({PersistenceException.class, TransactionException.class})
+
+public ModelAndView handleDbExceptions(DatabaseException e) {
+
+   ModelAndView modelAndView = new ModelAndView("error");
+
+   modelAndView.addObject("message", e.getMessage());
+
+  
+
+   return modelAndView;
+
+}
+
+<html>
+
+<head>...</head>
+
+<body>
+
+   <h1>An error occurred while processing your request!</h1>
+
+   <p th:text="|Error: ${message}|"></p>
+
+</body>
+</html>
+
+Parent Exception
+
+17
+
+
+Handler methods have flexible signatures
+
+You can pass in servlet-related objects as parameters
+
+HttpServletRequest
+
+HttpServletResponse
+
+HttpSession
+
+Principal
+
+Controller-Based Error Handling
+
+18
+
+
+The Model or ModelAndView cannot be a 
+parameter though
+
+Instead of passing it, you have to setup it inside the method
+
+Nevertheless, this is not an issue because the IoC container would have done the same (pass an empty instance)
+
+Controller-Based Error Handling
+
+19
+
+
+It is not a good practice for full error stacktraces to be exposed
+
+Your users don't need to see ugly exception web-pages
+
+You may even have security policies which 
+strictly forbid any public exception info
+
+Hide as much information as possible and
+present User-friendly error pages
+
+For testing purposes you may view details
+
+This may need an environment setup
+
+Controller-Based Error Handling
+
+20
+
+
+Global Application Exception Handling
+
+@ControllerAdvice Classes
+
+
+There is a way to achieve Global exception handling in Spring
+
+This is done through the @ControllerAdvise annotation
+
+Any class annotated with @ControllerAdvise turns into an 
+interceptor-like controller:
+
+Enables global exception handling
+
+Enables model enhancement methods
+
+Enables model-binding customization
+
+Global Exception Handling
+
+22
+
+
+In @ControllerAdvice classes you still use @ExceptionHandler
+
+However, this time it refers to the whole application
+
+The error handling is not limited only to a specific controller
+
+Global Exception Handling
+
+@ControllerAdvice
+
+public class GlobalExceptionHandler {
+
+   @ExceptionHandler({TransactionException.class, PersistenceException.class})
+
+   public ModelAndView handleDatabaseErrors(DatabaseException e) {
+
+      ModelAndView modelAndView = new ModelAndView("index");
+
+      modelAndView.addObject("message", e.getMessage());
+
+      modelAndView.addObject("stack", {...} /* Formatted Stack Trace */);
+
+
+
+      return modelAndView;
+
+  }}
+
+23
+
+
+RESTful requests may also generate unexpected exceptions
+
+HTTP Error response codes are a good choice
+
+However sometimes you might need more than 
+just a status
+
+Customized Error Object, which can be presented 
+on the Client
+
+Limited Information returned to the Client
+
+
+
+Global Exception Handling (REST)
+
+24
+
+
+You can customize the Error Response by introducing a class
+
+The Error Handler itself remains the same as in casual web apps
+
+
+
+Global Exception Handling (REST)
+
+25
+
+public class ErrorInfo {
+
+   public final String url;
+
+   public final String ex;
+
+   public ErrorInfo(String url, Exception ex) {
+
+      this.url = url;
+
+      this.ex = ex.getLocalizedMessage();
+
+   }
+
+}
+
+
+Global Exception Handling (REST)
+
+@ControllerAdvice
+
+public class GlobalRESTExceptionHandler {
+   @ResponseStatus(HttpStatus.INTERNAL_SERVER_ERROR)
+
+   @ExceptionHandler({TransactionException.class,
+
+ 				PersistenceException.class})
+
+   public @ResponseBody ErrorInfo handleRESTErrors(HttpServletRequest req,
+
+								 DbException e) {
+
+      return new ErrorInfo(req.getRequestURL(), ex);   
+
+   }
+
+}
+
+26
+
+
+HandlerExceptionResolver Interface
+
+HandlerExceptionResolver
+
+DefaultHandlerExceptionResolver
+
+ResponseHandlerExceptionResolver
+
+SimpleMappingExceptionResolver
+
+
+What to Use When?
+
+Exception Techniques Use Cases
+
+28
+
+
+Spring offers many choices, when it comes 
+to error handling
+
+Be careful mixing too many of these
+
+You may not get the behavior you wanted
+
+There are some semantics, that should be 
+followed, though
+
+If you have a preference for XML configuration 
+or Annotations, that’s fine too
+
+What to Use When?
+
+29
+
+
+For custom exceptions, consider adding @ResponseStatus to then
+
+For Controller-specific exceptions, @ExceptionHandler methods should be added alongside the actions
+
+For all other exceptions, @ExceptionHandler methods in @ControllerAdvice classes should be implemented 
+
+
+
+Exception techniques use cases
+
+30
+
+
+Exception Handling
+
+Live Demonstration
+
+
+…
+
+…
+
+…
+
+
+
+Summary
+
+
+
+
+
+
+
+Error Handling is essential
+
+Improves User Experience
+
+Improves Application maintenance
+
+Error Handling in Spring
+
+HTTP Error Response Status Codes
+
+@ExceptionHandler methods
+
+@ControllerAdvice global handlers
+
+Exception techniques use cases
+
+32
+
+
+Questions?
+
+
+Software University – High-Quality Education, Profession and Job for Software Developers
+
+softuni.bg, about.softuni.bg 
+
+Software University Foundation
+
+softuni.foundation
+
+Software University @ Facebook
+
+facebook.com/SoftwareUniversity
+
+Software University Forums
+
+forum.softuni.bg
+
+Trainings @ Software University (SoftUni)
+
+34
+
+
+This course (slides, examples, demos, exercises, homework, documents, videos and other assets) is copyrighted content
+
+Unauthorized copy, reproduction or use is illegal
+
+© SoftUni – https://about.softuni.bg/
+
+© Software University – https://softuni.bg
+
+License
+
+35
+
