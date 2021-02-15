@@ -7,11 +7,13 @@ public class App {
     public static final String SALES_PU = "sales";
     public static final String UNIVERSITY_PU = "university";
     public static final String HOSPITAL_PU = "hospital";
+    public static final String BILLS_PU = "bills";
+    public static final String FOOTBALL_PU = "football";
 
     public static void main(String[] args) {
 
         EntityManagerFactory entityManagerFactory =
-                Persistence.createEntityManagerFactory(HOSPITAL_PU);
+                Persistence.createEntityManagerFactory(BILLS_PU);
 //        EntityManager entityManager = entityManagerFactory.createEntityManager();
 //        Engine engine = new Engine(entityManager);
 //        engine.run();

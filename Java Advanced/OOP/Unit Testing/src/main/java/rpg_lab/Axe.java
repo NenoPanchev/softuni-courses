@@ -1,9 +1,6 @@
-package rpg_tests;
+package rpg_lab;
 
-import rpg_tests.interfaces.Target;
-import rpg_tests.interfaces.Weapon;
-
-public class Axe implements Weapon {
+public class Axe {
 
     private int attackPoints;
     private int durabilityPoints;
@@ -21,7 +18,7 @@ public class Axe implements Weapon {
         return this.durabilityPoints;
     }
 
-    public void attack(Target target) {
+    public void attack(Dummy target) {
         if (this.durabilityPoints <= 0) {
             throw new IllegalStateException("Axe is broken.");
         }

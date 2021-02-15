@@ -1,22 +1,13 @@
-package rpg_tests;
+package rpg_lab;
 
-import rpg_tests.interfaces.Target;
-import rpg_tests.interfaces.Weapon;
-
-import java.util.ArrayList;
-import java.util.List;
-
-public class Dummy implements Target {
+public class Dummy {
 
     private int health;
     private int experience;
-    private List<Weapon> possibleLoot;
 
     public Dummy(int health, int experience) {
         this.health = health;
         this.experience = experience;
-        this.possibleLoot = new ArrayList<>();
-        this.possibleLoot.add(new Axe(10, 10));
     }
 
     public int getHealth() {
@@ -41,13 +32,5 @@ public class Dummy implements Target {
 
     public boolean isDead() {
         return this.health <= 0;
-    }
-
-    public Weapon getLoot() {
-        if (this.isDead()) {
-            return this.possibleLoot.get(0);
-        }
-
-        throw new IllegalStateException("Cannot get loot from alive target");
     }
 }
