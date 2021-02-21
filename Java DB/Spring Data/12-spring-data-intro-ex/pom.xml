@@ -9,9 +9,9 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>com.example</groupId>
-    <artifactId>11-spring-data-intro-lab</artifactId>
+    <artifactId>12-spring-data-intro-ex</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>11-spring-data-intro-lab</name>
+    <name>12-spring-data-intro-ex</name>
     <description>Demo project for Spring Boot</description>
     <properties>
         <java.version>15</java.version>
