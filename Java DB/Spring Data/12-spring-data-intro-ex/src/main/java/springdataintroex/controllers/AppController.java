@@ -34,8 +34,8 @@ public class AppController implements CommandLineRunner {
 //        .forEach(book -> System.out.println(book.getTitle()));
 
         //Query 2
-        this.authorService.findAllAuthorsWithAtLeastOneBookWithReleaseDateBefore1990()
-                .forEach(author -> System.out.println(author.getFirstName() + " " + author.getLastName()));
+//        this.authorService.findAllAuthorsWithAtLeastOneBookWithReleaseDateBefore1990()
+//                .forEach(author -> System.out.println(author.getFirstName() + " " + author.getLastName()));
 
         //Query 3
 //        this.authorService.findAllAuthorsOrderedByCountOfBooks()
