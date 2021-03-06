@@ -1,8 +1,6 @@
 package course.springdata.jsonprocessingex2.models.entities;
 
-import javax.persistence.Entity;
-import javax.persistence.ManyToMany;
-import javax.persistence.Table;
+import javax.persistence.*;
 import java.util.Set;
 
 @Entity
@@ -40,7 +38,9 @@ public class Car extends BaseEntity {
         this.travelledDistance = travelledDistance;
     }
 
-    @ManyToMany(mappedBy = "cars")
+    @ManyToMany(fetch = FetchType.EAGER)
+    @JoinTable(joinColumns = @JoinColumn(name = "car_id", referencedColumnName = "id"),
+            inverseJoinColumns = @JoinColumn(name = "part_id", referencedColumnName = "id"))
     public Set<Part> getParts() {
         return parts;
     }

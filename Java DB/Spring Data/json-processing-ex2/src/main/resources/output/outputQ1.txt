@@ -1,0 +1,486 @@
+[
+  {
+    "Id": 29,
+    "Name": "Louann Holzworth",
+    "BirthDate": "1960-10-01T00:00:00",
+    "IsYoungDriver": false,
+    "Sales": []
+  },
+  {
+    "Id": 28,
+    "Name": "Donnetta Soliz",
+    "BirthDate": "1963-10-01T00:00:00",
+    "IsYoungDriver": true,
+    "Sales": [
+      {
+        "Make": "Chevy",
+        "Model": "Camaro",
+        "Discount": 0.05
+      },
+      {
+        "Make": "Toyota",
+        "Model": "Prius",
+        "Discount": 0.15
+      }
+    ]
+  },
+  {
+    "Id": 17,
+    "Name": "Rema Revelle",
+    "BirthDate": "1970-05-01T00:00:00",
+    "IsYoungDriver": true,
+    "Sales": [
+      {
+        "Make": "Peugeot",
+        "Model": "407",
+        "Discount": 0.25
+      },
+      {
+        "Make": "Citroen",
+        "Model": "C5",
+        "Discount": 0.25
+      }
+    ]
+  },
+  {
+    "Id": 16,
+    "Name": "Carri Knapik",
+    "BirthDate": "1972-02-02T00:00:00",
+    "IsYoungDriver": true,
+    "Sales": [
+      {
+        "Make": "Citroen",
+        "Model": "C8",
+        "Discount": 0.10
+      },
+      {
+        "Make": "Great Wall",
+        "Model": "H2",
+        "Discount": 0.15
+      }
+    ]
+  },
+  {
+    "Id": 27,
+    "Name": "Garret Capron",
+    "BirthDate": "1975-07-01T00:00:00",
+    "IsYoungDriver": false,
+    "Sales": [
+      {
+        "Make": "Lamborghini",
+        "Model": "Gallardo",
+        "Discount": 0.40
+      },
+      {
+        "Make": "Opel",
+        "Model": "Omega",
+        "Discount": 0.40
+      }
+    ]
+  },
+  {
+    "Id": 8,
+    "Name": "Teddy Hobby",
+    "BirthDate": "1975-10-01T00:00:00",
+    "IsYoungDriver": true,
+    "Sales": [
+      {
+        "Make": "Citroen",
+        "Model": "C3",
+        "Discount": 0.35
+      },
+      {
+        "Make": "Chevy",
+        "Model": "Camaro",
+        "Discount": 0.05
+      },
+      {
+        "Make": "Renault",
+        "Model": "Espace",
+        "Discount": 0.35
+      }
+    ]
+  },
+  {
+    "Id": 10,
+    "Name": "Audrea Cardinal",
+    "BirthDate": "1976-10-01T00:00:00",
+    "IsYoungDriver": false,
+    "Sales": [
+      {
+        "Make": "Alfa Romeo",
+        "Model": "75",
+        "Discount": 0.15
+      },
+      {
+        "Make": "BMW",
+        "Model": "F20",
+        "Discount": 0.30
+      },
+      {
+        "Make": "Ferrari",
+        "Model": "F430",
+        "Discount": 0.10
+      }
+    ]
+  },
+  {
+    "Id": 11,
+    "Name": "Francis Mckim",
+    "BirthDate": "1977-10-01T00:00:00",
+    "IsYoungDriver": true,
+    "Sales": [
+      {
+        "Make": "Dacia",
+        "Model": "Sandero",
+        "Discount": 0.15
+      },
+      {
+        "Make": "Fiat",
+        "Model": "Panda 4x4",
+        "Discount": 0.25
+      }
+    ]
+  },
+  {
+    "Id": 14,
+    "Name": "Brett Brickley",
+    "BirthDate": "1980-10-01T00:00:00",
+    "IsYoungDriver": true,
+    "Sales": [
+      {
+        "Make": "Fiat",
+        "Model": "Panda",
+        "Discount": 0.20
+      },
+      {
+        "Make": "Toyota",
+        "Model": "Tacoma",
+        "Discount": 0.25
+      }
+    ]
+  },
+  {
+    "Id": 15,
+    "Name": "Kristian Engberg",
+    "BirthDate": "1981-10-03T00:00:00",
+    "IsYoungDriver": false,
+    "Sales": [
+      {
+        "Make": "Nissan",
+        "Model": "GT-R",
+        "Discount": 0.10
+      },
+      {
+        "Make": "Peugeot",
+        "Model": "308",
+        "Discount": 0.10
+      },
+      {
+        "Make": "Citroen",
+        "Model": "C1",
+        "Discount": 0.10
+      },
+      {
+        "Make": "Citroen",
+        "Model": "C3",
+        "Discount": 0.05
+      }
+    ]
+  },
+  {
+    "Id": 26,
+    "Name": "Hipolito Lamoreaux",
+    "BirthDate": "1982-08-01T00:00:00",
+    "IsYoungDriver": true,
+    "Sales": []
+  },
+  {
+    "Id": 4,
+    "Name": "Zada Attwood",
+    "BirthDate": "1982-10-01T00:00:00",
+    "IsYoungDriver": true,
+    "Sales": []
+  },
+  {
+    "Id": 25,
+    "Name": "Sylvie Mcelravy",
+    "BirthDate": "1983-10-01T00:00:00",
+    "IsYoungDriver": false,
+    "Sales": [
+      {
+        "Make": "Ford",
+        "Model": "Torino",
+        "Discount": 0.05
+      },
+      {
+        "Make": "Opel",
+        "Model": "Corsa",
+        "Discount": 0.15
+      }
+    ]
+  },
+  {
+    "Id": 7,
+    "Name": "Rico Peer",
+    "BirthDate": "1984-10-01T00:00:00",
+    "IsYoungDriver": true,
+    "Sales": [
+      {
+        "Make": "Nissan",
+        "Model": "370Z",
+        "Discount": 0.05
+      }
+    ]
+  },
+  {
+    "Id": 5,
+    "Name": "Hai Everton",
+    "BirthDate": "1985-10-01T00:00:00",
+    "IsYoungDriver": true,
+    "Sales": []
+  },
+  {
+    "Id": 6,
+    "Name": "Lino Subia",
+    "BirthDate": "1985-12-21T00:00:00",
+    "IsYoungDriver": false,
+    "Sales": []
+  },
+  {
+    "Id": 24,
+    "Name": "Jimmy Grossi",
+    "BirthDate": "1986-07-01T00:00:00",
+    "IsYoungDriver": true,
+    "Sales": [
+      {
+        "Make": "Citroen",
+        "Model": "C4",
+        "Discount": 0.25
+      },
+      {
+        "Make": "Alfa Romeo",
+        "Model": "164",
+        "Discount": 0.25
+      }
+    ]
+  },
+  {
+    "Id": 12,
+    "Name": "Carole Witman",
+    "BirthDate": "1987-10-01T00:00:00",
+    "IsYoungDriver": false,
+    "Sales": [
+      {
+        "Make": "Mercedes",
+        "Model": "W204",
+        "Discount": 0.05
+      },
+      {
+        "Make": "Opel",
+        "Model": "Vectra",
+        "Discount": 0.05
+      }
+    ]
+  },
+  {
+    "Id": 13,
+    "Name": "Oren Perlman",
+    "BirthDate": "1988-10-01T00:00:00",
+    "IsYoungDriver": true,
+    "Sales": [
+      {
+        "Make": "Citroen",
+        "Model": "C3",
+        "Discount": 0.10
+      },
+      {
+        "Make": "Nissan",
+        "Model": "370Z",
+        "Discount": 0.15
+      }
+    ]
+  },
+  {
+    "Id": 2,
+    "Name": "Natalie Poli",
+    "BirthDate": "1990-10-04T00:00:00",
+    "IsYoungDriver": false,
+    "Sales": [
+      {
+        "Make": "Toyota",
+        "Model": "Prius",
+        "Discount": 0.00
+      },
+      {
+        "Make": "BMW",
+        "Model": "M6 E63",
+        "Discount": 0.40
+      },
+      {
+        "Make": "Alfa Romeo",
+        "Model": "Alfetta",
+        "Discount": 0.40
+      }
+    ]
+  },
+  {
+    "Id": 3,
+    "Name": "Marcelle Griego",
+    "BirthDate": "1990-10-04T00:00:00",
+    "IsYoungDriver": true,
+    "Sales": [
+      {
+        "Make": "Skoda",
+        "Model": "Rapid",
+        "Discount": 0.15
+      },
+      {
+        "Make": "Ford",
+        "Model": "Torino",
+        "Discount": 0.25
+      }
+    ]
+  },
+  {
+    "Id": 19,
+    "Name": "Yvonne Mccalla",
+    "BirthDate": "1992-03-02T00:00:00",
+    "IsYoungDriver": true,
+    "Sales": [
+      {
+        "Make": "Ferrari",
+        "Model": "F40",
+        "Discount": 0.45
+      }
+    ]
+  },
+  {
+    "Id": 30,
+    "Name": "Ann Mcenaney",
+    "BirthDate": "1992-03-02T00:00:00",
+    "IsYoungDriver": true,
+    "Sales": [
+      {
+        "Make": "BMW",
+        "Model": "F04",
+        "Discount": 0.45
+      }
+    ]
+  },
+  {
+    "Id": 21,
+    "Name": "Cinthia Lasala",
+    "BirthDate": "1992-11-01T00:00:00",
+    "IsYoungDriver": true,
+    "Sales": [
+      {
+        "Make": "Toyota",
+        "Model": "Prius",
+        "Discount": 0.35
+      }
+    ]
+  },
+  {
+    "Id": 1,
+    "Name": "Emmitt Benally",
+    "BirthDate": "1993-11-20T00:00:00",
+    "IsYoungDriver": true,
+    "Sales": [
+      {
+        "Make": "Mercedes",
+        "Model": "W124",
+        "Discount": 0.10
+      }
+    ]
+  },
+  {
+    "Id": 20,
+    "Name": "Nisha Markwell",
+    "BirthDate": "1994-04-04T00:00:00",
+    "IsYoungDriver": false,
+    "Sales": [
+      {
+        "Make": "Great Wall",
+        "Model": "H8",
+        "Discount": 0.15
+      },
+      {
+        "Make": "Opel",
+        "Model": "Vectra",
+        "Discount": 0.00
+      },
+      {
+        "Make": "Ferrari",
+        "Model": "F40",
+        "Discount": 0.20
+      },
+      {
+        "Make": "Toyota",
+        "Model": "Corolla",
+        "Discount": 0.00
+      },
+      {
+        "Make": "Mercedes",
+        "Model": "W202",
+        "Discount": 0.20
+      }
+    ]
+  },
+  {
+    "Id": 23,
+    "Name": "Faustina Burgher",
+    "BirthDate": "1994-06-01T00:00:00",
+    "IsYoungDriver": false,
+    "Sales": [
+      {
+        "Make": "Fiat",
+        "Model": "Panda 4x4 Antarctica",
+        "Discount": 0.20
+      },
+      {
+        "Make": "Ford",
+        "Model": "Pinto",
+        "Discount": 0.30
+      }
+    ]
+  },
+  {
+    "Id": 18,
+    "Name": "Taina Achenbach",
+    "BirthDate": "1994-10-01T00:00:00",
+    "IsYoungDriver": false,
+    "Sales": []
+  },
+  {
+    "Id": 9,
+    "Name": "Johnette Derryberry",
+    "BirthDate": "1995-10-01T00:00:00",
+    "IsYoungDriver": true,
+    "Sales": [
+      {
+        "Make": "Rolls-Royce",
+        "Model": "Phantom Drophead Coupé",
+        "Discount": 0.25
+      },
+      {
+        "Make": "Lamborghini",
+        "Model": "Gallardo",
+        "Discount": 0.15
+      }
+    ]
+  },
+  {
+    "Id": 22,
+    "Name": "Daniele Zarate",
+    "BirthDate": "1995-10-05T00:00:00",
+    "IsYoungDriver": false,
+    "Sales": [
+      {
+        "Make": "Toyota",
+        "Model": "Corolla",
+        "Discount": 0.20
+      }
+    ]
+  }
+]

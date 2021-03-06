@@ -1,18 +1,19 @@
 package course.springdata.jsonprocessingex2.models.entities;
 
 import javax.persistence.*;
+import java.math.BigDecimal;
 
 @Entity
 @Table(name = "sales")
 public class Sale extends BaseEntity{
     private Car car;
     private Customer customer;
-    private double discount;
+    private BigDecimal discount;
 
     public Sale() {
     }
 
-    @ManyToOne
+    @OneToOne(fetch = FetchType.EAGER)
     public Car getCar() {
         return car;
     }
@@ -30,11 +31,11 @@ public class Sale extends BaseEntity{
         this.customer = customer;
     }
 
-    public double getDiscount() {
+    public BigDecimal getDiscount() {
         return discount;
     }
 
-    public void setDiscount(double discount) {
+    public void setDiscount(BigDecimal discount) {
         this.discount = discount;
     }
 }

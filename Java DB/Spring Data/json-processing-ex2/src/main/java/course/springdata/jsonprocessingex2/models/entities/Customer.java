@@ -1,17 +1,14 @@
 package course.springdata.jsonprocessingex2.models.entities;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.OneToMany;
-import javax.persistence.Table;
-import java.time.LocalDate;
+import javax.persistence.*;
+import java.time.LocalDateTime;
 import java.util.Set;
 
 @Entity
 @Table(name = "customers")
 public class Customer extends BaseEntity{
     private String name;
-    private LocalDate birthDate;
+    private String  birthDate;
     private boolean isYoungDriver;
     private Set<Sale> sales;
 
@@ -26,11 +23,11 @@ public class Customer extends BaseEntity{
         this.name = name;
     }
 
-    public LocalDate getBirthDate() {
+    public String getBirthDate() {
         return birthDate;
     }
 
-    public void setBirthDate(LocalDate birthDate) {
+    public void setBirthDate(String birthDate) {
         this.birthDate = birthDate;
     }
 
@@ -43,7 +40,7 @@ public class Customer extends BaseEntity{
         isYoungDriver = youngDriver;
     }
 
-    @OneToMany(mappedBy = "customer")
+    @OneToMany(mappedBy = "customer", fetch = FetchType.EAGER)
     public Set<Sale> getSales() {
         return sales;
     }

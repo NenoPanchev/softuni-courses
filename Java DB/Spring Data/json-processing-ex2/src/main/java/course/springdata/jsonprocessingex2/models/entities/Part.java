@@ -2,6 +2,7 @@ package course.springdata.jsonprocessingex2.models.entities;
 
 import javax.persistence.*;
 import java.math.BigDecimal;
+import java.util.Objects;
 import java.util.Set;
 
 @Entity
@@ -40,9 +41,7 @@ public class Part extends BaseEntity{
         this.quantity = quantity;
     }
 
-    @ManyToMany
-    @JoinTable(joinColumns = @JoinColumn(name = "part_id", referencedColumnName = "id"),
-    inverseJoinColumns = @JoinColumn(name = "car_id", referencedColumnName = "id"))
+    @ManyToMany(mappedBy = "parts")
     public Set<Car> getCars() {
         return cars;
     }
@@ -58,5 +57,18 @@ public class Part extends BaseEntity{
 
     public void setSupplier(Supplier supplier) {
         this.supplier = supplier;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Part part = (Part) o;
+        return quantity == part.quantity && Objects.equals(name, part.name) && Objects.equals(price, part.price) && Objects.equals(supplier, part.supplier);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(name, price, quantity, supplier);
     }
 }

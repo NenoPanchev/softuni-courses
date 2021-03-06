@@ -1,9 +1,6 @@
 package course.springdata.jsonprocessingex2.models.entities;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.OneToMany;
-import javax.persistence.Table;
+import javax.persistence.*;
 import java.util.Set;
 
 @Entity
@@ -33,7 +30,7 @@ public class Supplier extends BaseEntity {
         isImporter = importer;
     }
 
-    @OneToMany(mappedBy = "supplier")
+    @OneToMany(mappedBy = "supplier", fetch = FetchType.EAGER)
     public Set<Part> getParts() {
         return parts;
     }

@@ -21,7 +21,6 @@ import static coursespringdata.jsonprocessingex1.constants.GlobalConstants.*;
 
 @Component
 public class AppController implements CommandLineRunner {
-    private final ModelMapper modelMapper;
     private final Gson gson;
     private final CategoryService categoryService;
     private final UserService userService;
@@ -30,8 +29,7 @@ public class AppController implements CommandLineRunner {
     private final CategoryProductService categoryProductService;
 
     @Autowired
-    public AppController(ModelMapper modelMapper, Gson gson, CategoryService categoryService, UserService userService, ProductService productService, FileIOUtil fileIOUtil, CategoryProductService categoryProductService) {
-        this.modelMapper = modelMapper;
+    public AppController(Gson gson, CategoryService categoryService, UserService userService, ProductService productService, FileIOUtil fileIOUtil, CategoryProductService categoryProductService) {
         this.gson = gson;
         this.categoryService = categoryService;
         this.userService = userService;

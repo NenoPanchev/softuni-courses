@@ -1,7 +1,6 @@
 package course.springdata.jsonprocessingex2.config;
 
-import com.google.gson.Gson;
-import com.google.gson.GsonBuilder;
+import com.google.gson.*;
 import course.springdata.jsonprocessingex2.utils.FileIOUtil;
 import course.springdata.jsonprocessingex2.utils.FileIOUtilImpl;
 import course.springdata.jsonprocessingex2.utils.ValidationUtil;
@@ -9,6 +8,11 @@ import course.springdata.jsonprocessingex2.utils.ValidationUtilImpl;
 import org.modelmapper.ModelMapper;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+
+import java.lang.reflect.Type;
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
+import java.util.Random;
 
 @Configuration
 public class AppBeanConfiguration {
@@ -34,5 +38,10 @@ public class AppBeanConfiguration {
     @Bean
     public FileIOUtil fileIOUtil() {
         return new FileIOUtilImpl();
+    }
+
+    @Bean
+    public Random random() {
+        return new Random();
     }
 }
