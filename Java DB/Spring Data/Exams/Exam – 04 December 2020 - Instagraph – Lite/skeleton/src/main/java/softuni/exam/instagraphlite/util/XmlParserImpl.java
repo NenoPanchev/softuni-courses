@@ -1,4 +1,4 @@
-package softuni.exam.util;
+package softuni.exam.instagraphlite.util;
 
 import javax.xml.bind.JAXBContext;
 import javax.xml.bind.JAXBException;
