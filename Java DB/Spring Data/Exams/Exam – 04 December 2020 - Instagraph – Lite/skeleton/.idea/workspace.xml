@@ -5,48 +5,69 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8cc3c261-b1ba-40cb-89d7-627268a0cdf5" name="Default Changelist" comment="exam preparation Instagraph">
-      <change afterPath="$PROJECT_DIR$/../../Exam – 3 April 2020 - Airline Company/Airline_Skeleton.zip" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Exam – 3 April 2020 - Airline Company/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Exam – 3 April 2020 - Airline Company/src/main/java/softuni/exam/ExamApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Exam – 3 April 2020 - Airline Company/src/main/java/softuni/exam/ServletInitializer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Exam – 3 April 2020 - Airline Company/src/main/java/softuni/exam/config/ApplicationBeanConfiguration.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Exam – 3 April 2020 - Airline Company/src/main/java/softuni/exam/repository/PassengerRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Exam – 3 April 2020 - Airline Company/src/main/java/softuni/exam/repository/PlaneRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Exam – 3 April 2020 - Airline Company/src/main/java/softuni/exam/repository/TicketRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Exam – 3 April 2020 - Airline Company/src/main/java/softuni/exam/repository/TownRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Exam – 3 April 2020 - Airline Company/src/main/java/softuni/exam/service/PassengerService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Exam – 3 April 2020 - Airline Company/src/main/java/softuni/exam/service/PlaneService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Exam – 3 April 2020 - Airline Company/src/main/java/softuni/exam/service/TicketService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Exam – 3 April 2020 - Airline Company/src/main/java/softuni/exam/service/TownService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Exam – 3 April 2020 - Airline Company/src/main/java/softuni/exam/util/ValidationUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Exam – 3 April 2020 - Airline Company/src/main/java/softuni/exam/web/controllers/BaseController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Exam – 3 April 2020 - Airline Company/src/main/java/softuni/exam/web/controllers/ExportController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Exam – 3 April 2020 - Airline Company/src/main/java/softuni/exam/web/controllers/HomeController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Exam – 3 April 2020 - Airline Company/src/main/java/softuni/exam/web/controllers/ImportController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Exam – 3 April 2020 - Airline Company/src/main/resources/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Exam – 3 April 2020 - Airline Company/src/main/resources/files/json/passengers.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Exam – 3 April 2020 - Airline Company/src/main/resources/files/json/towns.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Exam – 3 April 2020 - Airline Company/src/main/resources/files/xml/planes.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Exam – 3 April 2020 - Airline Company/src/main/resources/files/xml/tickets.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Exam – 3 April 2020 - Airline Company/src/main/resources/static/css/bootstrap.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Exam – 3 April 2020 - Airline Company/src/main/resources/static/css/style.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Exam – 3 April 2020 - Airline Company/src/main/resources/static/js/bootstrap.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Exam – 3 April 2020 - Airline Company/src/main/resources/static/js/jquery-3.3.1.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Exam – 3 April 2020 - Airline Company/src/main/resources/static/pics/1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Exam – 3 April 2020 - Airline Company/src/main/resources/static/pics/2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Exam – 3 April 2020 - Airline Company/src/main/resources/templates/export/export-passengers-by-tickets.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Exam – 3 April 2020 - Airline Company/src/main/resources/templates/fragments/base-layout.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Exam – 3 April 2020 - Airline Company/src/main/resources/templates/fragments/footer.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Exam – 3 April 2020 - Airline Company/src/main/resources/templates/fragments/head.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Exam – 3 April 2020 - Airline Company/src/main/resources/templates/fragments/navbar.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Exam – 3 April 2020 - Airline Company/src/main/resources/templates/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Exam – 3 April 2020 - Airline Company/src/main/resources/templates/json/import-json.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Exam – 3 April 2020 - Airline Company/src/main/resources/templates/json/import-passengers.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Exam – 3 April 2020 - Airline Company/src/main/resources/templates/json/import-towns.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Exam – 3 April 2020 - Airline Company/src/main/resources/templates/xml/import-planes.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Exam – 3 April 2020 - Airline Company/src/main/resources/templates/xml/import-tickets.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Exam – 3 April 2020 - Airline Company/src/main/resources/templates/xml/import-xml.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Exam – 3 April 2020 - Airline Company/src/test/java/softuni/exam/ExamApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../Java Web/Spring Fundamentals/05. Spring Boot Introduction/Exercise/springbootex/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../Java Web/Spring Fundamentals/05. Spring Boot Introduction/Exercise/springbootex/.mvn/wrapper/MavenWrapperDownloader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../Java Web/Spring Fundamentals/05. Spring Boot Introduction/Exercise/springbootex/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../Java Web/Spring Fundamentals/05. Spring Boot Introduction/Exercise/springbootex/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../Java Web/Spring Fundamentals/05. Spring Boot Introduction/Exercise/springbootex/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../Java Web/Spring Fundamentals/05. Spring Boot Introduction/Exercise/springbootex/mvnw.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../Java Web/Spring Fundamentals/05. Spring Boot Introduction/Exercise/springbootex/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../Java Web/Spring Fundamentals/05. Spring Boot Introduction/Exercise/springbootex/src/main/java/spring/fundamentals/springbootex/SpringbootexApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../Java Web/Spring Fundamentals/05. Spring Boot Introduction/Exercise/springbootex/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../Java Web/Spring Fundamentals/05. Spring Boot Introduction/Exercise/springbootex/src/test/java/spring/fundamentals/springbootex/SpringbootexApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../Java Web/Spring Fundamentals/05. Spring Boot Introduction/Lab/Mobilelele/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../Java Web/Spring Fundamentals/05. Spring Boot Introduction/Lab/Mobilelele/.mvn/wrapper/MavenWrapperDownloader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../Java Web/Spring Fundamentals/05. Spring Boot Introduction/Lab/Mobilelele/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../Java Web/Spring Fundamentals/05. Spring Boot Introduction/Lab/Mobilelele/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../Java Web/Spring Fundamentals/05. Spring Boot Introduction/Lab/Mobilelele/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../Java Web/Spring Fundamentals/05. Spring Boot Introduction/Lab/Mobilelele/mvnw.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../Java Web/Spring Fundamentals/05. Spring Boot Introduction/Lab/Mobilelele/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../Java Web/Spring Fundamentals/05. Spring Boot Introduction/Lab/Mobilelele/src/main/java/spring/fundamentals/springbootlab/SpringbootlabApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../Java Web/Spring Fundamentals/05. Spring Boot Introduction/Lab/Mobilelele/src/main/java/spring/fundamentals/springbootlab/entities/BaseEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../Java Web/Spring Fundamentals/05. Spring Boot Introduction/Lab/Mobilelele/src/main/java/spring/fundamentals/springbootlab/entities/BrandEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../Java Web/Spring Fundamentals/05. Spring Boot Introduction/Lab/Mobilelele/src/main/java/spring/fundamentals/springbootlab/entities/ModelEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../Java Web/Spring Fundamentals/05. Spring Boot Introduction/Lab/Mobilelele/src/main/java/spring/fundamentals/springbootlab/entities/OfferEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../Java Web/Spring Fundamentals/05. Spring Boot Introduction/Lab/Mobilelele/src/main/java/spring/fundamentals/springbootlab/entities/UserEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../Java Web/Spring Fundamentals/05. Spring Boot Introduction/Lab/Mobilelele/src/main/java/spring/fundamentals/springbootlab/entities/UserRoleEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../Java Web/Spring Fundamentals/05. Spring Boot Introduction/Lab/Mobilelele/src/main/java/spring/fundamentals/springbootlab/entities/enums/CategoryEnum.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../Java Web/Spring Fundamentals/05. Spring Boot Introduction/Lab/Mobilelele/src/main/java/spring/fundamentals/springbootlab/entities/enums/EngineEnum.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../Java Web/Spring Fundamentals/05. Spring Boot Introduction/Lab/Mobilelele/src/main/java/spring/fundamentals/springbootlab/entities/enums/TransmissionEnum.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../Java Web/Spring Fundamentals/05. Spring Boot Introduction/Lab/Mobilelele/src/main/java/spring/fundamentals/springbootlab/entities/enums/UserRoleEnum.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../Java Web/Spring Fundamentals/05. Spring Boot Introduction/Lab/Mobilelele/src/main/java/spring/fundamentals/springbootlab/entities/init/DataInitializer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../Java Web/Spring Fundamentals/05. Spring Boot Introduction/Lab/Mobilelele/src/main/java/spring/fundamentals/springbootlab/repositories/BrandRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../Java Web/Spring Fundamentals/05. Spring Boot Introduction/Lab/Mobilelele/src/main/java/spring/fundamentals/springbootlab/repositories/ModelRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../Java Web/Spring Fundamentals/05. Spring Boot Introduction/Lab/Mobilelele/src/main/java/spring/fundamentals/springbootlab/repositories/OfferRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../Java Web/Spring Fundamentals/05. Spring Boot Introduction/Lab/Mobilelele/src/main/java/spring/fundamentals/springbootlab/repositories/RoleRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../Java Web/Spring Fundamentals/05. Spring Boot Introduction/Lab/Mobilelele/src/main/java/spring/fundamentals/springbootlab/repositories/UserRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../Java Web/Spring Fundamentals/05. Spring Boot Introduction/Lab/Mobilelele/src/main/java/spring/fundamentals/springbootlab/services/BrandService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../Java Web/Spring Fundamentals/05. Spring Boot Introduction/Lab/Mobilelele/src/main/java/spring/fundamentals/springbootlab/services/ModelService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../Java Web/Spring Fundamentals/05. Spring Boot Introduction/Lab/Mobilelele/src/main/java/spring/fundamentals/springbootlab/services/OfferService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../Java Web/Spring Fundamentals/05. Spring Boot Introduction/Lab/Mobilelele/src/main/java/spring/fundamentals/springbootlab/services/RoleService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../Java Web/Spring Fundamentals/05. Spring Boot Introduction/Lab/Mobilelele/src/main/java/spring/fundamentals/springbootlab/services/UserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../Java Web/Spring Fundamentals/05. Spring Boot Introduction/Lab/Mobilelele/src/main/java/spring/fundamentals/springbootlab/services/impl/BrandServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../Java Web/Spring Fundamentals/05. Spring Boot Introduction/Lab/Mobilelele/src/main/java/spring/fundamentals/springbootlab/services/impl/ModelServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../Java Web/Spring Fundamentals/05. Spring Boot Introduction/Lab/Mobilelele/src/main/java/spring/fundamentals/springbootlab/services/impl/OfferServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../Java Web/Spring Fundamentals/05. Spring Boot Introduction/Lab/Mobilelele/src/main/java/spring/fundamentals/springbootlab/services/impl/RoleServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../Java Web/Spring Fundamentals/05. Spring Boot Introduction/Lab/Mobilelele/src/main/java/spring/fundamentals/springbootlab/services/impl/UserServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../Java Web/Spring Fundamentals/05. Spring Boot Introduction/Lab/Mobilelele/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../Java Web/Spring Fundamentals/05. Spring Boot Introduction/Lab/Mobilelele/src/main/resources/static/css/bootstrap.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../Java Web/Spring Fundamentals/05. Spring Boot Introduction/Lab/Mobilelele/src/main/resources/static/css/main.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../Java Web/Spring Fundamentals/05. Spring Boot Introduction/Lab/Mobilelele/src/main/resources/static/css/reset-css.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../Java Web/Spring Fundamentals/05. Spring Boot Introduction/Lab/Mobilelele/src/main/resources/static/img/1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../Java Web/Spring Fundamentals/05. Spring Boot Introduction/Lab/Mobilelele/src/main/resources/static/img/car-dealership-car-car-showroom.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../Java Web/Spring Fundamentals/05. Spring Boot Introduction/Lab/Mobilelele/src/main/resources/static/img/car.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../Java Web/Spring Fundamentals/05. Spring Boot Introduction/Lab/Mobilelele/src/main/resources/static/img/user-avatar.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../Java Web/Spring Fundamentals/05. Spring Boot Introduction/Lab/Mobilelele/src/main/resources/static/js/bootstrap.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../Java Web/Spring Fundamentals/05. Spring Boot Introduction/Lab/Mobilelele/src/main/resources/static/js/jquery-3.5.1.slim.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../Java Web/Spring Fundamentals/05. Spring Boot Introduction/Lab/Mobilelele/src/main/resources/templates/auth-login.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../Java Web/Spring Fundamentals/05. Spring Boot Introduction/Lab/Mobilelele/src/main/resources/templates/auth-register.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../Java Web/Spring Fundamentals/05. Spring Boot Introduction/Lab/Mobilelele/src/main/resources/templates/brands.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../Java Web/Spring Fundamentals/05. Spring Boot Introduction/Lab/Mobilelele/src/main/resources/templates/details.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../Java Web/Spring Fundamentals/05. Spring Boot Introduction/Lab/Mobilelele/src/main/resources/templates/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../Java Web/Spring Fundamentals/05. Spring Boot Introduction/Lab/Mobilelele/src/main/resources/templates/offer-add.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../Java Web/Spring Fundamentals/05. Spring Boot Introduction/Lab/Mobilelele/src/main/resources/templates/offers.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../Java Web/Spring Fundamentals/05. Spring Boot Introduction/Lab/Mobilelele/src/main/resources/templates/update.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../Java Web/Spring Fundamentals/05. Spring Boot Introduction/Lab/Mobilelele/src/test/java/spring/fundamentals/springbootlab/SpringbootlabApplicationTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -100,17 +121,6 @@
     </key>
   </component>
   <component name="RunManager">
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="InstagraphLiteApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="instagraph" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="softuni.exam.instagraphlite.InstagraphLiteApplication" />
@@ -128,6 +138,7 @@
       <option name="presentableId" value="Default" />
       <updated>1615619242789</updated>
       <workItem from="1615619243992" duration="8007000" />
+      <workItem from="1616144979894" duration="28000" />
     </task>
     <task id="LOCAL-00001" summary="exam preparation Instagraph">
       <created>1615627200091</created>
@@ -152,6 +163,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
