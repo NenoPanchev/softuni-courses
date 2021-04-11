@@ -1,1 +1,1 @@
-# MyRepository
+SoftUni courses
