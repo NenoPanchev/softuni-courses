@@ -1,0 +1,28 @@
+h3 {
+    color: #234465;
+    text-align: center;
+    
+}
+
+body {
+    
+    font-family: Helvetica, sans-serif;
+    counter-reset: section;
+}
+ol {
+    text-decoration: underline;
+    text-underline-position: above;
+    text-align: left;
+}
+li {
+    padding: 2px;
+    
+}
+
+section {
+    width: 20%;
+    margin: 80px auto;
+    padding: 30px;
+    padding-right: 70px;
+    background-color: #E6E5E5;
+}

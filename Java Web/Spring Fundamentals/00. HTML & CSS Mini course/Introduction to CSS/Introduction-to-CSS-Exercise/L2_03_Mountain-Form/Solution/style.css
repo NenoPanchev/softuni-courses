@@ -1,0 +1,86 @@
+body {
+    font-family: 'Lato', sans-serif;
+    
+}
+
+form {
+    width: 800px;
+    height: 600px;
+    margin: auto;
+}
+
+section {
+    display: inline-block;
+    height: 100%;
+}
+
+section h1 {
+    margin: 30px 0 450px 0;
+}
+
+section p {
+    font-style: italic;
+    font-weight: bold;
+}
+
+section:nth-child(1) {
+    width: 50%;
+    background-image: 
+    linear-gradient(to bottom, rgba(50, 69, 243, 0.438), rgba(78, 19, 117, 0.466)),
+    url("../Requirements-and-Resources/Images/peak.jpg");
+    background-size: cover;
+    border-top-left-radius: 12px;
+    border-bottom-left-radius: 12px;
+    text-align: center;
+    color: white;
+}
+
+section:nth-child(2) {
+    float: right;
+    border-top-right-radius: 12px;
+    border-bottom-right-radius: 12px;
+    border: 3px solid #38082A;
+    width: 394px;
+    height: 594px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+article {
+    width: 50%;
+    margin: 100px 80px;
+    height: 400px;
+}
+
+label {
+    color: rgb(218, 217, 220); 
+    height: 20px;
+}
+
+input {
+    color: rgb(118, 115, 115);
+    font-size: 18px; 
+    font-weight: bold ;
+    padding-top: 5px;  
+    border: 0;
+    border-bottom: 2px solid rgb(118, 115, 115);
+    margin-bottom: 40px;
+}
+
+div.button {
+    margin-top: 25px;
+}
+
+button {
+    color: white;
+    background: #38082A;
+    border-radius: 4px;
+    padding: 10px 20px;
+    border: 0;
+}
+
+div span:nth-child(3) {
+    color: #38082A;
+
+}

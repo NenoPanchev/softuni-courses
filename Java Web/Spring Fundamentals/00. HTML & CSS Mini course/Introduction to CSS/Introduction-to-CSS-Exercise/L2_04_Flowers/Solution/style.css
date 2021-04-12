@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+*, *:before, *:after {
+    box-sizing: border-box;
+}
+/*    color: #D67471 ; */
+
+body {
+    margin: 0  ; 
+    font-family: 'Open Sans', sans-serif;
+    color: #cc6763 ; 
+    background-image: url("../Requirements-and-Resources/Images/header-flower.png");
+    background-position: center top;
+    background-size: 100%  auto;
+    background-repeat: no-repeat ; 
+    backdrop-filter: brightness(0.6); 
+}
+
+/* header styles */
+nav {
+    background-color: white ; 
+}
+ul {
+    display: flex;
+    justify-content: center;
+    margin: 0 ; 
+    padding: 5px ;
+    
+}
+ul li {
+    list-style-type: none;
+    font-weight: bold;
+    padding-right: 25px ; 
+}
+
+/* main styles */
+.image-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh ;
+}
+.presentation {
+    align-self: center;
+    text-align: center;    
+    color: white ; 
+    width: 35% ; 
+    margin-top: 30px ; 
+}
+
+.presentation h1 {
+    font-weight: bold;
+}
+
+.presentation hr {
+    border-bottom: 2px solid #cc6763 ; 
+    width: 40px  ; 
+}
+
+.pink-section{
+    color: white ; 
+    background-color: #cc6763 ; 
+    text-align: center;
+    padding-top: 5px ; 
+    padding-bottom: 10px ;
+}
+
+.pink-section h3 {
+    font-weight: 300;
+}
+.pink-section article hr {
+    border-bottom: 2px solid white ; 
+    width: 40px  ; 
+}
+
+.pink-section button {
+    outline: none ; 
+    border: none ; 
+    border-radius: 5px ; 
+    background-color: white ; 
+    color: #cc6763 ; 
+    padding: 10px 15px ; 
+    font-weight: bold ; 
+    margin-bottom: 10px ; 
+}
+
+.white-section {
+    background-color: white ;
+    color: black ; 
+    text-align: center ;
+    padding-top: 5px ; 
+}
+
+.white-section hr {
+    border-bottom: 2px solid black ; 
+    width: 40px  ; 
+}
+
+.article-container {
+    display: flex;
+    justify-content: center;
+}
+.article-container article {
+    width: 25% ; 
+    padding: 20px ; 
+}
+
+.white-section img {
+    width: 80px ; 
+}
+
+.article-container article p {
+    font-size: 14px ; 
+}
+
+/*styles for footer */
+footer {
+    color: white ; 
+    background-color: #cc6763 ; 
+    text-align: center ; 
+    margin: 0 ; 
+    padding: 5px;  
+}
