@@ -1,0 +1,4 @@
+<th:block>
+    <span th:text="|Name: *{name} Price: *{price} lv|"></span>
+    <a class="ml-3 text-danger" th:href="@{/products/buy/{id}(id = *{id})}">Buy</a>
+</th:block>
