@@ -12,6 +12,7 @@ import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.ModelAndView;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
+import javax.servlet.http.HttpSession;
 import javax.validation.Valid;
 
 @Controller
@@ -27,7 +28,12 @@ public class HeroesController {
     }
 
     @GetMapping("/create")
-    public String create(Model model) {
+    public String create(Model model, HttpSession httpSession) {
+
+        if (httpSession.getAttribute("user") == null) {
+            return "redirect:/";
+        }
+
         if (!model.containsAttribute("heroCreateBindingModel")) {
             model.addAttribute("heroCreateBindingModel", new HeroCreateBindingModel());
         }
@@ -48,14 +54,24 @@ public class HeroesController {
     }
 
     @GetMapping("/details")
-    public ModelAndView details(@RequestParam("id")String id, ModelAndView modelAndView) {
+    public ModelAndView details(@RequestParam("id")String id, ModelAndView modelAndView, HttpSession httpSession) {
+        if (httpSession.getAttribute("user") == null) {
+            modelAndView.setViewName("redirect:/");
+            return modelAndView;
+        }
+
         modelAndView.addObject("hero", this.heroService.findById(id));
         modelAndView.setViewName("details-hero");
         return modelAndView;
     }
 
     @GetMapping("/delete/{id}")
-    public ModelAndView delete(@PathVariable("id") String id, ModelAndView modelAndView) {
+    public ModelAndView delete(@PathVariable("id") String id, ModelAndView modelAndView, HttpSession httpSession) {
+        if (httpSession.getAttribute("user") == null) {
+            modelAndView.setViewName("redirect:/");
+            return modelAndView;
+        }
+
         modelAndView.addObject("hero", this.heroService.findById(id));
         modelAndView.setViewName("delete-hero");
         return modelAndView;
