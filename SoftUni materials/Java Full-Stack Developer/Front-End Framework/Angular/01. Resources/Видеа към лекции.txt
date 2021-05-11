@@ -1,0 +1,11 @@
+Intro to Angular and TypeScript - https://youtu.be/K6QIaf7deWc
+Components - https://youtu.be/0fj_AOQ2_5k
+DI, Intro to RxJS, Services - https://youtu.be/iMEIHWa0304
+Workshop: Components - https://youtu.be/Kipm3h9dF_Q
+Modules and Routing - https://youtu.be/2MiGqXq_ZDs
+Workshop: Modules and Routing - https://youtu.be/LJk3p1pvFgk
+Forms - https://youtu.be/hj4FScmhFbI
+Workshop: Forms - https://youtu.be/jpf79iMsgKo
+Pipes, Interceptors and Subjects - https://youtu.be/nzfgpX35QSk
+Workshop: Pipes, Interceptors and Subjects - https://youtu.be/iefoLgc8AMs
+State Management - https://youtu.be/t1qkXJa49cw
