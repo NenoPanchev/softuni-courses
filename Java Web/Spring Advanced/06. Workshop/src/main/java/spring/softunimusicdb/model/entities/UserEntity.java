@@ -7,20 +7,43 @@ import java.util.List;
 @Entity
 @Table(name = "users")
 public class UserEntity extends BaseEntity {
-    private String name;
+    private String username;
+    private String fullName;
+    private String email;
     private String password;
     private List<UserRoleEntity> roles = new ArrayList<>();
 
     public UserEntity() {
     }
 
+
     @Column(nullable = false)
-    public String getName() {
-        return name;
+    public String getUsername() {
+        return username;
     }
 
-    public UserEntity setName(String name) {
-        this.name = name;
+    public UserEntity setUsername(String username) {
+        this.username = username;
+        return this;
+    }
+
+    @Column(nullable = false)
+    public String getFullName() {
+        return fullName;
+    }
+
+    public UserEntity setFullName(String fullName) {
+        this.fullName = fullName;
+        return this;
+    }
+
+    @Column(nullable = false)
+    public String getEmail() {
+        return email;
+    }
+
+    public UserEntity setEmail(String email) {
+        this.email = email;
         return this;
     }
 
@@ -41,6 +64,11 @@ public class UserEntity extends BaseEntity {
 
     public UserEntity setRoles(List<UserRoleEntity> roles) {
         this.roles = roles;
+        return this;
+    }
+
+    public UserEntity addRole(UserRoleEntity roleEntity) {
+        this.roles.add(roleEntity);
         return this;
     }
 }

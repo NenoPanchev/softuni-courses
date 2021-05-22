@@ -8,6 +8,7 @@ import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
 import org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter;
 import org.springframework.security.crypto.password.PasswordEncoder;
+import org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter;
 import spring.softunimusicdb.service.impl.MusicDBUserService;
 
 @Configuration
@@ -38,15 +39,25 @@ public class AppSecurityConfig extends WebSecurityConfigurerAdapter {
                 // configure login with HTML form
                 .formLogin()
                 // our login page will be served by the controller with mapping /users/login
-                .loginPage("/user/login")
+                .loginPage("/users/login")
                 // the name of the username input field in OUR login form is username (optional)
-                .usernameParameter("username")
+                .usernameParameter(UsernamePasswordAuthenticationFilter.SPRING_SECURITY_FORM_USERNAME_KEY) // "username"
                 // the name of the password input field in OUR login form is password (optional)
-                .passwordParameter("password")
+                .passwordParameter(UsernamePasswordAuthenticationFilter.SPRING_SECURITY_FORM_PASSWORD_KEY)
                 // on login success redirect here
                 .defaultSuccessUrl("/home")
                 // on login failure redirect here
-                .failureForwardUrl("/users/login-error"); //todo errors
+                .failureForwardUrl("/users/login-error")
+        .and()
+                // which endpoint performs logout, (should be POST request!!!)
+            .logout()
+            .logoutUrl("/logout")
+                // where to land after logout
+            .logoutSuccessUrl("/")
+                // remove session from the server
+            .invalidateHttpSession(true)
+                // delete the session cookie
+            .deleteCookies("JSESSIONID");
     }
 
     @Override

@@ -46,3 +46,13 @@ body {
     background-image: url("/img/instruments.jpg");
     background-position: center;
 }
+
+html body header nav.navbar.navbar-expand-lg.bg-nav.rounded div#navbarNav.collapse.navbar-collapse.d-flex.justify-content-end ul.navbar-nav.row li.nav-item form button.btn-link.text-white.active.h5 {
+    border: none;
+    text-decoration: none;
+    padding-top: 8px;
+}
+
+html body header nav.navbar.navbar-expand-lg.bg-nav.rounded div#navbarNav.collapse.navbar-collapse.d-flex.justify-content-end ul.navbar-nav.row li.nav-item form button.btn-link.text-white.active.h5:hover {
+    cursor: pointer;
+}

@@ -3,10 +3,11 @@ package spring.softunimusicdb.repository;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 import spring.softunimusicdb.model.entities.UserEntity;
+import spring.softunimusicdb.model.service.UserRegistrationServiceModel;
 
 import java.util.Optional;
 
 @Repository
 public interface UserRepository extends JpaRepository<UserEntity, Long> {
-    Optional<UserEntity> findByName(String name);
+    Optional<UserEntity> findByUsername(String username);
 }

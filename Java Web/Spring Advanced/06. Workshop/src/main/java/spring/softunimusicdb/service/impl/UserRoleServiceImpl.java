@@ -29,6 +29,8 @@ public class UserRoleServiceImpl implements UserRoleService {
 
     @Override
     public UserRoleEntity getUserRoleByRole(UserRole role) {
-        return this.userRoleRepository.getByRole(role);
+        return this.userRoleRepository.findByRole(role).orElseThrow(
+                () -> new IllegalStateException("Such role not found.")
+        );
     }
 }
