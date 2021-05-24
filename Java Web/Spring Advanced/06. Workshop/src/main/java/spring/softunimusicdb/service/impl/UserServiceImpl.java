@@ -42,12 +42,14 @@ public class UserServiceImpl implements UserService {
             UserEntity admin = new UserEntity()
                     .setUsername("admin")
                     .setEmail("admin@admin.bg")
+                    .setFullName("Admin Adminov")
                     .setPassword(passwordEncoder.encode("admin"))
                     .setRoles(List.of(this.userRoleService.getUserRoleByRole(UserRole.ADMIN),
                             this.userRoleService.getUserRoleByRole(UserRole.USER)));
 
             UserEntity user = new UserEntity()
                     .setUsername("user")
+                    .setFullName("User Userov")
                     .setEmail("user@user.bg")
                     .setPassword(passwordEncoder.encode("user"))
                     .setRoles(List.of(this.userRoleService.getUserRoleByRole(UserRole.USER)));
