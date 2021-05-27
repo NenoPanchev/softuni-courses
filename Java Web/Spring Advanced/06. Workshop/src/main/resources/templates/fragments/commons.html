@@ -16,7 +16,10 @@
 <body>
 <header th:fragment="navigation">
     <nav class="navbar navbar-expand-lg bg-nav rounded">
-        <a class="nav-link" href="/">
+        <a class="nav-link" sec:authorize="isAuthenticated()" href="/home">
+            <img src="/img/headphones.png" width="40px" alt="HeadPhones picture">
+        </a>
+        <a class="nav-link" sec:authorize="isAnonymous()" href="/">
             <img src="/img/headphones.png" width="40px" alt="HeadPhones picture">
         </a>
 
