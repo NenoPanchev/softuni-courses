@@ -22,8 +22,8 @@ public class HomeController {
     @GetMapping("/home")
     public String home(Model model) {
         model.addAttribute("firstImg", carouselService.firstImage());
-        model.addAttribute("secondImg", carouselService.firstImage());
-        model.addAttribute("thirdImg", carouselService.firstImage());
+        model.addAttribute("secondImg", carouselService.secondImage());
+        model.addAttribute("thirdImg", carouselService.thirdImage());
         return "home";
     }
 }

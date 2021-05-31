@@ -1,3 +1,7 @@
+carousel:
+    images: aerosmith.jpg, iron maiden.jpg, madonna.jpg, metallica.jpg, queen.jpg,
+        rolling stones.webp
+    refresh-cron: "0 */1 * * * *"
 logging:
     level:
         blog: WARN
@@ -17,7 +21,3 @@ spring:
             hibernate:
                 dialect: org.hibernate.dialect.MySQL8Dialect
                 format_sql: true
-
-carousel:
-    images: aerosmith.jpg, iron maiden.jpg, madonna.jpg, metallica.jpg, queen.jpg, rolling stones.webp
-    refresh-cron: "30 * * * * *"
