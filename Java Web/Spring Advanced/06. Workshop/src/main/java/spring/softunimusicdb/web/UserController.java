@@ -4,18 +4,17 @@ import org.modelmapper.ModelMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter;
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.ModelAttribute;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.servlet.ModelAndView;
+import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 import spring.softunimusicdb.model.binding.UserRegistrationBindingModel;
+import spring.softunimusicdb.model.entities.UserEntity;
 import spring.softunimusicdb.model.service.UserRegistrationServiceModel;
 import spring.softunimusicdb.service.UserService;
 
 import javax.validation.Valid;
+import java.security.Principal;
 
 @Controller
 @RequestMapping("/users")
@@ -76,5 +75,21 @@ public class UserController {
         redirectAttributes.addFlashAttribute("username", username);
 
         return "redirect:login";
+    }
+
+    @GetMapping("/update")
+    public String update(Principal principal, Model model) {
+        UserEntity userEntity = userService.findByUsername(principal.getName());
+
+        model.addAttribute("username", userEntity.getUsername());
+        model.addAttribute("userId", userEntity.getId());
+        return "update";
+    }
+
+    @PatchMapping( "/update/{id}")
+    public String updateConfirm(@PathVariable Long id) {
+        System.out.println();
+//        userService.updateUser(id, username);
+        return "redirect:/home";
     }
 }

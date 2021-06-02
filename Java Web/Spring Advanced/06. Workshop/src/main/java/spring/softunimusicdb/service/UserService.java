@@ -9,4 +9,6 @@ public interface UserService {
 
     boolean usernameExists(String username);
     UserEntity findByUsername(String username);
+
+    void updateUser(Long id, String username);
 }

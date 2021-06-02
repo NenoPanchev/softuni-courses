@@ -88,4 +88,11 @@ public class UserServiceImpl implements UserService {
         return this.userRepository.findByUsername(username)
                 .orElseThrow(() -> new IllegalStateException("Username is not in database. Please login again."));
     }
+
+    @Override
+    public void updateUser(Long id, String username) {
+        UserEntity userEntity = userRepository.findById(id).orElseThrow(IllegalStateException::new);
+        userEntity.setUsername(username);
+        userRepository.saveAndFlush(userEntity);
+    }
 }

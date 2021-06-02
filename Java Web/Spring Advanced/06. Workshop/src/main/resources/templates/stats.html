@@ -74,20 +74,20 @@
                     <table class="table table-striped table-sm">
                         <thead>
                         <tr>
-                            <th>#</th>
-                            <th>Header</th>
-                            <th>Header</th>
-                            <th>Header</th>
-                            <th>Header</th>
+                            <th>ID</th>
+                            <th>Date and Time</th>
+                            <th>Action</th>
+                            <th>Album</th>
+                            <th>User</th>
                         </tr>
                         </thead>
                         <tbody>
-                        <tr>
-                            <td>1,001</td>
-                            <td>Lorem</td>
-                            <td>ipsum</td>
-                            <td>dolor</td>
-                            <td>sit</td>
+                        <tr th:each="l : ${logs}" th:object="${l}">
+                            <td th:text="*{id}"></td>
+                            <td th:text="*{dateTime}"></td>
+                            <td th:text="*{action}"></td>
+                            <td th:text="*{album}"></td>
+                            <td th:text="*{user}"></td>
                         </tr>
 
                         </tbody>
