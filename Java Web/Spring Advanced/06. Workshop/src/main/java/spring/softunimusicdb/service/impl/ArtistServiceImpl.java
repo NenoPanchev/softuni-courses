@@ -15,6 +15,8 @@ import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.util.Arrays;
+import java.util.List;
+import java.util.stream.Collectors;
 
 @Service
 public class ArtistServiceImpl implements ArtistService {
@@ -48,5 +50,16 @@ public class ArtistServiceImpl implements ArtistService {
                 throw new IllegalStateException("Cannot seed artists");
             }
         }
+    }
+
+    @Override
+    public List<String> findAllArtistNames() {
+        return this.artistRepository.findAllArtistNames();
+    }
+
+    @Override
+    public ArtistEntity findByName(String name) {
+        return this.artistRepository.findByName(name)
+                .orElseThrow(() -> new IllegalStateException("Artist does not exist in database."));
     }
 }

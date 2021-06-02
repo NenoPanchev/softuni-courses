@@ -56,3 +56,12 @@ html body header nav.navbar.navbar-expand-lg.bg-nav.rounded div#navbarNav.collap
 html body header nav.navbar.navbar-expand-lg.bg-nav.rounded div#navbarNav.collapse.navbar-collapse.d-flex.justify-content-end ul.navbar-nav.row li.nav-item form button.btn-link.text-white.active.h5:hover {
     cursor: pointer;
 }
+
+input:valid {
+    border: lawngreen solid 2px;
+}
+
+input:invalid {
+    border: red solid 2px;
+}
+

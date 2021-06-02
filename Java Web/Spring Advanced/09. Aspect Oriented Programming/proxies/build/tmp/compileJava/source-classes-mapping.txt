@@ -1,0 +1,20 @@
+proxies/pattern/ProxyGreeter.java
+ proxies.pattern.ProxyGreeter
+proxies/cache/Test.java
+ proxies.cache.Test
+proxies/cache/CacheableInvocationHandler.java
+ proxies.cache.CacheableInvocationHandler
+proxies/cache/StudentServiceIfc.java
+ proxies.cache.StudentServiceIfc
+proxies/cache/StudentService.java
+ proxies.cache.StudentService
+proxies/pattern/Test.java
+ proxies.pattern.Test
+proxies/pattern/RealGreeter.java
+ proxies.pattern.RealGreeter
+proxies/cache/Student.java
+ proxies.cache.Student
+proxies/pattern/GreeterIfc.java
+ proxies.pattern.GreeterIfc
+proxies/cache/Cacheable.java
+ proxies.cache.Cacheable

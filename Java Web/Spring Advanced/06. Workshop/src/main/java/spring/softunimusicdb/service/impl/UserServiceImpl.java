@@ -82,4 +82,10 @@ public class UserServiceImpl implements UserService {
     public boolean usernameExists(String username) {
         return this.userRepository.findByUsername(username).isPresent();
     }
+
+    @Override
+    public UserEntity findByUsername(String username) {
+        return this.userRepository.findByUsername(username)
+                .orElseThrow(() -> new IllegalStateException("Username is not in database. Please login again."));
+    }
 }

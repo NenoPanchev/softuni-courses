@@ -27,6 +27,7 @@
                         <input type="text"
                                name="username"
                                th:value="${username}"
+                               required
                                id="inputUsername"
                                class="form-control"
                                aria-describedby="usernameHelpInline">
@@ -40,7 +41,9 @@
                         <label for="inputPassword" class="col-form-label text-light">Password</label>
                     </div>
                     <div class="col-auto">
-                        <input type="password" name="password" id="inputPassword" class="form-control"
+                        <input type="password"
+                               required
+                               name="password" id="inputPassword" class="form-control"
                                aria-describedby="passwordHelpInline">
                     </div>
                 </div>

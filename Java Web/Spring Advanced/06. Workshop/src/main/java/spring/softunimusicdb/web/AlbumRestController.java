@@ -1,6 +1,7 @@
 package spring.softunimusicdb.web;
 
 import org.modelmapper.ModelMapper;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -21,7 +22,12 @@ public class AlbumRestController {
     }
 
     @GetMapping("/api")
-    public List<AlbumViewModel> findAll() {
-        return this.albumService.showAllView();
+    public ResponseEntity<List<AlbumViewModel>> findAll() {
+        List<AlbumViewModel> albumViewModels = albumService
+                .showAllView();
+
+        return ResponseEntity
+                .ok()
+                .body(albumViewModels);
     }
 }

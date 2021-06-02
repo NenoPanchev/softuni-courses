@@ -33,8 +33,8 @@ public class AppSecurityConfig extends WebSecurityConfigurerAdapter {
                 // allow access to index, user login and reg to anyone
                 .antMatchers("/", "/users/login", "/users/register").permitAll()
                 // protect all other pages
-//        .antMatchers("/**").authenticated()
-                .anyRequest().authenticated()
+        .antMatchers("/**").authenticated()
+//                .anyRequest().authenticated()
         .and()
                 // configure login with HTML form
                 .formLogin()

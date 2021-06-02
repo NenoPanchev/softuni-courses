@@ -1,15 +1,14 @@
-package spring.softunimusicdb.model.entities;
+package spring.softunimusicdb.model.binding;
 
+import org.hibernate.validator.constraints.Length;
+import org.springframework.format.annotation.DateTimeFormat;
 import spring.softunimusicdb.model.entities.enums.Genre;
 
-import javax.persistence.*;
+import javax.validation.constraints.*;
 import java.math.BigDecimal;
-import java.time.Instant;
 import java.time.LocalDate;
 
-@Entity
-@Table(name = "albums")
-public class AlbumEntity extends BaseEntity{
+public class AlbumAddBindingModel {
     private String name;
     private String imageUrl;
     private String videoUrl;
@@ -18,28 +17,27 @@ public class AlbumEntity extends BaseEntity{
     private BigDecimal price;
     private LocalDate releaseDate;
     private Genre genre;
-    private ArtistEntity artistEntity;
-    private UserEntity userEntity;
+    private String artistName;
 
-    public AlbumEntity() {
+    public AlbumAddBindingModel() {
     }
 
-    @Column(nullable = false)
+    @Length(min = 3, max = 20)
     public String getName() {
         return name;
     }
 
-    public AlbumEntity setName(String name) {
+    public AlbumAddBindingModel setName(String name) {
         this.name = name;
         return this;
     }
 
-    @Column(nullable = false)
+    @Length(min = 6)
     public String getImageUrl() {
         return imageUrl;
     }
 
-    public AlbumEntity setImageUrl(String imageUrl) {
+    public AlbumAddBindingModel setImageUrl(String imageUrl) {
         this.imageUrl = imageUrl;
         return this;
     }
@@ -48,78 +46,73 @@ public class AlbumEntity extends BaseEntity{
         return videoUrl;
     }
 
-    public AlbumEntity setVideoUrl(String videoUrl) {
+    public AlbumAddBindingModel setVideoUrl(String videoUrl) {
         this.videoUrl = videoUrl;
         return this;
     }
 
-    @Column(nullable = false, columnDefinition = "TEXT")
+    @Length(min = 6)
     public String getDescription() {
         return description;
     }
 
-    public AlbumEntity setDescription(String description) {
+    public AlbumAddBindingModel setDescription(String description) {
         this.description = description;
         return this;
     }
 
-    @Column(nullable = false)
+    @Min(0)
+    @NotNull
     public Long getCopies() {
         return copies;
     }
 
-    public AlbumEntity setCopies(Long copies) {
+    public AlbumAddBindingModel setCopies(Long copies) {
         this.copies = copies;
         return this;
     }
 
-    @Column(nullable = false)
+    @DecimalMin("0")
+    @NotNull
     public BigDecimal getPrice() {
         return price;
     }
 
-    public AlbumEntity setPrice(BigDecimal price) {
+    public AlbumAddBindingModel setPrice(BigDecimal price) {
         this.price = price;
         return this;
     }
 
-    @Column(nullable = false)
+    @PastOrPresent(message = "Release date cannot be in the future")
+    @NotNull(message = "Enter a valid date")
+    @DateTimeFormat(pattern = "yyyy-MM-dd")
     public LocalDate getReleaseDate() {
         return releaseDate;
     }
 
-    public AlbumEntity setReleaseDate(LocalDate releaseDate) {
+    public AlbumAddBindingModel setReleaseDate(LocalDate releaseDate) {
         this.releaseDate = releaseDate;
         return this;
     }
 
-    @Enumerated(EnumType.STRING)
+    @NotNull
     public Genre getGenre() {
         return genre;
     }
 
-    public AlbumEntity setGenre(Genre genre) {
+    public AlbumAddBindingModel setGenre(Genre genre) {
         this.genre = genre;
         return this;
     }
 
-    @ManyToOne
-    public ArtistEntity getArtistEntity() {
-        return artistEntity;
+    @NotNull
+    @NotEmpty
+    public String getArtistName() {
+        return artistName;
     }
 
-    public AlbumEntity setArtistEntity(ArtistEntity artistEntity) {
-        this.artistEntity = artistEntity;
-        return this;
-    }
-
-    @ManyToOne
-    public UserEntity getUserEntity() {
-        return userEntity;
-    }
-
-    public AlbumEntity setUserEntity(UserEntity userEntity) {
-        this.userEntity = userEntity;
+    public AlbumAddBindingModel setArtistName(String artistName) {
+        this.artistName = artistName;
         return this;
     }
 }
