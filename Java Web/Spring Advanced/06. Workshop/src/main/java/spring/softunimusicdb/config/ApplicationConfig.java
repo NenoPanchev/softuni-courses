@@ -7,6 +7,7 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.crypto.password.PasswordEncoder;
+import spring.softunimusicdb.interceptor.RequestProcessingTimeInterceptor;
 
 @Configuration
 public class ApplicationConfig {
@@ -27,5 +28,10 @@ public class ApplicationConfig {
                 .excludeFieldsWithoutExposeAnnotation()
                 .setPrettyPrinting()
                 .create();
+    }
+
+    @Bean
+    public RequestProcessingTimeInterceptor requestProcessingTimeInterceptor() {
+        return new RequestProcessingTimeInterceptor();
     }
 }

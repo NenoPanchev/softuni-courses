@@ -4,7 +4,7 @@ CREATE TABLE `passports` (
 `passport_number` VARCHAR(20)
 );
 
-CREATE TABLE `persons` (
+CREATE TABLE `people` (
 `person_id` INT PRIMARY KEY AUTO_INCREMENT,
 `first_name` VARCHAR(20),
 `salary` DECIMAL(10,2),
@@ -20,7 +20,7 @@ VALUES
 (102, 'K65LO4R7'),
 (103, 'ZE657QP2');
 
-INSERT INTO `persons`
+INSERT INTO `people`
 VALUES
 (1, 'Roberto', 43300.00, 102),
 (2, 'Tom', 56100.00, 103),
@@ -58,15 +58,20 @@ VALUES
 (106, 'Nova', 3);
 
 #3
+CREATE DATABASE demo;
+USE demo;
+
 CREATE TABLE `students` (
 `student_id` INT PRIMARY KEY AUTO_INCREMENT,
 `name` VARCHAR(20)
 );
 
 CREATE TABLE `exams` (
-`exam_id` INT PRIMARY KEY,
+`exam_id` INT PRIMARY KEY AUTO_INCREMENT,
 `name` VARCHAR(30)
 );
+
+ALTER TABLE exams AUTO_INCREMENT=101;
 
 INSERT INTO `students`
 VALUES
@@ -74,11 +79,11 @@ VALUES
 (2, 'Toni'),
 (3, 'Ron');
 
-INSERT INTO `exams`
+INSERT INTO `exams`(`name`)
 VALUES
-(101, 'Spring MVC'),
-(102, 'Neo4j'),
-(103, 'Oracle 11g');
+('Spring MVC'),
+('Neo4j'),
+('Oracle 11g');
 
 CREATE TABLE `students_exams` (
 `student_id` INT,
@@ -115,6 +120,7 @@ FOREIGN KEY (`manager_id`)
 REFERENCES `teachers`(`teacher_id`)
 )AUTO_INCREMENT = 101;
 
+SET FOREIGN_KEY_CHECKS=0;
 
 INSERT INTO `teachers` (`name`, `manager_id`)
 VALUES
@@ -124,8 +130,6 @@ VALUES
 ('Ted', 105),
 ('Mark', 101),
 ('Greta', 101);
-
-SET FOREIGN_KEY_CHECKS=0;
 
 #5
 CREATE DATABASE `online_store`;
@@ -173,9 +177,11 @@ CREATE TABLE `order_items` (
 `item_id` INT,
 CONSTRAINT pk_order_items
 PRIMARY KEY (`order_id`, `item_id`),
+
 CONSTRAINT fk_order_items_items
 FOREIGN KEY (`item_id`)
 REFERENCES `items`(`item_id`),
+
 CONSTRAINT fk_order_items_orders
 FOREIGN KEY (`order_id`)
 REFERENCES `orders`(`order_id`)

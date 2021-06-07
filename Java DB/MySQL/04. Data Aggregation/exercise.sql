@@ -100,7 +100,7 @@ FROM `wizzard_deposits` AS w1,
 WHERE w2.`id` - w1.`id` = 1;
 
 #13
-SELECT `department_id`, ROUND(MIN(`salary`), 2) AS `minimum_salary`
+SELECT `department_id`, MIN(`salary`) AS `minimum_salary`
 FROM `employees`
 WHERE `department_id` IN (2, 5, 7) AND `hire_date` > '2000-01-01'
 GROUP BY `department_id`
@@ -118,7 +118,7 @@ GROUP BY `department_id`
 ORDER BY `department_id`;
 
 #15
-SELECT `department_id`, ROUND(MAX(`salary`), 2) AS `max_salary`
+SELECT `department_id`, MAX(`salary`) AS `max_salary`
 FROM `employees`
 GROUP BY `department_id`
 HAVING `max_salary` NOT BETWEEN 30000 AND 70000
@@ -130,15 +130,16 @@ FROM `employees`
 WHERE `manager_id` IS NULL;
 
 #17
-SELECT e.`department_id`, 
-(SELECT ROUND(`salary`, 2)
-FROM `employees` AS e2
-WHERE e2.`department_id` = e.`department_id`
-ORDER BY `salary` DESC
-LIMIT 2, 1) AS `third_highest_salary`
-FROM `employees` AS e
-GROUP BY `department_id`
-ORDER BY `department_id`;
+SELECT e.department_id,
+ (SELECT DISTINCT e2.salary 
+FROM employees AS e2
+WHERE e2.department_id = e.department_id
+ORDER BY salary DESC
+LIMIT 2,1) AS third_highest_salary
+FROM employees AS e
+GROUP BY e.department_id
+HAVING third_highest_salary IS NOT NULL
+ORDER BY e.department_id;
 
 #18
 SELECT e.`first_name`, e.`last_name`, e.`department_id`
@@ -150,7 +151,7 @@ ORDER BY `department_id`, `employee_id`
 LIMIT 10;
 
 #19
-SELECT `department_id`, ROUND(SUM(`salary`), 2) AS total_salary
+SELECT `department_id`, SUM(`salary`) AS total_salary
 FROM `employees`
 GROUP BY `department_id`
 ORDER BY `department_id`;

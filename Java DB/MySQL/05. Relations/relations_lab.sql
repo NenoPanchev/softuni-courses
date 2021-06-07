@@ -18,8 +18,7 @@ REFERENCES mountains(id);
 SELECT v.driver_id, v.vehicle_type, CONCAT(first_name,' ', last_name) AS `driver_name`
 FROM vehicles AS v 
 JOIN campers AS c
-ON v.driver_id = c.id
-ORDER BY v.driver_id;
+ON v.driver_id = c.id;
 
 #3
 SELECT r.`starting_point` AS `route_starting_point`,
