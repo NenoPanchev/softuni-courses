@@ -45,7 +45,7 @@ FROM employees AS e
 LEFT JOIN employees_projects AS ep
 ON ep.employee_id = e.employee_id
 WHERE ep.project_id IS NULL
-ORDER BY e.employee_id DESC
+ORDER BY e.employee_id DESC               
 LIMIT 3;
 
 #6
@@ -61,10 +61,10 @@ ORDER BY e.hire_date;
 SELECT e.employee_id, e.first_name, p.`name` AS project_name
 FROM employees AS e
 JOIN employees_projects AS ep
-ON ep.employee_id = e.employee_id
+ON e.employee_id = ep.employee_id
 JOIN projects AS p
-ON ep.project_id = p.project_id
-WHERE p.start_date > '2002-08-13'
+USING (project_id)
+WHERE DATE(p.start_date) > '2002-08-13'
 AND p.end_date IS NULL
 ORDER BY e.first_name, p.`name`
 LIMIT 5;
