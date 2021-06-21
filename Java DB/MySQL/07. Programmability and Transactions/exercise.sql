@@ -82,15 +82,18 @@ CALL usp_get_employees_by_salary_level('high');
 #7
 SELECT 'bob' REGEXP CONCAT('^[', 'oistmiahf', ']+$');
 DELIMITER $$
-CREATE FUNCTION ufn_is_word_comprised(given_letters VARCHAR(50), given_word VARCHAR(50))
+CREATE FUNCTION ufn_is_word_comprised(set_of_letters VARCHAR(50), word VARCHAR(50))
 RETURNS BOOLEAN
 DETERMINISTIC
 BEGIN 
-RETURN (SELECT given_word REGEXP CONCAT('^[', given_letters, ']+$'));
+RETURN (SELECT word REGEXP(CONCAT('^[', set_of_letters, ']+$')));
 END $$
 DELIMITER ;
 SELECT ufn_is_word_comprised('oistmiahf', 'Sofia');
 SELECT ufn_is_word_comprised('oistmiahf', 'halves');
+SELECT ufn_is_word_comprised('bobr', 'Rob');
+SELECT ufn_is_word_comprised('pppp', 'Guy');
+SELECT 1 = (SELECT ufn_is_word_comprised('oistmiahf', 'Sofia'));
 
 #8
 DELIMITER $$
@@ -148,7 +151,7 @@ ON a.account_holder_id = ah.id
 WHERE a.id = 1;
 
 DELIMITER $$
-CREATE PROCEDURE usp_calculate_future_value_for_account(given_acc_id INT, given_interest DOUBLE)
+CREATE PROCEDURE usp_calculate_future_value_for_account(given_acc_id INT, given_interest DECIMAL(19, 4))
 BEGIN
 SELECT a.id AS account_id, ah.first_name, ah.last_name, a.balance AS current_balance,
 (SELECT ufn_calculate_future_value(a2.balance, given_interest, 5)
@@ -281,7 +284,7 @@ SELECT * FROM `logs`;
 CREATE TABLE notification_emails (
 id INT PRIMARY KEY AUTO_INCREMENT,
 recipient INT,
-`subject` VARCHAR(60),
+`subject` VARCHAR(100),
 body TEXT
 );
 
@@ -297,7 +300,7 @@ INSERT INTO notification_emails (recipient, `subject`, body)
 VALUES
 (NEW.account_id, CONCAT('Balance change for account: ', NEW.account_id), 
 CONCAT('On ', DATE_FORMAT(CURRENT_TIMESTAMP(), '%b %d %Y at %r'), ' your balance was changed from ',
-ROUND(NEW.old_sum), ' to ', ROUND(NEW.new_sum), '.'));
+NEW.old_sum, ' to ', NEW.new_sum, '.'));
 END $$
 DELIMITER ;
 

@@ -40,9 +40,9 @@ ORDER BY id;
 
 #6
 SELECT id, CONCAT(first_name, ' ', last_name) AS full_name,
-CONCAT('$', salary), started_on
-FROM employees
-WHERE salary >= 100000
+CONCAT('$', salary) AS salary, started_on
+FROM employees AS e
+WHERE e.salary >= 100000
 AND started_on >= '2018-01-01'
 ORDER BY salary DESC, id;
 
@@ -62,7 +62,7 @@ FROM employees AS e
 JOIN employees_clients AS ec
 ON e.id = ec.employee_id
 GROUP BY ec.employee_id
-ORDER BY count_of_clients DESC
+ORDER BY count_of_clients DESC, ec.employee_id
 LIMIT 5;
 
 #9
@@ -97,9 +97,9 @@ DELIMITER ;
 
 SELECT c.full_name, udf_client_cards_count('Baxy David') as `cards` FROM
 clients c
-WHERE c.full_name = 'Baxy David';
+WHERE c.full_name = 'Baxy David';                   
 
-#12
+#11
 DELIMITER $$
 CREATE PROCEDURE udp_clientinfo(given_name VARCHAR(50))
 BEGIN

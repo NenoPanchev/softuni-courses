@@ -65,10 +65,10 @@ WHERE employee_id = 178;
 #4
 CREATE TABLE deleted_employees (
 employee_id INT PRIMARY KEY AUTO_INCREMENT,
-first_name VARCHAR(20),
-last_name VARCHAR(20),
-middle_name VARCHAR(20),
-job_title VARCHAR(20),
+first_name VARCHAR(50),
+last_name VARCHAR(50),
+middle_name VARCHAR(50),
+job_title VARCHAR(50),
 department_id INT,
 salary DECIMAL
 );
@@ -85,6 +85,20 @@ END $$
 
 DELIMITER ;
 
-SELECT * FROM deleted_employees;
 DELETE FROM employees
 WHERE employee_id = 293;
+SELECT * FROM deleted_employees;
+
+SELECT lower(TABLE_NAME)
+FROM information_schema.TABLES 
+WHERE lower(TABLE_SCHEMA) = database() and lower(TABLE_NAME) = 'deleted_employees';
+
+SELECT lower(COLUMN_NAME)
+FROM information_schema.COLUMNS 
+WHERE lower(TABLE_NAME) = 'deleted_employees';
+
+SELECT lower(COLUMN_NAME)
+    FROM INFORMATION_SCHEMA.key_column_usage
+    WHERE TABLE_SCHEMA = database()
+    and CONSTRAINT_NAME='PRIMARY'
+    and lower(table_name) = 'deleted_employees';
