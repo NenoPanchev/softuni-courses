@@ -9,23 +9,23 @@ public class Main {
         start(homework);
     }
     private static Homework setUp() throws SQLException {
-        System.out.println("Hello, fellow student!\r\n" +
-                "First make sure you have your 'minions_db' database, then \r\n" +
-                "Enter your MySQL user:");
+        System.out.println("Здравей, колега!\r\n" +
+                "Първо се увери, че имаш базата 'minions_db' и след това \r\n" +
+                "Въведи своя MySQL user:");
         String user = scan.nextLine();
-        System.out.println("Enter your MySQL password:");
+        System.out.println("Въведи своята MySQL password:");
         String password = scan.nextLine();
         return new Homework(user, password);
     }
     private static void start(Homework homework) {
         while (true) {
-            System.out.println("Enter the number of problem you wish to check or 0 to exit:");
+            System.out.println("Въведи номера на задачата, която искаш да провериш или 0 за изход:");
             int problem = Integer.parseInt(scan.nextLine());
 
             try {
                 switch (problem) {
                     case 0:
-                        System.out.println("Goodbye! :)");
+                        System.out.println("Довиждане! :)");
                         System.exit(0);
                     case 2:
                         homework.getVillainsNamesEx2();
@@ -52,7 +52,7 @@ public class Main {
                         homework.increaseAgeStoredProcedureEx9();
                         break;
                     default:
-                        System.out.println("Incorrect number. Try again.");
+                        System.out.println("Грешен номер. Опитай отново.");
                 }
             } catch (SQLException sqlException) {
                 sqlException.printStackTrace();

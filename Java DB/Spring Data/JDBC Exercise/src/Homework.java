@@ -22,9 +22,9 @@ public class Homework {
     }
 
     public void getVillainsNamesEx2() throws SQLException {
-        System.out.println("Enter the minimum amount of minions to get all the villains that have that many:  (15 in the example)");
+        System.out.println("Въведи минималния брой миниони, за да получиш злодеите, които имат поне толкова:  (15 в примерното условие)");
         int minimumMinions = Integer.parseInt(scan.nextLine());
-        String query = "SELECT name, COUNT(mv.minion_id) AS count\n" +
+        String query = "SELECT name, COUNT(DISTINCT mv.minion_id) AS count\n" +
                 "FROM villains AS v\n" +
                 "JOIN minions_villains mv on v.id = mv.villain_id\n" +
                 "GROUP BY v.id\n" +
@@ -40,9 +40,9 @@ public class Homework {
     }
 
     public void getMinionNamesEx3() throws SQLException {
-        System.out.println("Enter villain ID to get info of all of their minions:");
+        System.out.println("Въведи villain ID, за да получиш информация за съответните им миниони:");
         int villainId = Integer.parseInt(scan.nextLine());
-        String query = "SELECT m.name, m.age\n" +
+        String query = "SELECT DISTINCT m.name, m.age\n" +
                 "FROM villains AS v\n" +
                 "LEFT JOIN minions_villains mv on v.id = mv.villain_id\n" +
                 "LEFT JOIN minions m on mv.minion_id = m.id\n" +
@@ -66,7 +66,7 @@ public class Homework {
     }
 
     public void addMinionEx4() throws SQLException {
-        System.out.println("Enter minion and villain input together:");
+        System.out.println("Въведи данните на миниона и на злодея заедно:");
         String[] minionInfo = scan.nextLine().split("\\s+");
         String minionName = minionInfo[1];
         int minionAge = Integer.parseInt(minionInfo[2]);
@@ -106,16 +106,16 @@ public class Homework {
     }
 
     public void changeTownNamesCasingEx5() throws SQLException {
-        System.out.println("Enter a country to change its town names casing:");
+        System.out.println("Въведи името на държава:");
         String country = scan.nextLine();
 
         if (countryExists(country)) {
-        String query = "UPDATE towns\n" +
-                "SET name = UPPER(name)\n" +
-                "WHERE country = ?;";
-        PreparedStatement statement = connection.prepareStatement(query);
-        statement.setString(1, country);
-        int affectedTowns = statement.executeUpdate();
+            String query = "UPDATE towns\n" +
+                    "SET name = UPPER(name)\n" +
+                    "WHERE country = ?;";
+            PreparedStatement statement = connection.prepareStatement(query);
+            statement.setString(1, country);
+            int affectedTowns = statement.executeUpdate();
             System.out.printf("%d town names were affected.%n", affectedTowns);
             List<String> towns = new ArrayList<>();
 
@@ -134,7 +134,7 @@ public class Homework {
     }
 
     public void removeVillainEx6() throws SQLException {
-        System.out.println("Enter villain ID to delete them and release their minions:");
+        System.out.println("Въведи villain ID, да го изтриеш и освободиш минионите му:");
         int villainId = Integer.parseInt(scan.nextLine());
         String villainName = getEntityNameById(villainId, "villains");
         if (villainName == null) {
@@ -172,17 +172,18 @@ public class Homework {
             }
             counter++;
         }
+        System.out.println("Имай предвид, че за да е коректен резултатът, трябва да се зареди базата на чисто, тъй като предните задачи я модифицират.");
     }
 
     public void increaseMinionsAgeEx8() throws SQLException {
-        System.out.println("Enter minions IDs on one row, separated by space, to increase minions age by 1 year:");
+        System.out.println("Въведи minion IDs на един ред, разделени с интервал, за да увеличиш възрастта им с 1 година:");
         List<String> iDs = Arrays.stream(scan.nextLine().split("\\s+"))
                 .collect(Collectors.toList());
         String inRange = iDs.toString().replaceAll("\\[", "(");
         inRange = inRange.replaceAll("]", ")");
         String query = String.format("UPDATE minions SET age = age + 1, name = LOWER(name) WHERE id IN %s", inRange);
         PreparedStatement statement = connection.prepareStatement(query);
-       statement.execute();
+        statement.execute();
 
         String printQuery = "SELECT name, age FROM minions";
         PreparedStatement printStatement = connection.prepareStatement(printQuery);
@@ -193,7 +194,7 @@ public class Homework {
     }
 
     public void increaseAgeStoredProcedureEx9() throws SQLException {
-        System.out.println("You need to have the procedure already.\r\nEnter minion ID to call the procedure with:");
+        System.out.println("Трябва да имаш процедурата, за да сработи. Закоментирал съм една в края на Homework класа.\r\nВъведи minion ID, с което да се извика процедурата:");
         int minionId = Integer.parseInt(scan.nextLine());
 
         String callQuery = String.format("CALL usp_get_older(%d)", minionId);
@@ -268,3 +269,12 @@ public class Homework {
         statement1.execute();
     }
 }
+
+//        DELIMITER $$
+//        CREATE PROCEDURE usp_get_older(minion_id INT)
+//        BEGIN
+//        UPDATE minions
+//        SET age = age + 1
+//        WHERE id = minion_id;
+//        END $$
+//        DELIMITER ;

@@ -2,23 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6283ae8f-c59d-455d-a0b1-112f19e48604" name="Default Changelist" comment="JDBC exercise">
-      <change afterPath="$PROJECT_DIR$/../13-spring-data-advanced-querying-lab/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../13-spring-data-advanced-querying-lab/.mvn/wrapper/MavenWrapperDownloader.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../13-spring-data-advanced-querying-lab/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../13-spring-data-advanced-querying-lab/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../13-spring-data-advanced-querying-lab/mvnw" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../13-spring-data-advanced-querying-lab/mvnw.cmd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../13-spring-data-advanced-querying-lab/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../13-spring-data-advanced-querying-lab/src/main/java/com/example/springdataadvancedqueryinglab/Application.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../13-spring-data-advanced-querying-lab/src/main/java/com/example/springdataadvancedqueryinglab/domain/entities/BaseEntity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../13-spring-data-advanced-querying-lab/src/main/java/com/example/springdataadvancedqueryinglab/domain/entities/Ingredient.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../13-spring-data-advanced-querying-lab/src/main/java/com/example/springdataadvancedqueryinglab/domain/entities/Label.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../13-spring-data-advanced-querying-lab/src/main/java/com/example/springdataadvancedqueryinglab/domain/entities/Shampoo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../13-spring-data-advanced-querying-lab/src/main/java/com/example/springdataadvancedqueryinglab/domain/entities/Size.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../13-spring-data-advanced-querying-lab/src/main/java/com/example/springdataadvancedqueryinglab/domain/init/AppInitializer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../13-spring-data-advanced-querying-lab/src/main/java/com/example/springdataadvancedqueryinglab/domain/services/ShampooService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../13-spring-data-advanced-querying-lab/src/main/resources/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../13-spring-data-advanced-querying-lab/src/test/java/com/example/springdataadvancedqueryinglab/ApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JDBC Exercise/Homework.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JDBC Exercise/Homework.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JDBC Exercise/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JDBC Exercise/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Homework.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Homework.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,7 +41,11 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="extract.method.default.visibility" value="private" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/lib/mysql-connector-java-8.0.21.jar" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -61,6 +54,17 @@
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
       <module name="JDBC Exercise" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -86,6 +90,7 @@
       <workItem from="1612184926124" duration="755000" />
       <workItem from="1612210710138" duration="62000" />
       <workItem from="1613923396770" duration="46000" />
+      <workItem from="1624524680846" duration="6128000" />
     </task>
     <task id="LOCAL-00001" summary="JDBC exercise">
       <created>1611777012390</created>
