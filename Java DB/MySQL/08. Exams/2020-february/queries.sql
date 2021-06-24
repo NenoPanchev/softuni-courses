@@ -1,7 +1,7 @@
 #2
 INSERT INTO coaches (first_name, last_name, salary, coach_level)
-SELECT first_name, last_name, salary, CHAR_LENGTH(first_name)
-FROM players 
+SELECT first_name, last_name, (p.salary * 2) AS salary, CHAR_LENGTH(first_name)
+FROM players AS p
 WHERE age >= 45;
 
 #3

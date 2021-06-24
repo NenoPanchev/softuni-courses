@@ -14,10 +14,10 @@ SET `comment` =
 	WHEN id % 3 = 0 THEN 'This is interesting.'
 	WHEN id % 5 = 0 THEN 'I definitely will read the article again.'
 	WHEN id % 7 = 0 THEN 'The universe is such an amazing thing.'
-    ELSE `comment` 
+    ELSE 'comment' 
     END
 )
-WHERE id BETWEEN 1 AND 15;
+WHERE id BETWEEN 1 AND 15; 
 
 #4
 DELETE FROM articles
