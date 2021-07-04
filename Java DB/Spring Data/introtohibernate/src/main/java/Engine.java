@@ -31,7 +31,7 @@ public class Engine implements Runnable{
 
             try {
                 problem = Integer.parseInt(reader.readLine());
-            } catch (IOException e) {
+            } catch (IOException | NumberFormatException e) {
                 e.printStackTrace();
             }
 
@@ -80,7 +80,7 @@ public class Engine implements Runnable{
                     default:
                         System.out.println("Incorrect number. Try again.");
                 }
-            } catch (IndexOutOfBoundsException | IOException e) {
+            } catch (IndexOutOfBoundsException | IOException | NumberFormatException e) {
 
             }
             System.out.println();
