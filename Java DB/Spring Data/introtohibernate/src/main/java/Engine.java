@@ -138,11 +138,13 @@ public class Engine implements Runnable{
     }
 
     private void addingANewAddressAndUpdatingEmployeeEx6() throws IOException {
-        Address address = createAddress("Vitoshka 15");
-        System.out.println("Enter employee's last name to update their address:");
-        String lastName = reader.readLine();
+
 
         try {
+            Address address = createAddress("Vitoshka 15");
+            System.out.println("Enter employee's last name to update their address:");
+            String lastName = reader.readLine();
+
         Employee employee = entityManager
                 .createQuery("SELECT e FROM Employee e " +
                         "WHERE e.lastName = :name", Employee.class)
