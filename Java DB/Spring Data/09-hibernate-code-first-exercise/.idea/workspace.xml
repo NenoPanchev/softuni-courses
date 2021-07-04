@@ -5,23 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8b4d1c30-8333-490d-981c-d7248fe57344" name="Default Changelist" comment="Building DB code first">
-      <change afterPath="$PROJECT_DIR$/../13-spring-data-advanced-querying-lab/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../13-spring-data-advanced-querying-lab/.mvn/wrapper/MavenWrapperDownloader.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../13-spring-data-advanced-querying-lab/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../13-spring-data-advanced-querying-lab/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../13-spring-data-advanced-querying-lab/mvnw" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../13-spring-data-advanced-querying-lab/mvnw.cmd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../13-spring-data-advanced-querying-lab/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../13-spring-data-advanced-querying-lab/src/main/java/com/example/springdataadvancedqueryinglab/Application.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../13-spring-data-advanced-querying-lab/src/main/java/com/example/springdataadvancedqueryinglab/domain/entities/BaseEntity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../13-spring-data-advanced-querying-lab/src/main/java/com/example/springdataadvancedqueryinglab/domain/entities/Ingredient.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../13-spring-data-advanced-querying-lab/src/main/java/com/example/springdataadvancedqueryinglab/domain/entities/Label.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../13-spring-data-advanced-querying-lab/src/main/java/com/example/springdataadvancedqueryinglab/domain/entities/Shampoo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../13-spring-data-advanced-querying-lab/src/main/java/com/example/springdataadvancedqueryinglab/domain/entities/Size.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../13-spring-data-advanced-querying-lab/src/main/java/com/example/springdataadvancedqueryinglab/domain/init/AppInitializer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../13-spring-data-advanced-querying-lab/src/main/java/com/example/springdataadvancedqueryinglab/domain/services/ShampooService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../13-spring-data-advanced-querying-lab/src/main/resources/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../13-spring-data-advanced-querying-lab/src/test/java/com/example/springdataadvancedqueryinglab/ApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Exams/Exam – 3 April 2020 - Airline Company/.idea/dataSources/93ff5622-3ca0-4c31-8234-486a86726da7/storage_v2/_src_/schema/mysql.osA4Bg.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Exams/Exam – 3 April 2020 - Airline Company/.idea/dataSources/93ff5622-3ca0-4c31-8234-486a86726da7/storage_v2/_src_/schema/performance_schema.kIw0nw.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../introtohibernate/.idea/dataSources/6e89f208-d9aa-4491-a9b3-d1501bf2f28d/storage_v2/_src_/schema/mysql.osA4Bg.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../introtohibernate/.idea/dataSources/6e89f208-d9aa-4491-a9b3-d1501bf2f28d/storage_v2/_src_/schema/performance_schema.kIw0nw.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Java Web/Spring Fundamentals/Exam preparation/daily-nail/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Java Web/Spring Fundamentals/Exam preparation/daily-nail/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Java Web/Spring Fundamentals/Exam preparation/daily-nail/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Java Web/Spring Fundamentals/Exam preparation/daily-nail/daily-nail.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JDBC Exercise/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../JDBC Exercise/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JDBC Exercise/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../JDBC Exercise/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../introtohibernate/.idea/dataSources/6e89f208-d9aa-4491-a9b3-d1501bf2f28d.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../introtohibernate/.idea/dataSources/6e89f208-d9aa-4491-a9b3-d1501bf2f28d.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../introtohibernate/src/main/resources/META-INF/persistence.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../introtohibernate/src/main/resources/META-INF/persistence.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,6 +49,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../14-spring-data-advanced-querying-ex" />
   </component>
   <component name="RunManager">
     <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
@@ -83,6 +79,7 @@
       <workItem from="1613665450798" duration="237000" />
       <workItem from="1613670636792" duration="19000" />
       <workItem from="1613923331102" duration="16000" />
+      <workItem from="1625142117959" duration="78000" />
     </task>
     <task id="LOCAL-00001" summary="Building DB code first">
       <created>1612858597469</created>

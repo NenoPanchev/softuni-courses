@@ -1,6 +1,7 @@
 import entities.*;
 
 import javax.persistence.EntityManager;
+import javax.persistence.NoResultException;
 import javax.persistence.Query;
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -8,6 +9,7 @@ import java.io.InputStreamReader;
 import java.math.BigDecimal;
 import java.time.format.DateTimeFormatter;
 import java.util.Comparator;
+import java.util.HashSet;
 import java.util.List;
 
 public class Engine implements Runnable{
@@ -95,7 +97,7 @@ public class Engine implements Runnable{
         towns.forEach(entityManager::detach);
 
         for (Town town : towns) {
-            town.setName(town.getName().toLowerCase());
+            town.setName(town.getName().toUpperCase());
         }
         towns.forEach(entityManager::merge);
         entityManager.flush();
@@ -137,17 +139,23 @@ public class Engine implements Runnable{
 
     private void addingANewAddressAndUpdatingEmployeeEx6() throws IOException {
         Address address = createAddress("Vitoshka 15");
-        System.out.println("Enter employee last name to update their address:");
+        System.out.println("Enter employee's last name to update their address:");
         String lastName = reader.readLine();
+
+        try {
         Employee employee = entityManager
                 .createQuery("SELECT e FROM Employee e " +
                         "WHERE e.lastName = :name", Employee.class)
                 .setParameter("name", lastName)
                 .getSingleResult();
+            entityManager.getTransaction().begin();
+            employee.setAddress(address);
+            address.getEmployees().add(employee);
+            entityManager.getTransaction().commit();
 
-        entityManager.getTransaction().begin();
-        employee.setAddress(address);
-        entityManager.getTransaction().commit();
+        } catch (NoResultException noResultException) {
+            System.out.println("No such employee.");
+        }
     }
 
     private void addressesWithEmployeeCountEx7() {
@@ -168,6 +176,10 @@ public class Engine implements Runnable{
 
         Employee employee = entityManager
                 .find(Employee.class, employeeId);
+        if (employee == null) {
+            System.out.println("Employee with that ID does not exist");
+            return;
+        }
         System.out.printf("%s %s - %s%n", employee.getFirstName(), employee.getLastName(), employee.getJobTitle());
         employee.getProjects().stream()
                 .sorted(Comparator.comparing(Project::getName))
@@ -291,6 +303,7 @@ public class Engine implements Runnable{
                         "WHERE t.name = 'Sofia'", Town.class)
                 .getSingleResult();
         address.setTown(town);
+        address.setEmployees(new HashSet<>());
 
         entityManager.getTransaction().begin();
         entityManager.persist(address);
