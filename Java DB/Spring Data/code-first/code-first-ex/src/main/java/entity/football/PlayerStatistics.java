@@ -5,11 +5,10 @@ import entity.football.composite.PlayerStatisticsPK;
 import javax.persistence.*;
 import java.io.Serializable;
 
-@Entity(name = "player_statistics")
-@IdClass(PlayerStatisticsPK.class)
+@Entity
+@Table(name = "player_statistics")
 public class PlayerStatistics implements Serializable {
-    private Game game;
-    private Player player;
+    private PlayerStatisticsPK playerStatisticsPK;
     private Short scoredGoals;
     private Short playerAssists;
     private Short playedMinutes;
@@ -17,27 +16,6 @@ public class PlayerStatistics implements Serializable {
     public PlayerStatistics() {
     }
 
-    @Id
-    @ManyToOne
-    public Game getGame() {
-        return game;
-    }
-
-    public PlayerStatistics setGame(Game game) {
-        this.game = game;
-        return this;
-    }
-
-    @Id
-    @ManyToOne
-    public Player getPlayer() {
-        return player;
-    }
-
-    public PlayerStatistics setPlayer(Player player) {
-        this.player = player;
-        return this;
-    }
 
     @Column(name = "scored_goals")
     public Short getScoredGoals() {
@@ -66,6 +44,16 @@ public class PlayerStatistics implements Serializable {
 
     public PlayerStatistics setPlayedMinutes(Short playedMinutes) {
         this.playedMinutes = playedMinutes;
+        return this;
+    }
+
+    @EmbeddedId
+    public PlayerStatisticsPK getPlayerStatisticsPK() {
+        return playerStatisticsPK;
+    }
+
+    public PlayerStatistics setPlayerStatisticsPK(PlayerStatisticsPK playerStatisticsPK) {
+        this.playerStatisticsPK = playerStatisticsPK;
         return this;
     }
 }

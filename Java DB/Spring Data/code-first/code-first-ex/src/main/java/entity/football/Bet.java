@@ -29,7 +29,7 @@ public class Bet extends BaseEntity {
         return this;
     }
 
-    @Column(name = "date_and_time_of_bet")
+    @Column(name = "date_time")
     public LocalDateTime getDateTime() {
         return dateTime;
     }

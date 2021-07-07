@@ -4,7 +4,6 @@ import entity.BaseEntity;
 
 import javax.persistence.*;
 import java.time.LocalDateTime;
-import java.util.Set;
 
 @Entity
 @Table(name = "games")
@@ -19,13 +18,12 @@ public class Game extends BaseEntity {
     private Float drawGameBetRate;
     private Round round;
     private Competition competition;
-    private Set<Player> players;
 
     public Game() {
     }
 
     @ManyToOne
-    @JoinColumn(name = "home_team_id", referencedColumnName = "id")
+    @JoinColumn(name = "home_team", referencedColumnName = "id")
     public Team getHomeTeam() {
         return homeTeam;
     }
@@ -36,7 +34,7 @@ public class Game extends BaseEntity {
     }
 
     @ManyToOne
-    @JoinColumn(name = "away_team_id", referencedColumnName = "id")
+    @JoinColumn(name = "away_team", referencedColumnName = "id")
     public Team getAwayTeam() {
         return awayTeam;
     }
@@ -46,7 +44,7 @@ public class Game extends BaseEntity {
         return this;
     }
 
-    @Column(name = "home_goals")
+    @Column(name = "home_team_goals")
     public Short getHomeGoals() {
         return homeGoals;
     }
@@ -56,7 +54,7 @@ public class Game extends BaseEntity {
         return this;
     }
 
-    @Column(name = "away_goals")
+    @Column(name = "away_team_goals")
     public Short getAwayGoals() {
         return awayGoals;
     }
@@ -66,7 +64,7 @@ public class Game extends BaseEntity {
         return this;
     }
 
-    @Column(name = "date_and_time_of_game")
+    @Column(name = "date_time")
     public LocalDateTime getDateTime() {
         return dateTime;
     }
@@ -126,13 +124,4 @@ public class Game extends BaseEntity {
         return this;
     }
 
-    @ManyToMany(mappedBy = "games")
-    public Set<Player> getPlayers() {
-        return players;
-    }
-
-    public Game setPlayers(Set<Player> players) {
-        this.players = players;
-        return this;
-    }
 }

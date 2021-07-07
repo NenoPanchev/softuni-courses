@@ -3,12 +3,14 @@ package entity.football;
 import entity.BaseEntity;
 
 import javax.persistence.*;
+import java.util.Set;
 
 @Entity
 @Table(name = "competitions")
 public class Competition extends BaseEntity {
     private String name;
     private CompetitionType competitionType;
+    private Set<Game> games;
 
     public Competition() {
     }
@@ -31,6 +33,16 @@ public class Competition extends BaseEntity {
 
     public Competition setType(CompetitionType competitionType) {
         this.competitionType = competitionType;
+        return this;
+    }
+
+    @OneToMany(mappedBy = "competition")
+    public Set<Game> getGames() {
+        return games;
+    }
+
+    public Competition setGames(Set<Game> games) {
+        this.games = games;
         return this;
     }
 }

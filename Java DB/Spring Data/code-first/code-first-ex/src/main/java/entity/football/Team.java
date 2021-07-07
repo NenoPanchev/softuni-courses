@@ -52,7 +52,7 @@ public class Team extends BaseEntity {
     }
 
     @ManyToOne
-    @JoinColumn(name = "primary_kit_color_id", referencedColumnName = "id")
+    @JoinColumn(name = "primary_kit_color", referencedColumnName = "id")
     public Color getPrimaryKitColor() {
         return primaryKitColor;
     }
@@ -63,7 +63,7 @@ public class Team extends BaseEntity {
     }
 
     @ManyToOne
-    @JoinColumn(name = "secondary_kit_color_id", referencedColumnName = "id")
+    @JoinColumn(name = "secondary_kit_color", referencedColumnName = "id")
     public Color getSecondaryKitColor() {
         return SecondaryKitColor;
     }

@@ -13,7 +13,6 @@ public class Player extends BaseEntity {
     private Team team;
     private Position position;
     private boolean isInjured;
-    private Set<Game> games;
 
     public Player() {
     }
@@ -68,17 +67,4 @@ public class Player extends BaseEntity {
         return this;
     }
 
-    @ManyToMany
-    @JoinTable(
-            joinColumns = @JoinColumn(name = "player_id", referencedColumnName = "id"),
-            inverseJoinColumns = @JoinColumn(name = "game_id", referencedColumnName = "id")
-    )
-    public Set<Game> getGames() {
-        return games;
-    }
-
-    public Player setGames(Set<Game> games) {
-        this.games = games;
-        return this;
-    }
 }

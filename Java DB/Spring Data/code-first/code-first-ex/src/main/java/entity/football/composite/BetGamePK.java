@@ -1,18 +1,18 @@
 package entity.football.composite;
 
+import entity.football.Bet;
 import entity.football.Game;
-import entity.football.Player;
 
 import javax.persistence.Embeddable;
 import javax.persistence.ManyToOne;
 import java.io.Serializable;
 
 @Embeddable
-public class PlayerStatisticsPK implements Serializable {
+public class BetGamePK implements Serializable {
     private Game game;
-    private Player player;
+    private Bet bet;
 
-    public PlayerStatisticsPK() {
+    public BetGamePK() {
     }
 
     @ManyToOne
@@ -20,18 +20,18 @@ public class PlayerStatisticsPK implements Serializable {
         return game;
     }
 
-    public PlayerStatisticsPK setGame(Game game) {
+    public BetGamePK setGame(Game game) {
         this.game = game;
         return this;
     }
 
     @ManyToOne
-    public Player getPlayer() {
-        return player;
+    public Bet getBet() {
+        return bet;
     }
 
-    public PlayerStatisticsPK setPlayer(Player player) {
-        this.player = player;
+    public BetGamePK setBet(Bet bet) {
+        this.bet = bet;
         return this;
     }
 }
