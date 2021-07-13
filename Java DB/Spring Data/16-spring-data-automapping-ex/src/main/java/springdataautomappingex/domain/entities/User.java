@@ -3,6 +3,7 @@ package springdataautomappingex.domain.entities;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
+import springdataautomappingex.domain.entities.enums.Role;
 
 import javax.persistence.*;
 import javax.validation.constraints.Email;
@@ -23,6 +24,9 @@ public class User extends BaseEntity{
     private String password;
     private String fullName;
     @ManyToMany(fetch = FetchType.EAGER)
+    @JoinTable(
+            inverseJoinColumns = @JoinColumn(name = "game_id", referencedColumnName = "id")
+    )
     private Set<Game> games = new LinkedHashSet<>();
     @Enumerated(value = EnumType.STRING)
     private Role role;

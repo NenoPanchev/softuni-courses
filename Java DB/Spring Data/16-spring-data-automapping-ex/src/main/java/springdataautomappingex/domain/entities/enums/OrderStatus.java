@@ -1,4 +1,4 @@
-package springdataautomappingex.domain.entities;
+package springdataautomappingex.domain.entities.enums;
 
 public enum OrderStatus {
     IN_PROGRESS, FINISHED;

@@ -44,7 +44,7 @@ public class GameServiceImpl implements GameService {
     @Override
     public void editGame(String[] data) {
         if (!this.userService.isLoggedUserAdmin()) {
-            System.out.println("Only admin cad edit games.");
+            System.out.println("Only admin can edit games.");
             return;
         }
 
@@ -91,7 +91,7 @@ public class GameServiceImpl implements GameService {
         if (this.validationUtil.isValid(gameEditDto)) {
             Game game1 = this.modelMapper.map(gameEditDto, Game.class);
             this.gameRepository.saveAndFlush(game1);
-            System.out.printf("%s edited%n", game1.getTitle());
+            System.out.printf("Edited %s%n", game1.getTitle());
         } else {
             this.validationUtil.getViolations(gameEditDto)
                     .stream()
@@ -103,7 +103,7 @@ public class GameServiceImpl implements GameService {
     @Override
     public void deleteGame(long id) {
         if (!this.userService.isLoggedUserAdmin()) {
-            System.out.println("Only admin cad delete games.");
+            System.out.println("Only admin can delete games.");
             return;
         }
         Optional<Game> game = this.gameRepository.findById(id);
@@ -113,7 +113,7 @@ public class GameServiceImpl implements GameService {
         }
         String gameName = game.get().getTitle();
         this.gameRepository.deleteById(id);
-        System.out.printf("%s deleted%n", gameName);
+        System.out.printf("Deleted %s%n", gameName);
     }
 
     @Override

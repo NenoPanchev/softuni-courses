@@ -4,7 +4,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import springdataautomappingex.domain.entities.Game;
 import springdataautomappingex.domain.entities.Order;
-import springdataautomappingex.domain.entities.OrderStatus;
+import springdataautomappingex.domain.entities.enums.OrderStatus;
 import springdataautomappingex.domain.entities.User;
 import springdataautomappingex.repositories.OrderRepository;
 import springdataautomappingex.services.GameService;

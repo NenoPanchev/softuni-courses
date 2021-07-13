@@ -7,7 +7,7 @@ import org.springframework.stereotype.Service;
 import springdataautomappingex.domain.dtos.UserDto;
 import springdataautomappingex.domain.dtos.UserLoginDto;
 import springdataautomappingex.domain.dtos.UserRegisterDto;
-import springdataautomappingex.domain.entities.Role;
+import springdataautomappingex.domain.entities.enums.Role;
 import springdataautomappingex.domain.entities.User;
 import springdataautomappingex.repositories.UserRepository;
 import springdataautomappingex.services.UserService;
