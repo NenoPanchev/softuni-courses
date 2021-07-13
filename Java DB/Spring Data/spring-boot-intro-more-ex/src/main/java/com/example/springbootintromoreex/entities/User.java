@@ -1,7 +1,11 @@
 package com.example.springbootintromoreex.entities;
 
+import org.hibernate.validator.constraints.Length;
+
 import javax.persistence.*;
 import javax.validation.constraints.Email;
+import javax.validation.constraints.Min;
+import javax.validation.constraints.Pattern;
 import javax.validation.constraints.Size;
 import java.time.LocalDateTime;
 import java.util.Set;
@@ -40,6 +44,7 @@ public class User {
     }
 
     @Column(name = "username", length = 30, nullable = false)
+    @Length(min = 4, max = 30)
     public String getUsername() {
         return username;
     }
@@ -48,7 +53,8 @@ public class User {
         this.username = username;
     }
 
-
+    @Column(nullable = false, length = 50)
+    @Pattern(regexp = "^(?=.*[a-z])(?=.*[A-Z])(?=.*\\d)(?=.*[@$!%*?&#^()_+<>])[A-Za-z\\d@$!%*?&#^()_+<>]{6,50}$")
     public String getPassword() {
         return password;
     }
@@ -84,7 +90,8 @@ public class User {
         this.lastTimeLoggedIn = lastTimeLoggedIn;
     }
 
-    @Column()
+    @Column
+    @Size(min = 1, max = 120)
     public int getAge() {
         return age;
     }
@@ -149,6 +156,10 @@ public class User {
     }
 
     @ManyToMany
+    @JoinTable(
+            joinColumns = @JoinColumn(name = "user_id", referencedColumnName = "id"),
+            inverseJoinColumns = @JoinColumn(name = "friend_id")
+    )
     public Set<User> getFriends() {
         return friends;
     }
