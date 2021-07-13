@@ -85,6 +85,10 @@ public class Book extends BaseEntity{
     }
 
     @ManyToMany(cascade = CascadeType.ALL, fetch = FetchType.EAGER)
+    @JoinTable (
+            joinColumns = @JoinColumn(name = "book_id", referencedColumnName = "id"),
+            inverseJoinColumns = @JoinColumn(name = "category_id", referencedColumnName = "id")
+    )
     public Set<Category> getCategories() {
         return categories;
     }
