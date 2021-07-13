@@ -27,7 +27,7 @@ public interface BookRepository extends JpaRepository<Book, Long> {
 
     @Query("SELECT b from Book b JOIN b.author a " +
             "WHERE a.lastName LIKE :pattern%")
-    List<Book> findAllByAuthorLastNameEndingWith(@Param("pattern") String pattern);
+    List<Book> findAllByAuthorLastNameStartingWith(@Param("pattern") String pattern);
 
     @Query("SELECT COUNT(b) FROM Book b WHERE LENGTH(b.title) > :param")
     int countByTitleLongerThan(@Param("param") int length);

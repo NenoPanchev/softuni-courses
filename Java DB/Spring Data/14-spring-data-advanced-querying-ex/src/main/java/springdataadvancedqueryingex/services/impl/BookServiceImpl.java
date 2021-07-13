@@ -99,7 +99,7 @@ public class BookServiceImpl implements BookService {
 
     @Override
     public List<Book> getBooksByPatternInTheirLastNameEx8(String pattern) {
-        return this.bookRepository.findAllByAuthorLastNameEndingWith(pattern);
+        return this.bookRepository.findAllByAuthorLastNameStartingWith(pattern);
     }
 
     @Override
