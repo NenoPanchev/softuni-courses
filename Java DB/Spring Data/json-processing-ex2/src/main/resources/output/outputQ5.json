@@ -1,132 +1,127 @@
 [
   {
-    "fullName": "Rico Peer",
-    "boughtCars": 5,
-    "spentMoney": 22369.0020
-  },
-  {
-    "fullName": "Garret Capron",
-    "boughtCars": 3,
-    "spentMoney": 22031.5745
-  },
-  {
-    "fullName": "Oren Perlman",
-    "boughtCars": 4,
-    "spentMoney": 13277.8910
-  },
-  {
-    "fullName": "Yvonne Mccalla",
-    "boughtCars": 3,
-    "spentMoney": 12049.9200
-  },
-  {
-    "fullName": "Hipolito Lamoreaux",
-    "boughtCars": 2,
-    "spentMoney": 9196.1040
-  },
-  {
-    "fullName": "Natalie Poli",
-    "boughtCars": 3,
-    "spentMoney": 9151.5610
-  },
-  {
-    "fullName": "Taina Achenbach",
-    "boughtCars": 2,
-    "spentMoney": 8021.5110
-  },
-  {
     "fullName": "Ann Mcenaney",
-    "boughtCars": 2,
-    "spentMoney": 7764.6020
+    "boughtCars": 4,
+    "spentMoney": 6738.8530
   },
   {
-    "fullName": "Audrea Cardinal",
-    "boughtCars": 2,
-    "spentMoney": 7482.4560
+    "fullName": "Cinthia Lasala",
+    "boughtCars": 3,
+    "spentMoney": 6096.1200
   },
   {
     "fullName": "Lino Subia",
-    "boughtCars": 2,
-    "spentMoney": 6781.1880
+    "boughtCars": 4,
+    "spentMoney": 4550.0260
   },
   {
-    "fullName": "Faustina Burgher",
+    "fullName": "Taina Achenbach",
+    "boughtCars": 1,
+    "spentMoney": 4312.0025
+  },
+  {
+    "fullName": "Rema Revelle",
     "boughtCars": 2,
-    "spentMoney": 6604.5960
+    "spentMoney": 2450.7405
+  },
+  {
+    "fullName": "Yvonne Mccalla",
+    "boughtCars": 2,
+    "spentMoney": 2411.7300
+  },
+  {
+    "fullName": "Garret Capron",
+    "boughtCars": 1,
+    "spentMoney": 2083.1680
   },
   {
     "fullName": "Jimmy Grossi",
     "boughtCars": 2,
-    "spentMoney": 6019.8705
+    "spentMoney": 2028.0960
+  },
+  {
+    "fullName": "Faustina Burgher",
+    "boughtCars": 1,
+    "spentMoney": 2020.6215
+  },
+  {
+    "fullName": "Carri Knapik",
+    "boughtCars": 1,
+    "spentMoney": 1954.8525
+  },
+  {
+    "fullName": "Zada Attwood",
+    "boughtCars": 2,
+    "spentMoney": 1677.0775
+  },
+  {
+    "fullName": "Oren Perlman",
+    "boughtCars": 2,
+    "spentMoney": 1578.1360
   },
   {
     "fullName": "Kristian Engberg",
-    "boughtCars": 1,
-    "spentMoney": 5847.0030
+    "boughtCars": 2,
+    "spentMoney": 1093.0275
   },
   {
     "fullName": "Hai Everton",
     "boughtCars": 3,
-    "spentMoney": 5691.4260
+    "spentMoney": 1003.1050
   },
   {
-    "fullName": "Sylvie Mcelravy",
-    "boughtCars": 2,
-    "spentMoney": 5618.4635
-  },
-  {
-    "fullName": "Teddy Hobby",
-    "boughtCars": 2,
-    "spentMoney": 4787.8480
-  },
-  {
-    "fullName": "Cinthia Lasala",
-    "boughtCars": 1,
-    "spentMoney": 3900.3120
-  },
-  {
-    "fullName": "Brett Brickley",
-    "boughtCars": 1,
-    "spentMoney": 3514.6880
+    "fullName": "Johnette Derryberry",
+    "boughtCars": 3,
+    "spentMoney": 929.8400
   },
   {
     "fullName": "Marcelle Griego",
     "boughtCars": 1,
-    "spentMoney": 3063.5730
+    "spentMoney": 895.1910
+  },
+  {
+    "fullName": "Carole Witman",
+    "boughtCars": 2,
+    "spentMoney": 753.6630
+  },
+  {
+    "fullName": "Brett Brickley",
+    "boughtCars": 1,
+    "spentMoney": 627.3705
+  },
+  {
+    "fullName": "Francis Mckim",
+    "boughtCars": 3,
+    "spentMoney": 578.3920
+  },
+  {
+    "fullName": "Sylvie Mcelravy",
+    "boughtCars": 2,
+    "spentMoney": 501.6610
+  },
+  {
+    "fullName": "Natalie Poli",
+    "boughtCars": 2,
+    "spentMoney": 460.7410
   },
   {
     "fullName": "Louann Holzworth",
-    "boughtCars": 1,
-    "spentMoney": 2551.6335
+    "boughtCars": 2,
+    "spentMoney": 400.0035
   },
   {
-    "fullName": "Donnetta Soliz",
-    "boughtCars": 1,
-    "spentMoney": 2504.8710
+    "fullName": "Hipolito Lamoreaux",
+    "boughtCars": 2,
+    "spentMoney": 355.0450
   },
   {
-    "fullName": "Nisha Markwell",
+    "fullName": "Audrea Cardinal",
     "boughtCars": 1,
-    "spentMoney": 2442.4310
+    "spentMoney": 344.8215
   },
   {
     "fullName": "Emmitt Benally",
     "boughtCars": 1,
-    "spentMoney": 2355.2550
-  },
-  {
-    "fullName": "Zada Attwood",
-    "boughtCars": 1,
-    "spentMoney": 1958.0550
-  },
-  {
-    "fullName": "Francis Mckim",
-    "boughtCars": 1,
-    "spentMoney": 712.1250
-  },
-  {
-    "fullName": "Johnette Derryberry",
-    "boughtCars": 1,
-    "spentMoney": 633.0000
+    "spentMoney": 48.9280
   }
 ]

@@ -7,5 +7,5 @@ import java.util.Set;
 
 public interface PartService {
     void seedParts(PartSeedDto[] dtos);
-    Set<Part> getSetOfTenToTwentyRandomParts();
+    Set<Part> getSetOfThreeToFiveRandomParts();
 }

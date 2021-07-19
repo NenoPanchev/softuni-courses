@@ -6,8 +6,13 @@
     "IsYoungDriver": false,
     "Sales": [
       {
-        "Make": "Renault",
-        "Model": "Alaskan",
+        "Make": "Citroen",
+        "Model": "Elysée",
+        "Discount": 0.30
+      },
+      {
+        "Make": "Toyota",
+        "Model": "Corolla",
         "Discount": 0.05
       }
     ]
@@ -17,27 +22,38 @@
     "Name": "Donnetta Soliz",
     "BirthDate": "1963-10-01T00:00:00",
     "IsYoungDriver": true,
-    "Sales": [
-      {
-        "Make": "Mercedes",
-        "Model": "W210",
-        "Discount": 0.10
-      }
-    ]
+    "Sales": []
   },
   {
     "Id": 17,
     "Name": "Rema Revelle",
     "BirthDate": "1970-05-01T00:00:00",
     "IsYoungDriver": true,
-    "Sales": []
+    "Sales": [
+      {
+        "Make": "BMW",
+        "Model": "F04",
+        "Discount": 0.25
+      },
+      {
+        "Make": "Lamborghini",
+        "Model": "Gallardo",
+        "Discount": 0.45
+      }
+    ]
   },
   {
     "Id": 16,
     "Name": "Carri Knapik",
     "BirthDate": "1972-02-02T00:00:00",
     "IsYoungDriver": true,
-    "Sales": []
+    "Sales": [
+      {
+        "Make": "Rolls-Royce",
+        "Model": "Wraith",
+        "Discount": 0.25
+      }
+    ]
   },
   {
     "Id": 27,
@@ -46,19 +62,9 @@
     "IsYoungDriver": false,
     "Sales": [
       {
-        "Make": "Peugeot",
-        "Model": "206",
-        "Discount": 0.15
-      },
-      {
-        "Make": "Peugeot",
-        "Model": "405",
-        "Discount": 0.10
-      },
-      {
-        "Make": "Great Wall",
-        "Model": "Haval H6",
-        "Discount": 0.05
+        "Make": "Opel",
+        "Model": "Omega",
+        "Discount": 0.20
       }
     ]
   },
@@ -67,18 +73,7 @@
     "Name": "Teddy Hobby",
     "BirthDate": "1975-10-01T00:00:00",
     "IsYoungDriver": true,
-    "Sales": [
-      {
-        "Make": "Nissan",
-        "Model": "GT-R",
-        "Discount": 0.35
-      },
-      {
-        "Make": "BMW",
-        "Model": "E88",
-        "Discount": 0.35
-      }
-    ]
+    "Sales": []
   },
   {
     "Id": 10,
@@ -87,14 +82,9 @@
     "IsYoungDriver": false,
     "Sales": [
       {
-        "Make": "Renault",
-        "Model": "Captur",
-        "Discount": 0.40
-      },
-      {
-        "Make": "Peugeot",
-        "Model": "308",
-        "Discount": 0.15
+        "Make": "Seat",
+        "Model": "Toledo",
+        "Discount": 0.05
       }
     ]
   },
@@ -105,9 +95,19 @@
     "IsYoungDriver": true,
     "Sales": [
       {
-        "Make": "Ferrari",
-        "Model": "Daytona",
-        "Discount": 0.10
+        "Make": "Toyota",
+        "Model": "Prius",
+        "Discount": 0.35
+      },
+      {
+        "Make": "Citroen",
+        "Model": "C1",
+        "Discount": 0.25
+      },
+      {
+        "Make": "Mercedes",
+        "Model": "W212",
+        "Discount": 0.25
       }
     ]
   },
@@ -118,9 +118,9 @@
     "IsYoungDriver": true,
     "Sales": [
       {
-        "Make": "Rolls-Royce",
-        "Model": "Ghost",
-        "Discount": 0.20
+        "Make": "Toyota",
+        "Model": "Camry Hybrid",
+        "Discount": 0.05
       }
     ]
   },
@@ -131,9 +131,14 @@
     "IsYoungDriver": false,
     "Sales": [
       {
-        "Make": "Ford",
-        "Model": "Ranger",
-        "Discount": 0.05
+        "Make": "Peugeot",
+        "Model": "407",
+        "Discount": 0.15
+      },
+      {
+        "Make": "Nissan",
+        "Model": "370Z",
+        "Discount": 0.00
       }
     ]
   },
@@ -144,14 +149,14 @@
     "IsYoungDriver": true,
     "Sales": [
       {
-        "Make": "Opel",
-        "Model": "Corsa",
-        "Discount": 0.05
+        "Make": "Nissan",
+        "Model": "Altima",
+        "Discount": 0.45
       },
       {
-        "Make": "Opel",
-        "Model": "Corsa",
-        "Discount": 0.20
+        "Make": "Chevy",
+        "Model": "Impala",
+        "Discount": 0.15
       }
     ]
   },
@@ -162,9 +167,14 @@
     "IsYoungDriver": true,
     "Sales": [
       {
-        "Make": "Peugeot",
-        "Model": "405",
-        "Discount": 0.45
+        "Make": "Skoda",
+        "Model": "Citigo",
+        "Discount": 0.25
+      },
+      {
+        "Make": "Toyota",
+        "Model": "Prius",
+        "Discount": 0.35
       }
     ]
   },
@@ -175,14 +185,14 @@
     "IsYoungDriver": false,
     "Sales": [
       {
-        "Make": "Nissan",
-        "Model": "370Z",
-        "Discount": 0.15
+        "Make": "Alfa Romeo",
+        "Model": "AR51",
+        "Discount": 0.30
       },
       {
-        "Make": "Rolls-Royce",
-        "Model": "Phantom",
-        "Discount": 0.10
+        "Make": "Mercedes",
+        "Model": "A 140",
+        "Discount": 0.40
       }
     ]
   },
@@ -191,33 +201,7 @@
     "Name": "Rico Peer",
     "BirthDate": "1984-10-01T00:00:00",
     "IsYoungDriver": true,
-    "Sales": [
-      {
-        "Make": "Great Wall",
-        "Model": "Haval M4",
-        "Discount": 0.20
-      },
-      {
-        "Make": "Alfa Romeo",
-        "Model": "Giulietta",
-        "Discount": 0.10
-      },
-      {
-        "Make": "Great Wall",
-        "Model": "Haval M4",
-        "Discount": 0.45
-      },
-      {
-        "Make": "Ford",
-        "Model": "Pinto",
-        "Discount": 0.35
-      },
-      {
-        "Make": "Peugeot",
-        "Model": "405",
-        "Discount": 0.35
-      }
-    ]
+    "Sales": []
   },
   {
     "Id": 5,
@@ -227,18 +211,18 @@
     "Sales": [
       {
         "Make": "Citroen",
-        "Model": "C5",
-        "Discount": 0.10
-      },
-      {
-        "Make": "Toyota",
-        "Model": "Prius",
+        "Model": "Elysée",
         "Discount": 0.05
       },
       {
-        "Make": "Seat",
-        "Model": "Mii",
-        "Discount": 0.45
+        "Make": "Citroen",
+        "Model": "C4",
+        "Discount": 0.05
+      },
+      {
+        "Make": "Mercedes",
+        "Model": "A 160 CDI",
+        "Discount": 0.05
       }
     ]
   },
@@ -249,14 +233,24 @@
     "IsYoungDriver": false,
     "Sales": [
       {
-        "Make": "Peugeot",
-        "Model": "306",
-        "Discount": 0.40
+        "Make": "Dacia",
+        "Model": "Logan",
+        "Discount": 0.30
       },
       {
-        "Make": "Chevy",
-        "Model": "Impala",
-        "Discount": 0.20
+        "Make": "Ford",
+        "Model": "Pinto",
+        "Discount": 0.00
+      },
+      {
+        "Make": "Citroen",
+        "Model": "Elysée",
+        "Discount": 0.05
+      },
+      {
+        "Make": "Renault",
+        "Model": "Duster",
+        "Discount": 0.40
       }
     ]
   },
@@ -267,14 +261,14 @@
     "IsYoungDriver": true,
     "Sales": [
       {
-        "Make": "Nissan",
-        "Model": "Versa",
-        "Discount": 0.35
+        "Make": "Peugeot",
+        "Model": "308",
+        "Discount": 0.10
       },
       {
-        "Make": "Mercedes",
-        "Model": "W212",
-        "Discount": 0.25
+        "Make": "Great Wall",
+        "Model": "Steed 3",
+        "Discount": 0.10
       }
     ]
   },
@@ -283,7 +277,18 @@
     "Name": "Carole Witman",
     "BirthDate": "1987-10-01T00:00:00",
     "IsYoungDriver": false,
-    "Sales": []
+    "Sales": [
+      {
+        "Make": "Rolls-Royce",
+        "Model": "Ghost",
+        "Discount": 0.15
+      },
+      {
+        "Make": "Toyota",
+        "Model": "Corolla",
+        "Discount": 0.20
+      }
+    ]
   },
   {
     "Id": 13,
@@ -292,24 +297,14 @@
     "IsYoungDriver": true,
     "Sales": [
       {
-        "Make": "Citroen",
-        "Model": "C1",
-        "Discount": 0.35
-      },
-      {
-        "Make": "Renault",
-        "Model": "Clio IV",
-        "Discount": 0.20
-      },
-      {
-        "Make": "Citroen",
-        "Model": "C5",
-        "Discount": 0.15
-      },
-      {
-        "Make": "Ford",
-        "Model": "Fiesta",
+        "Make": "Mercedes",
+        "Model": "W212",
         "Discount": 0.05
+      },
+      {
+        "Make": "Seat",
+        "Model": "Mii",
+        "Discount": 0.35
       }
     ]
   },
@@ -320,18 +315,13 @@
     "IsYoungDriver": false,
     "Sales": [
       {
-        "Make": "Toyota",
-        "Model": "Camry Hybrid",
+        "Make": "Rolls-Royce",
+        "Model": "Phantom",
         "Discount": 0.20
       },
       {
-        "Make": "Lamborghini",
-        "Model": "Gallardo",
-        "Discount": 0.10
-      },
-      {
-        "Make": "Mercedes",
-        "Model": "W210",
+        "Make": "Alfa Romeo",
+        "Model": "Giulietta",
         "Discount": 0.10
       }
     ]
@@ -343,9 +333,9 @@
     "IsYoungDriver": true,
     "Sales": [
       {
-        "Make": "Toyota",
-        "Model": "Yaris",
-        "Discount": 0.10
+        "Make": "Nissan",
+        "Model": "Rogue",
+        "Discount": 0.45
       }
     ]
   },
@@ -356,19 +346,14 @@
     "IsYoungDriver": true,
     "Sales": [
       {
-        "Make": "Ferrari",
-        "Model": "250 GTO",
-        "Discount": 0.10
-      },
-      {
-        "Make": "Mercedes",
-        "Model": "W212",
-        "Discount": 0.10
-      },
-      {
-        "Make": "Seat",
-        "Model": "Mii",
+        "Make": "Skoda",
+        "Model": "Fabia",
         "Discount": 0.20
+      },
+      {
+        "Make": "Toyota",
+        "Model": "Tacoma",
+        "Discount": 0.25
       }
     ]
   },
@@ -379,14 +364,24 @@
     "IsYoungDriver": true,
     "Sales": [
       {
-        "Make": "Nissan",
-        "Model": "370Z",
+        "Make": "Mercedes",
+        "Model": "A 140",
+        "Discount": 0.05
+      },
+      {
+        "Make": "Renault",
+        "Model": "Alaskan",
+        "Discount": 0.25
+      },
+      {
+        "Make": "Rolls-Royce",
+        "Model": "Phantom Drophead Coupé",
         "Discount": 0.20
       },
       {
-        "Make": "BMW",
-        "Model": "M6 E63",
-        "Discount": 0.35
+        "Make": "Nissan",
+        "Model": "Versa",
+        "Discount": 0.15
       }
     ]
   },
@@ -397,8 +392,18 @@
     "IsYoungDriver": true,
     "Sales": [
       {
-        "Make": "Chevy",
-        "Model": "Malibu",
+        "Make": "Ford",
+        "Model": "Fiesta",
+        "Discount": 0.15
+      },
+      {
+        "Make": "Seat",
+        "Model": "Ibiza",
+        "Discount": 0.45
+      },
+      {
+        "Make": "Fiat",
+        "Model": "Panda 4x4",
         "Discount": 0.35
       }
     ]
@@ -410,9 +415,9 @@
     "IsYoungDriver": true,
     "Sales": [
       {
-        "Make": "Rolls-Royce",
-        "Model": "Phantom",
-        "Discount": 0.25
+        "Make": "Peugeot",
+        "Model": "206",
+        "Discount": 0.45
       }
     ]
   },
@@ -421,13 +426,7 @@
     "Name": "Nisha Markwell",
     "BirthDate": "1994-04-04T00:00:00",
     "IsYoungDriver": false,
-    "Sales": [
-      {
-        "Make": "Renault",
-        "Model": "Clio IV",
-        "Discount": 0.05
-      }
-    ]
+    "Sales": []
   },
   {
     "Id": 23,
@@ -436,14 +435,9 @@
     "IsYoungDriver": false,
     "Sales": [
       {
-        "Make": "Dacia",
-        "Model": "Dokker",
-        "Discount": 0.10
-      },
-      {
-        "Make": "Chevy",
-        "Model": "Impala",
-        "Discount": 0.10
+        "Make": "Ford",
+        "Model": "Pinto",
+        "Discount": 0.05
       }
     ]
   },
@@ -454,14 +448,9 @@
     "IsYoungDriver": false,
     "Sales": [
       {
-        "Make": "Skoda",
-        "Model": "Rapid Spaceback",
-        "Discount": 0.10
-      },
-      {
-        "Make": "Dacia",
-        "Model": "Sandero Stepway",
-        "Discount": 0.10
+        "Make": "Toyota",
+        "Model": "Corolla",
+        "Discount": 0.05
       }
     ]
   },
@@ -473,7 +462,17 @@
     "Sales": [
       {
         "Make": "Ferrari",
-        "Model": "Daytona",
+        "Model": "250 GTO",
+        "Discount": 0.25
+      },
+      {
+        "Make": "Seat",
+        "Model": "Toledo",
+        "Discount": 0.15
+      },
+      {
+        "Make": "Ford",
+        "Model": "GT40",
         "Discount": 0.20
       }
     ]

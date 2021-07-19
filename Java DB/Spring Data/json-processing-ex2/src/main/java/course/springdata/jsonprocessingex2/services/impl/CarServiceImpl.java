@@ -42,7 +42,7 @@ public class CarServiceImpl implements CarService {
         Arrays.stream(dtos)
                 .forEach(dto -> {
                     Car car = this.modelMapper.map(dto, Car.class);
-                    car.setParts(this.partService.getSetOfTenToTwentyRandomParts());
+                    car.setParts(this.partService.getSetOfThreeToFiveRandomParts());
                     this.carRepository.saveAndFlush(car);
                 });
     }

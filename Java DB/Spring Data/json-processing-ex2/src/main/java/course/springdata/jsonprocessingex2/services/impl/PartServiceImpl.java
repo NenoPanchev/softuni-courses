@@ -42,8 +42,8 @@ public class PartServiceImpl implements PartService {
     }
 
     @Override
-    public Set<Part> getSetOfTenToTwentyRandomParts() {
-        int numberOfParts = this.random.nextInt(11) + 10;
+    public Set<Part> getSetOfThreeToFiveRandomParts() {
+        int numberOfParts = this.random.nextInt(3) + 3;
         Set<Part> parts = new LinkedHashSet<>();
         while (parts.size() < numberOfParts) {
             int randomPartId = this.random.nextInt((int) this.partRepository.count()) + 1;
