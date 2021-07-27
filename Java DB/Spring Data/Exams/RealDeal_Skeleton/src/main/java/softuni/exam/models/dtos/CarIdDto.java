@@ -1,0 +1,21 @@
+package softuni.exam.models.dtos;
+
+import javax.xml.bind.annotation.XmlAccessType;
+import javax.xml.bind.annotation.XmlAccessorType;
+
+@XmlAccessorType(XmlAccessType.FIELD)
+public class CarIdDto {
+    private Long id;
+
+    public CarIdDto() {
+    }
+
+    public Long getId() {
+        return id;
+    }
+
+    public CarIdDto setId(Long id) {
+        this.id = id;
+        return this;
+    }
+}
