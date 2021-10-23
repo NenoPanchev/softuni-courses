@@ -5,7 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="00d7bbaa-6538-42a9-9acc-c3e3d2cdff98" name="Default Changelist" comment="Spring data exam">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/33d77888-a8b7-42c9-ad4b-7d97e4c752c3.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/33d77888-a8b7-42c9-ad4b-7d97e4c752c3.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -57,17 +56,6 @@
     </key>
   </component>
   <component name="RunManager">
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="FootballApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="football" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.football.FootballApplication" />
@@ -85,6 +73,8 @@
       <option name="presentableId" value="Default" />
       <updated>1627797770458</updated>
       <workItem from="1627797772507" duration="11578000" />
+      <workItem from="1629993851535" duration="41000" />
+      <workItem from="1630045348860" duration="2374000" />
     </task>
     <task id="LOCAL-00001" summary="Spring data exam">
       <created>1627806932758</created>
@@ -109,6 +99,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
