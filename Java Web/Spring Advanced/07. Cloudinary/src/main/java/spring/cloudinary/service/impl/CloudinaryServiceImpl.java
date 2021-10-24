@@ -26,6 +26,10 @@ public class CloudinaryServiceImpl implements CloudinaryService {
     File file = File.createTempFile(TEMP_FILE, multipartFile.getOriginalFilename());
     multipartFile.transferTo(file);
 
+    System.out.println("Original file name: " + multipartFile.getOriginalFilename());
+    System.out.println("Name: " + multipartFile.getName());
+    System.out.println("ContentType: " + multipartFile.getContentType());
+
     return this.cloudinary
         .uploader()
         .upload(file, Collections.emptyMap())
