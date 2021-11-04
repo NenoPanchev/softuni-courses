@@ -1,6 +1,4 @@
-package web.exams.coffeeshop.model.binding;
-
-import org.hibernate.validator.constraints.Length;
+package com.example.battleships.model.binding;
 
 import javax.validation.constraints.Email;
 import javax.validation.constraints.NotBlank;
@@ -9,8 +7,7 @@ import javax.validation.constraints.Size;
 
 public class UserRegisterBindingModel {
     private String username;
-    private String firstName;
-    private String lastName;
+    private String fullName;
     private String email;
     private String password;
     private String confirmPassword;
@@ -18,7 +15,7 @@ public class UserRegisterBindingModel {
     public UserRegisterBindingModel() {
     }
 
-    @Size(min = 5, max = 20)
+    @Size(min = 3, max = 10, message = "Username length must be between 3 and 10 characters.")
     public String getUsername() {
         return username;
     }
@@ -28,27 +25,18 @@ public class UserRegisterBindingModel {
         return this;
     }
 
-    public String getFirstName() {
-        return firstName;
+    @Size(min = 5, max = 20, message = "Full name length must be between 5 and 20 characters.")
+    public String getFullName() {
+        return fullName;
     }
 
-    public UserRegisterBindingModel setFirstName(String firstName) {
-        this.firstName = firstName;
+    public UserRegisterBindingModel setFullName(String fullName) {
+        this.fullName = fullName;
         return this;
     }
 
-    @Size(min = 5, max = 20)
-    public String getLastName() {
-        return lastName;
-    }
-
-    public UserRegisterBindingModel setLastName(String lastName) {
-        this.lastName = lastName;
-        return this;
-    }
-
-    @Email
-    @NotBlank
+    @Email(message = "Enter valid email address")
+    @NotBlank(message = "Enter valid email address")
     public String getEmail() {
         return email;
     }
@@ -58,7 +46,7 @@ public class UserRegisterBindingModel {
         return this;
     }
 
-    @Size(min = 3)
+    @Size(min = 3, message = "Password length must be more than 3 characters.")
     public String getPassword() {
         return password;
     }
@@ -68,7 +56,7 @@ public class UserRegisterBindingModel {
         return this;
     }
 
-    @Size(min = 3)
+    @Size(min = 3, message = "Password length must be more than 3 characters.")
     public String getConfirmPassword() {
         return confirmPassword;
     }
