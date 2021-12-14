@@ -1,0 +1,2 @@
+Мапване между ServiceModel и BindingModel в Service или в Controller е по-правилно да се върши?
+Хвърляне на ексепшъни
