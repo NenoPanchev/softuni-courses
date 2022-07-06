@@ -5,8 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ebdcea5f-6814-4c3a-bb17-3d7f2a7599b6" name="Default Changelist" comment="more spring data exams">
-      <change beforePath="$PROJECT_DIR$/../Exam – 04 December 2020 - Instagraph – Lite/skeleton/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Exam – 04 December 2020 - Instagraph – Lite/skeleton/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../RealDeal_Skeleton/.idea/libraries/Maven__org_aspectj_aspectjrt_1_9_4.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Airline_Skeleton/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Airline_Skeleton/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RealDeal_Skeleton/.idea/artifacts/exam_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../RealDeal_Skeleton/.idea/artifacts/exam_war_exploded.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RealDeal_Skeleton/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_data_jpa_2_5_3.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../RealDeal_Skeleton/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_data_jpa_2_6_7.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RealDeal_Skeleton/exam.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../RealDeal_Skeleton/exam.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Java Web/Spring Fundamentals/Exam preps/2020 June - Shopping List/src/main/java/exam/shoppinglist/model/binding/ProductAddBindingModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Java Web/Spring Fundamentals/Exam preps/2020 June - Shopping List/src/main/java/exam/shoppinglist/model/binding/ProductAddBindingModel.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,7 +47,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/softuni/exam/instagraphlite/util" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Airline_Skeleton/pom.xml" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -58,17 +62,6 @@
     </key>
   </component>
   <component name="RunManager">
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="InstagraphLiteApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="instagraph" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="softuni.exam.instagraphlite.InstagraphLiteApplication" />
@@ -86,6 +79,7 @@
       <option name="presentableId" value="Default" />
       <updated>1627454905334</updated>
       <workItem from="1627454909027" duration="8625000" />
+      <workItem from="1652369980115" duration="43000" />
     </task>
     <task id="LOCAL-00001" summary="more spring data exams">
       <created>1627465978773</created>
@@ -110,6 +104,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />

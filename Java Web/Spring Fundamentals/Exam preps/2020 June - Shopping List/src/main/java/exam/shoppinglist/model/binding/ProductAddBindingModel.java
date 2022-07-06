@@ -41,7 +41,7 @@ public class ProductAddBindingModel {
 
 
     @FutureOrPresent(message = "Date and time cannot be in the past")
-    @DateTimeFormat(pattern = "yyyy-MM-dd'T'HH-mm-ss")
+    @DateTimeFormat(pattern = "yyyy-MM-dd'T'HH:mm")
     public LocalDateTime getNeededBefore() {
         return neededBefore;
     }
